@@ -42,6 +42,20 @@ document.getElementById("mostrar").onclick = function() {
     } else {
         menu.addClass('show');
     }
+    document.getElementById('mostrar').setAttribute("style", "display: none;");
+
+}
+
+document.getElementById("mostrar1").onclick = function() {
+
+    menu = $('.menul');
+
+    if (menu.hasClass('show')) {
+        menu.removeClass('show');
+    } else {
+        menu.addClass('show');
+    }
+    document.getElementById('mostrar').setAttribute("style", "display: show;");
 
 }
 

@@ -69,9 +69,15 @@ body {
     border: none;
 }
 
+#mostrar1 {
+    display: flex;
+    margin-top: 36.5%;
+    margin-left: 94%;
+}
+
 .menul {
     z-index: 6;
-    margin-top: -34px;
+    margin-top: -35px;
     width: 500px;
     height: 100%;
     background-color: white;
@@ -581,6 +587,10 @@ body {
             }
             @media only screen and (max-width: 800px) {
                 @media only screen and (max-width: 575px) {
+                    #mostrar1 {
+                        display: flex;
+                        margin-left: 94%;
+                    }
                     .menulateral {
                         width: 100%;
                     }
@@ -622,6 +632,9 @@ body {
                         margin-left: 20px;
                     }
                     @media only screen and (max-width: 485px) {
+                        #mostrar1 {
+                            margin-left: 92%;
+                        }
                         .enviar1 {
                             width: 100%;
                         }
