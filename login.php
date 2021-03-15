@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +22,7 @@
                         <a href="#servic" id="btnclien">Servicios</a>
                         <a href="nosotros.html" id="btnnost">Nosotros</a>
                         <a href="#contac2" id="btncontac">Contacto</a>
-                        <a href="../taller/login.php" id="btnlog">Logeo</a>
+                        <a href="../SuenoIntimo-WEB/login.php" id="btnlog">Logeo</a>
                     </nav>
                 </div>
             </div>

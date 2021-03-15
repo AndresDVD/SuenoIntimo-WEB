@@ -43,6 +43,7 @@ document.getElementById("mostrar").onclick = function() {
         menu.addClass('show');
     }
     document.getElementById('mostrar').setAttribute("style", "display: none;");
+    document.getElementById('menulateral').setAttribute("style", "overflow-y: scroll;");
 
 }
 

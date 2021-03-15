@@ -12,6 +12,11 @@
     src: url("/fonts/Comfortaa-VariableFont_wght.ttf");
 }
 
+@font-face {
+    font-family: "BlueEyes";
+    src: url("/fonts/BlueEyes-PersonalUse.otf");
+}
+
 html {
     box-sizing: border-box;
 }
@@ -31,7 +36,6 @@ h2 {
     font-size: 2.8rem;
     text-align: center;
     padding-bottom: 2rem;
-
 }
 
 h3 {
@@ -39,7 +43,6 @@ h3 {
 }
 
 h1,
-
 h3 {
     text-align: center;
 }
@@ -54,25 +57,29 @@ body {
 }
 
 .menulateral {
+    overflow-y: visible;
+    overflow-x: hidden;
     position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 100%;
+    margin-top: -20px;
+    height: 81%;
 }
 
-.mostrar {  /* boton de desplegar el menu */
+.mostrar {
+    /* boton de desplegar el menu */
     z-index: 7;
     background-color: var(--terciario);
     border: none;
     border-radius: 0 6px 6px 0;
     padding: 5px 5px 3px 3px;
-
 }
 
-#mostrar1 {   /* boton de guardar el menu*/
+#mostrar1 {
+    /* boton de guardar el menu*/
     display: flex;
-    margin-top: 35%;
+    margin-top: -45%;
     margin-left: 92%;
     background-color: var(--terciario);
     border: none;
@@ -81,11 +88,12 @@ body {
 }
 
 .menul {
+    display: flex;
+    flex-direction: row;
     z-index: 6;
     margin-top: -35px;
     width: 500px;
     height: 100%;
-    background-color: white;
     border-right: var(--primario) 4px solid;
 }
 
@@ -95,6 +103,18 @@ body {
 
 .menul.show {
     display: block;
+}
+
+.contenidomenu {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: justify;
+}
+
+.botonmenul {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: justify;
 }
 
 .cabecera {
@@ -173,13 +193,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
-    position: relative;
     top: 0;
 }
 
 .contenido {
     background-color: rgba(0, 0, 0, 50%);
-    position: absolute;
     height: 100%;
     width: 100%;
     display: flex;
@@ -187,7 +205,6 @@ body {
     justify-content: flex-end;
     padding-right: 1rem;
     padding-bottom: 8px;
-
 }
 
 .contenido p {
@@ -260,6 +277,14 @@ body {
     padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%;
+    font-family: "BlueEyes";
+}
+
+.sombra h2 {
+    font-weight: normal;
+    text-shadow: 5px 5px 3px var(--primario);
+    font-family: "BlueEyes";
+    font-size: 100px;
 }
 
 .servicios {
@@ -268,7 +293,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.servicios img{
+.servicios img {
     width: 60%;
 }
 
@@ -291,7 +316,6 @@ body {
     max-width: 50%;
     padding-top: 1rem;
     text-align: center;
-
 }
 
 .servicio p {
@@ -374,13 +398,13 @@ body {
 .enviar {
     background-color: var(--secundario);
     color: white;
+    font-weight: bold;
     padding: .5rem .5rem;
     text-decoration: none;
     margin-top: .5rem;
     margin-bottom: .5rem;
     border-radius: .3rem;
     text-transform: uppercase;
-    font-weight: bold;
     text-align: center;
     border: none;
     width: 96%;

@@ -24,22 +24,33 @@
                         <a href="#servic" id="btnclien">Servicios</a>
                         <a href="html/nosotros.html" id="btnnost">Nosotros</a>
                         <a href="#contac2" id="btncontac">Contacto</a>
-                        <a href="../proyecto/login.php" id="btnlog">Logeo</a>
+                        <a href="../SuenoIntimo-WEB/login.php" id="btnlog">Logeo</a>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
-    <div class="menulateral">
+    <div class="menulateral" id="divmamon" style="background-color: white">
         <div class="menul">
-            <div class="mision">
-                <h1>asd</h1>
-            </div>
-            <div class="vision">
-                <h1>asd</h1>
-            </div>
-            <div class="usoempresa">
-                <h1>asd</h1>
+            <div>
+                <div class="mision">
+                    <p class="botonmenul">Mision</p>
+                    <div class="contenidomenu">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid repellat debitis illum, perspiciatis non dignissimos consequatur qui voluptatum aperiam recusandae mollitia, quaerat fugit in optio repellendus animi ipsam beatae molestiae.
+                    </div>
+                </div>
+                <div class="vision">
+                    <p class="botonmenul">Vision</p>
+                    <div class="contenidomenu">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid repellat debitis illum, perspiciatis non dignissimos consequatur qui voluptatum aperiam recusandae mollitia, quaerat fugit in optio repellendus animi ipsam beatae molestiae.
+                    </div>
+                </div>
+                <div class="usoempresa">
+                    <p class="botonmenul">Servicios</p>
+                    <div class="contenidomenu">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid repellat debitis illum, perspiciatis non dignissimos consequatur qui voluptatum aperiam recusandae mollitia, quaerat fugit in optio repellendus animi ipsam beatae molestiae.
+                    </div>
+                </div>
             </div>
             <button class="mostrar" id="mostrar1">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-bar-to-left" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -65,12 +76,10 @@
 
         <section class="fondo">
             <div class="contenido">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pins" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M10.828 9.828a4 4 0 1 0 -5.656 0l2.828 2.829l2.828 -2.829z" />
-                    <line x1="8" y1="7" x2="8" y2="7.01" />
-                    <path d="M18.828 17.828a4 4 0 1 0 -5.656 0l2.828 2.829l2.828 -2.829z" />
-                    <line x1="16" y1="15" x2="16" y2="15.01" />
+                    <circle cx="12" cy="11" r="3" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
                   </svg>
                 <p>Buga, Valle del Cauca</p>
             </div>
@@ -88,12 +97,10 @@
                     <li><img src="imgs/04.png" alt=""></li>
                 </ul>
             </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, voluptates officiis. Magnam ut
-                corporis quia, qui, cum rem dicta, accusamus illo suscipit doloremque fugit expedita! Sapiente dicta
-                laudantium explicabo incidunt?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, voluptates officiis. Magnam ut corporis quia, qui, cum rem dicta, accusamus illo suscipit doloremque fugit expedita! Sapiente dicta laudantium explicabo incidunt?</p>
         </div>
         <main class="sombra">
-            <h2>Catalogo</h2>
+            <h2>CATÁLOGO</h2>
             <div class="servicios">
                 <section class="servicio">
                     <img src="imgs/ej_cat1.jpg" alt="">
@@ -113,9 +120,7 @@
             <form class="formulario" method="post" action="php/insertarMensaje.php">
                 <fieldset>
                     <div class="iconos">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="100"
-                            height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <rect x="3" y="5" width="18" height="14" rx="2" />
                             <polyline points="3 7 12 13 21 7" />
@@ -127,16 +132,13 @@
                             <input type="text" placeholder="Nombre*" name="nombremen1" required id="nombremensaje">
                         </div>
                         <div class="campo">
-                            <input type="tel" class="tels" type="number" placeholder="Telefono*" name="telefonomen1"
-                                required id="telefono">
+                            <input type="tel" class="tels" type="number" placeholder="Telefono*" name="telefonomen1" required id="telefono">
                         </div>
                         <div class="campo">
-                            <input type="text" placeholder="Correo electronico*" name="correomen1" required
-                                id="emailmensaje">
+                            <input type="text" placeholder="Correo electronico*" name="correomen1" required id="emailmensaje">
                         </div>
                         <div class="campo">
-                            <textarea placeholder="Mensaje*" name="mensajemen1" required id="mensajeescrito"
-                                style="resize:none;"></textarea>
+                            <textarea placeholder="Mensaje*" name="mensajemen1" required id="mensajeescrito" style="resize:none;"></textarea>
                         </div>
                         <div>
                             <button class="enviar" id="botonenviarmensaje">Enviar Mensaje</button>
