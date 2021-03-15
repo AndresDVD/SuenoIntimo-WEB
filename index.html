@@ -118,15 +118,17 @@
         </main>
         <section class="contacto" id="contac">
             <form class="formulario" method="post" action="php/insertarMensaje.php">
-                <fieldset>
-                    <div class="iconos">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <rect x="3" y="5" width="18" height="14" rx="2" />
-                            <polyline points="3 7 12 13 21 7" />
-                        </svg>
+                <fieldset class="form_interno">
+                    <div class="cabecera_mail">
+                        <div class="icono_mail">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="90" height="90" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <rect x="3" y="5" width="18" height="14" rx="2" />
+                                <polyline points="3 7 12 13 21 7" />
+                            </svg>
+                        </div>
+                        <h3>Contactanos Aqui</h3>
                     </div>
-                    <h3>Contactanos</h3>
                     <div class="contener-campos">
                         <div class="campo">
                             <input type="text" placeholder="Nombre*" name="nombremen1" required id="nombremensaje">
@@ -140,7 +142,7 @@
                         <div class="campo">
                             <textarea placeholder="Mensaje*" name="mensajemen1" required id="mensajeescrito" style="resize:none;"></textarea>
                         </div>
-                        <div>
+                        <div class="divBotEnviar">
                             <button class="enviar" id="botonenviarmensaje">Enviar Mensaje</button>
                         </div>
                     </div>
@@ -150,7 +152,7 @@
 
     </main>
     <footer class="pie">
-        <p>Todos los derechos reservados Sueño Intimo©</p>
+        <p>Todos los derechos reservados Sueño Intimo ©</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/scripts1.js"></script>
