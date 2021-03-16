@@ -86,6 +86,10 @@ body {
     border-bottom: white 2px solid;
 }
 
+.informacionsinboton p:hover {
+    background: var(--secundario);
+    cursor: pointer;
+}
 
 .mostrar {
     /* boton de desplegar el menu */
@@ -579,7 +583,6 @@ body {
     width: 80%;
     margin: 0 0 0 auto;
     padding-right: 2rem;
-    
 }
 
 #linea_div1{
@@ -608,30 +611,31 @@ body {
     font-size: 20px;
 }
 
-.pie_pag p{
+.pie_pag p {
     padding: 1rem 0;
     text-align: center;
     color: rgb(160, 160, 160);
 }
 
-.sect_foot{
+.sect_foot {
     display: flex;
     align-items: center;
 }
 
-.sect_foot h3{
+.sect_foot h3 {
     color: rgb(160, 160, 160);
 }
 
-.sect_foot svg{
+.sect_foot svg {
     margin-right: 1rem;
 }
 
 .footer_2{
     background-color: rgba(0, 0, 0, 0.829);
     padding-top: 4px;
-    padding-bottom: 1px;   
+    padding-bottom: 1px;
 }
+
 
 /*FINALIZA FOOTER*/
 
