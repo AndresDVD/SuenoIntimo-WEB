@@ -550,34 +550,68 @@ body {
     grid-template-columns: repeat(3, 1fr);
     padding-top: 3rem;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 0 0 8%;
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
+
 .servicios_footer h2{
     font-size: 30px;
     color: var(--terciario);
     font-family: "BlueEyes";
     font-weight: normal;
     padding-bottom: 1rem;
-
-
-    
+   
 }
 
 .servi_foot{
     width: 80%;
-    margin: 0 auto;
+    margin: 0 0 0 auto;
+    padding-right: 2rem;
+    
 }
+
+
+.linea_divisoria{
+    position: relative;
+    bottom: 80%;
+    left: 70%;
+    height: 75%;
+    width: 3px;
+    border-radius: 25%;
+    border-color: var(--secundario);
+    background-color: var(--secundario);
+}
+
+.sect_foot h3{
+    font-size: 20px;
+}
+
+.pie_pag p{
+    padding: 1rem 0;
+    text-align: center;
+    color: rgb(160, 160, 160);
+}
+
 .sect_foot{
     display: flex;
     align-items: center;
 
 }
+
+.sect_foot h3{
+    color: rgb(160, 160, 160);
+}
+
 .sect_foot svg{
     margin-right: 1rem;
 }
 
+.footer_2{
+    background-color: black;
+    padding-top: 4px;
+    padding-bottom: 1px;   
+}
 
 
 
@@ -612,6 +646,9 @@ body {
         justify-content: space-around;
         align-items: center;
     }
+    /*.linea_divisoria{
+        left: 200px;
+    }*/
     @media only screen and (max-width: 1180px) {
         .inicio {
             flex-direction: column;
@@ -679,6 +716,11 @@ body {
         body {
             margin-top: -5px;
         }
+        /*.linea_divisoria{
+            left: 150px;
+            height: 350px;
+            bottom: 400px;
+        }*/
         @media only screen and (max-width: 910px) {
             .menul {
                 width: 400px;
@@ -693,6 +735,11 @@ body {
             .formulario svg {
                 margin-right: 2rem;
             }
+            /*.linea_divisoria{
+                left: 120px;
+                height: 450px;
+                bottom: 480px;
+            }*/
             @media only screen and (max-width: 800px) {
                 .formulario svg {
                     margin-right: 0rem;
