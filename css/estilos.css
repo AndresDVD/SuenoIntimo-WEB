@@ -11,6 +11,7 @@
     font-family: "Confortaa";
     src: url("/fonts/Comfortaa-VariableFont_wght.ttf");
 }
+
 @font-face {
     font-family: "BlueEyes";
     src: url("/fonts/BlueEyes-PersonalUse.otf");
@@ -56,15 +57,36 @@ body {
 }
 
 .menulateral {
-    overflow-y: visible;
-    overflow-x: hidden;
     position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: -20px;
-    height: 81%;
+    height: 100%;
 }
+
+.informacionsinboton {
+    overflow-y: visible;
+    overflow-x: hidden;
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 130px;
+    margin-top: -20px;
+    height: 100%;
+    border-left: var(--primario) 5px solid;
+    border-right: var(--primario) 5px solid;
+}
+
+.botonmenul {
+    background: var(--primario);
+    display: block;
+    color: black;
+    padding: 8px;
+    font-family: "Confortaa";
+    border-bottom: white 2px solid;
+}
+
+.contenidomenu {}
 
 .mostrar {
     /* boton de desplegar el menu */
@@ -75,17 +97,6 @@ body {
     padding: 5px 5px 3px 3px;
 }
 
-#mostrar1 {
-    /* boton de guardar el menu*/
-    display: flex;
-    margin-top: -45%;
-    margin-left: 92%;
-    background-color: var(--terciario);
-    border: none;
-    border-radius: 6px 0 0 6px;
-    padding: 5px 5px 3px 5px;
-}
-
 .menul {
     display: flex;
     flex-direction: row;
@@ -93,7 +104,6 @@ body {
     margin-top: -35px;
     width: 500px;
     height: 100%;
-    border-right: var(--primario) 4px solid;
 }
 
 .menul {
@@ -111,6 +121,7 @@ body {
 }
 
 .botonmenul {
+    margin-top: 1;
     padding-left: 3rem;
     padding-right: 3rem;
     text-align: justify;
@@ -543,8 +554,10 @@ body {
 
 /*FINALIZA SLIDER*/
 
+
 /*INICIO DE FOOTER*/
-.servicios_footer{
+
+.servicios_footer {
     display: grid;
     text-align: justify;
     grid-template-columns: repeat(3, 1fr);
@@ -554,35 +567,31 @@ body {
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
-.servicios_footer h2{
+
+.servicios_footer h2 {
     font-size: 30px;
     color: var(--terciario);
     font-family: "BlueEyes";
     font-weight: normal;
     padding-bottom: 1rem;
-
-
-    
 }
 
-.servi_foot{
+.servi_foot {
     width: 80%;
     margin: 0 auto;
 }
-.sect_foot{
+
+.sect_foot {
     display: flex;
     align-items: center;
-
 }
-.sect_foot svg{
+
+.sect_foot svg {
     margin-right: 1rem;
 }
 
 
-
-
 /*FINALIZA FOOTER*/
-
 
 @media only screen and (min-width: 1110px) {
     .boton {

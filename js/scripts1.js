@@ -38,25 +38,43 @@ document.getElementById("mostrar").onclick = function() {
     menu = $('.menul');
 
     if (menu.hasClass('show')) {
+        document.getElementById("mostrar").innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="icon_flecha" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"/> <line x1="14" y1="12" x2="4" y2="12" /> <line x1="14" y1="12" x2="10" y2="16" /> <line x1="14" y1="12" x2="10" y2="8" /> <line x1="20" y1="4" x2="20" y2="20" /> </svg>';
         menu.removeClass('show');
     } else {
+        document.getElementById("mostrar").innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-bar-to-left" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"/> <line x1="10" y1="12" x2="20" y2="12" /> <line x1="10" y1="12" x2="14" y2="16" /> <line x1="10" y1="12" x2="14" y2="8" /> <line x1="4" y1="4" x2="4" y2="20" /> </svg>';
         menu.addClass('show');
     }
-    document.getElementById('mostrar').setAttribute("style", "display: none;");
-    document.getElementById('menulateral').setAttribute("style", "overflow-y: scroll;");
+}
+
+document.getElementById("botonmenul1").onclick = function() {
+
+
+    if (document.getElementById("contenidomenu1").getAttribute("style") == "display:block") {
+        document.getElementById("contenidomenu1").setAttribute("style", "display:none");
+    } else {
+        document.getElementById("contenidomenu1").setAttribute("style", "display:block");
+    }
+
 
 }
 
-document.getElementById("mostrar1").onclick = function() {
+document.getElementById("botonmenul2").onclick = function() {
 
-    menu = $('.menul');
-
-    if (menu.hasClass('show')) {
-        menu.removeClass('show');
+    if (document.getElementById("contenidomenu2").getAttribute("style") == "display:block") {
+        document.getElementById("contenidomenu2").setAttribute("style", "display:none");
     } else {
-        menu.addClass('show');
+        document.getElementById("contenidomenu2").setAttribute("style", "display:block");
     }
-    document.getElementById('mostrar').setAttribute("style", "display: show;");
+
+}
+
+document.getElementById("botonmenul3").onclick = function() {
+
+    if (document.getElementById("contenidomenu3").getAttribute("style") == "display:block") {
+        document.getElementById("contenidomenu3").setAttribute("style", "display:none");
+    } else {
+        document.getElementById("contenidomenu3").setAttribute("style", "display:block");
+    }
 
 }
 
@@ -93,38 +111,5 @@ document.getElementById("btnlog").onclick = function() {
     menu = $('.cab nav');
 
     menu.removeClass('show');
-
-}
-
-document.getElementById("botonregistro").onclick = function() {
-
-    document.getElementById('nombrelog').setAttribute("required", "required");
-
-    document.getElementById('formulario1').removeAttribute("action");
-
-    if (document.getElementById('nombrelogeo').getAttribute("style") == "display: none;") {
-
-        document.getElementById('nombrelogeo').setAttribute("style", "display: block;");
-        document.getElementById('botonregistro').innerText = "Iniciar Sesion";
-        document.getElementById('botonlogeo').innerText = "Crear Cuenta";
-
-    } else {
-
-        document.getElementById('nombrelogeo').setAttribute("style", "display: none;");
-        document.getElementById('botonregistro').innerText = "Registrarse";
-        document.getElementById('botonlogeo').innerText = "Iniciar Sesion";
-
-    }
-}
-
-document.getElementById("botonlogeo").onclick = function() {
-
-    document.getElementById('nombrelog').removeAttribute("required");
-
-    if (document.getElementById('nombrelogeo').getAttribute("style") == "display: none;") {
-        document.getElementById('formulario1').setAttribute("action", "php/iniciarLogeo.php");
-    } else {
-        document.getElementById('formulario1').setAttribute("action", "php/insertarLogeo.php");
-    }
 
 }

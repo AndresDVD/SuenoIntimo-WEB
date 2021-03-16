@@ -66,6 +66,6 @@
         <p>Todos los derechos reservados ADaraviña</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="js/scripts1.js"></script>
+    <script src="js/scriptslogeo.js"></script>
 </body>
 </html>
