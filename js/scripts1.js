@@ -51,8 +51,10 @@ document.getElementById("botonmenul1").onclick = function() {
 
     if (document.getElementById("contenidomenu1").getAttribute("style") == "display:block") {
         document.getElementById("contenidomenu1").setAttribute("style", "display:none");
+        document.getElementById("botonmenul1").innerHTML = "+ Mision";
     } else {
         document.getElementById("contenidomenu1").setAttribute("style", "display:block");
+        document.getElementById("botonmenul1").innerHTML = "- Mision";
     }
 
 
@@ -62,8 +64,10 @@ document.getElementById("botonmenul2").onclick = function() {
 
     if (document.getElementById("contenidomenu2").getAttribute("style") == "display:block") {
         document.getElementById("contenidomenu2").setAttribute("style", "display:none");
+        document.getElementById("botonmenul2").innerHTML = "+ Vision";
     } else {
         document.getElementById("contenidomenu2").setAttribute("style", "display:block");
+        document.getElementById("botonmenul2").innerHTML = "- Vision";
     }
 
 }
@@ -72,8 +76,10 @@ document.getElementById("botonmenul3").onclick = function() {
 
     if (document.getElementById("contenidomenu3").getAttribute("style") == "display:block") {
         document.getElementById("contenidomenu3").setAttribute("style", "display:none");
+        document.getElementById("botonmenul3").innerHTML = "+ Servicios";
     } else {
         document.getElementById("contenidomenu3").setAttribute("style", "display:block");
+        document.getElementById("botonmenul3").innerHTML = "- Servicios";
     }
 
 }
