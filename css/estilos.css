@@ -11,12 +11,6 @@
     font-family: "Confortaa";
     src: url("/fonts/Comfortaa-VariableFont_wght.ttf");
 }
-
-@font-face {
-    font-family: "Confortaa";
-    src: url("/fonts/Comfortaa-VariableFont_wght.ttf");
-}
-
 @font-face {
     font-family: "BlueEyes";
     src: url("/fonts/BlueEyes-PersonalUse.otf");
@@ -548,6 +542,47 @@ body {
 
 
 /*FINALIZA SLIDER*/
+
+/*INICIO DE FOOTER*/
+.servicios_footer{
+    display: grid;
+    text-align: justify;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 3rem;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.servicios_footer h2{
+    font-size: 30px;
+    color: var(--terciario);
+    font-family: "BlueEyes";
+    font-weight: normal;
+    padding-bottom: 1rem;
+
+
+    
+}
+
+.servi_foot{
+    width: 80%;
+    margin: 0 auto;
+}
+.sect_foot{
+    display: flex;
+    align-items: center;
+
+}
+.sect_foot svg{
+    margin-right: 1rem;
+}
+
+
+
+
+/*FINALIZA FOOTER*/
+
 
 @media only screen and (min-width: 1110px) {
     .boton {
