@@ -562,7 +562,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     padding-top: 3rem;
     width: 90%;
-    margin: 0 0 0 8%;
+    margin: 0 0 0 6%;
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
@@ -582,17 +582,27 @@ body {
     
 }
 
+#linea_div1{
+    bottom: 80%;
+    left: 110%;
+    height: 75%;
 
+}
+
+#linea_div2{
+    bottom: 69%;
+    height: 75%;
+    left: 115%;
+}
 .linea_divisoria{
     position: relative;
-    bottom: 80%;
-    left: 70%;
-    height: 75%;
-    width: 3px;
     border-radius: 25%;
+    margin: 0;
+    width: 3px;
     border-color: var(--secundario);
     background-color: var(--secundario);
 }
+
 
 .sect_foot h3{
     font-size: 20px;
@@ -618,7 +628,7 @@ body {
 }
 
 .footer_2{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.829);
     padding-top: 4px;
     padding-bottom: 1px;   
 }
@@ -629,8 +639,15 @@ body {
     .boton {
         width: auto;
     }
+    
 }
 
+@media only screen and (max-width: 1100px) {
+    #linea_div2{
+        bottom: 50%;
+    }
+
+}
 @media only screen and (max-width: 575px) {
     .titulo {
         font-size: 30px;
@@ -653,9 +670,13 @@ body {
         justify-content: space-around;
         align-items: center;
     }
-    /*.linea_divisoria{
-        left: 200px;
-    }*/
+    .servicios_footer {
+        margin: 0 0 0 5%;
+        
+    }
+    #linea_div2{
+        bottom: 58%;
+    }
     @media only screen and (max-width: 1180px) {
         .inicio {
             flex-direction: column;
@@ -723,11 +744,9 @@ body {
         body {
             margin-top: -5px;
         }
-        /*.linea_divisoria{
-            left: 150px;
-            height: 350px;
-            bottom: 400px;
-        }*/
+        #linea_div2{
+            bottom: 55%;
+        }
         @media only screen and (max-width: 910px) {
             .menul {
                 width: 400px;
@@ -751,11 +770,19 @@ body {
                 .formulario svg {
                     margin-right: 0rem;
                 }
-                @media only screen and (max-width: 668px) {
+                .servicios_footer{
+                    grid-template-columns: repeat(1, 1fr);
+                }
+                .linea_divisoria{
+                    left: 100%;
+                    top: 0px;
+                    transform: rotate(90deg);
+                }
+                @media only screen and (max-width: 705px) {
                     .cabecera_mail {
                         flex-direction: column;
                         align-items: center;
-                    }
+                    }                   
                 }
                 @media only screen and (max-width: 575px) {
                     #mostrar1 {
@@ -802,6 +829,10 @@ body {
                         text-align: left;
                         margin-left: 20px;
                     }
+                    .servicios_footer {
+                        margin: 0 0 0 1%;
+                        
+                    }
                     @media only screen and (max-width: 485px) {
                         #mostrar1 {
                             margin-left: 92%;
@@ -817,6 +848,14 @@ body {
                         .titulo {
                             text-align: left;
                             margin-left: 15px;
+                        }
+                    }
+                    @media only screen and (max-width: 350px) {
+                        .sombra h2 {
+                             font-size: 75px;
+                        }
+                        .cabecera_mail h3{
+                            font-size: 20px;
                         }
                     }
                 }
