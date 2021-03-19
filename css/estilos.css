@@ -580,9 +580,10 @@ body {
 }
 
 .servi_foot {
-    width: 80%;
-    margin: 0 0 0 auto;
-    padding-right: 2rem;
+    width: 95%;
+    margin: 0 0 0 0;
+    padding-left: 4rem;
+
 }
 
 #linea_div1{
@@ -615,6 +616,14 @@ body {
     padding: 1rem 0;
     text-align: center;
     color: rgb(160, 160, 160);
+    text-align: justify;
+    width: 99%;
+    padding-left: 1rem;
+}
+.sub_footer p{
+    padding: 1rem 0;
+    text-align: center;
+    color: rgb(160, 160, 160);
 }
 
 .sect_foot {
@@ -624,10 +633,13 @@ body {
 
 .sect_foot h3 {
     color: rgb(160, 160, 160);
+    margin-left: 1rem;
+    text-align: left;
+
 }
 
 .sect_foot svg {
-    margin-right: 1rem;
+    box-sizing: border-box;
 }
 
 .footer_2{
@@ -637,6 +649,7 @@ body {
 }
 
 
+
 /*FINALIZA FOOTER*/
 
 @media only screen and (min-width: 1110px) {
@@ -644,13 +657,17 @@ body {
         width: auto;
     }
     
+    
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1050px) {
     #linea_div2{
-        bottom: 50%;
+        position: static;
     }
-
+    .servi_foot {
+        padding-left: 2rem;
+    
+    }
 }
 @media only screen and (max-width: 575px) {
     .titulo {
@@ -677,9 +694,6 @@ body {
     .servicios_footer {
         margin: 0 0 0 5%;
         
-    }
-    #linea_div2{
-        bottom: 58%;
     }
     @media only screen and (max-width: 1180px) {
         .inicio {
@@ -749,7 +763,8 @@ body {
             margin-top: -5px;
         }
         #linea_div2{
-            bottom: 55%;
+            position: relative;
+            bottom: 250px;
         }
         @media only screen and (max-width: 910px) {
             .menul {
@@ -765,11 +780,10 @@ body {
             .formulario svg {
                 margin-right: 2rem;
             }
-            /*.linea_divisoria{
-                left: 120px;
-                height: 450px;
-                bottom: 480px;
-            }*/
+            .servi_foot {
+                padding-left: 10%;
+            
+            }
             @media only screen and (max-width: 800px) {
                 .formulario svg {
                     margin-right: 0rem;
@@ -778,10 +792,9 @@ body {
                     grid-template-columns: repeat(1, 1fr);
                 }
                 .linea_divisoria{
-                    left: 100%;
-                    top: 0px;
-                    transform: rotate(90deg);
+                    display: none;
                 }
+                
                 @media only screen and (max-width: 705px) {
                     .cabecera_mail {
                         flex-direction: column;

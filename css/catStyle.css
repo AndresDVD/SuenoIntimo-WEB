@@ -1,0 +1,373 @@
+:root {
+    --primario: #fcd6ea;
+    --gris: #777777;
+    --secundario: #fba6d3;
+    --terciario: #f2f2f2;
+    --presionado: #fc8dc8;
+    ;
+}
+
+@font-face {
+    font-family: "Confortaa";
+    src: url("/fonts/Comfortaa-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "BlueEyes";
+    src: url("/fonts/BlueEyes-PersonalUse.otf");
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-family: "Confortaa";
+    font-size: 2.8rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1,
+h3 {
+    text-align: center;
+}
+
+body {
+    font-family: georgia, times, serif;
+    color: #333;
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    margin: 0;
+    background-image: linear-gradient(to bottom, white 0%, black 100%);
+}
+
+.menulateral {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -20px;
+    height: 100%;
+}
+
+.informacionsinboton {
+    overflow-y: visible;
+    overflow-x: hidden;
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 130px;
+    margin-top: -20px;
+    height: 100%;
+    border-left: var(--primario) 5px solid;
+    border-right: var(--primario) 5px solid;
+}
+
+.botonmenul {
+    background: var(--primario);
+    display: block;
+    color: black;
+    padding: 8px;
+    font-family: "Confortaa";
+    border-bottom: white 2px solid;
+}
+
+.informacionsinboton p:hover {
+    background: var(--secundario);
+    cursor: pointer;
+}
+
+.mostrar {
+    /* boton de desplegar el menu */
+    z-index: 7;
+    background-color: var(--terciario);
+    border: none;
+    border-radius: 0 6px 6px 0;
+    padding: 5px 5px 3px 3px;
+}
+
+.menul {
+    display: flex;
+    flex-direction: row;
+    z-index: 6;
+    margin-top: -35px;
+    width: 500px;
+    height: 100%;
+}
+
+.menul {
+    display: none;
+}
+
+.menul.show {
+    display: block;
+}
+
+.contenidomenu {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: justify;
+}
+
+.botonmenul {
+    margin-top: 1;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: justify;
+}
+
+.cabecera {
+    background: black 90%;
+    color: white;
+    padding: 0.5rem 0;
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: var(--primario) 4px solid;
+}
+
+.cabecera img {
+    margin-left: 2rem;
+}
+
+.menu-icono {
+    color: white;
+    display: none;
+}
+
+.titulo {
+    color: var(--primario);
+    margin-left: 7%;
+}
+
+#navegar {
+    padding-right: 5rem;
+}
+
+.titulo span {
+    font-size: 1.3rem;
+}
+
+.navegar-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cabecera a {
+    color: white;
+    margin-left: -6px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    width: 7rem;
+    transition: all 0.2s linear;
+    border-left: var(--primario) 1px solid;
+    border-right: var(--primario) 1px solid;
+}
+
+.cabecera a:hover {
+    background-color: var(--secundario);
+    border-left: black 1px solid;
+    border-right: black 1px solid;
+}
+
+.contenedor {
+    width: 80%;
+    max-width: 1300px;
+    margin: -32px auto;
+    background: white;
+    justify-content: center;
+    padding-bottom: 2.5rem;
+    padding-top: 0rem;
+}
+
+.fondo {
+    background-image: url(../imgs/ej_portada2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    top: 0;
+}
+
+.contenido {
+    background-color: rgba(0, 0, 0, 50%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    padding-bottom: 8px;
+}
+
+.contenido p {
+    font-family: "Confortaa";
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+.ubicacion {
+    display: flex;
+    align-items: flex-end;
+}
+
+.boton {
+    background-color: var(--secundario);
+    color: white;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    width: 95%;
+}
+
+.boton:hover {
+    background-color: var(--presionado);
+    cursor: pointer;
+}
+
+.pie {
+    width: 80%;
+    max-width: 1300px;
+    background: var(--terciario);
+    padding: 1rem 0;
+    text-align: center;
+    margin: 0 auto;
+    border-top: var(--primario) 4px solid;
+}
+
+.contacto {
+    padding-right: 20%;
+    padding-left: 20%;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contacto1 {
+    padding-right: 30%;
+    padding-left: 30%;
+    padding-top: 5.5rem;
+    padding-bottom: 5.5rem;
+    margin-bottom: -1.2rem;
+    background-color: var(--terciario);
+}
+
+.servi {
+    background: var(--terciario);
+    width: 100%;
+    left: 0;
+}
+
+.sombra {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: "BlueEyes";
+}
+
+.sombra h2 {
+    font-weight: normal;
+    text-shadow: 5px 5px 3px var(--primario);
+    font-family: "BlueEyes";
+    font-size: 100px;
+}
+
+.servicios {
+    display: grid;
+    text-align: justify;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.servicios img {
+    width: 60%;
+}
+
+.servicios section {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio a {
+    font-family: "Confortaa";
+    color: black;
+    font-weight: normal;
+    font-size: 25px;
+    max-width: 50%;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.servicio p {
+    line-height: 1.5;
+}
+
+.servicio .iconos {
+    height: 8rem;
+    width: 8rem;
+    background-color: var(--secundario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.formulario {
+    display: flex;
+    background-color: var(--terciario);
+    margin: 0 auto;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.form_interno {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.formulario fieldset {
+    border: none;
+    width: 100%;
+}
+
+.h1{
+    background-color: red;
+}
