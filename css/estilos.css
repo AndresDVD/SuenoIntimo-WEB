@@ -91,6 +91,10 @@ body {
     cursor: pointer;
 }
 
+.contac3 {
+    margin-top: 100em;
+}
+
 .mostrar {
     /* boton de desplegar el menu */
     z-index: 7;
@@ -585,19 +589,19 @@ body {
     padding-right: 2rem;
 }
 
-#linea_div1{
+#linea_div1 {
     bottom: 80%;
     left: 110%;
     height: 75%;
-
 }
 
-#linea_div2{
+#linea_div2 {
     bottom: 69%;
     height: 75%;
     left: 115%;
 }
-.linea_divisoria{
+
+.linea_divisoria {
     position: relative;
     border-radius: 25%;
     margin: 0;
@@ -606,8 +610,7 @@ body {
     background-color: var(--secundario);
 }
 
-
-.sect_foot h3{
+.sect_foot h3 {
     font-size: 20px;
 }
 
@@ -630,7 +633,7 @@ body {
     margin-right: 1rem;
 }
 
-.footer_2{
+.footer_2 {
     background-color: rgba(0, 0, 0, 0.829);
     padding-top: 4px;
     padding-bottom: 1px;
@@ -643,15 +646,14 @@ body {
     .boton {
         width: auto;
     }
-    
 }
 
 @media only screen and (max-width: 1100px) {
-    #linea_div2{
+    #linea_div2 {
         bottom: 50%;
     }
-
 }
+
 @media only screen and (max-width: 575px) {
     .titulo {
         font-size: 30px;
@@ -676,9 +678,8 @@ body {
     }
     .servicios_footer {
         margin: 0 0 0 5%;
-        
     }
-    #linea_div2{
+    #linea_div2 {
         bottom: 58%;
     }
     @media only screen and (max-width: 1180px) {
@@ -748,7 +749,7 @@ body {
         body {
             margin-top: -5px;
         }
-        #linea_div2{
+        #linea_div2 {
             bottom: 55%;
         }
         @media only screen and (max-width: 910px) {
@@ -774,10 +775,10 @@ body {
                 .formulario svg {
                     margin-right: 0rem;
                 }
-                .servicios_footer{
+                .servicios_footer {
                     grid-template-columns: repeat(1, 1fr);
                 }
-                .linea_divisoria{
+                .linea_divisoria {
                     left: 100%;
                     top: 0px;
                     transform: rotate(90deg);
@@ -786,7 +787,7 @@ body {
                     .cabecera_mail {
                         flex-direction: column;
                         align-items: center;
-                    }                   
+                    }
                 }
                 @media only screen and (max-width: 575px) {
                     #mostrar1 {
@@ -835,7 +836,6 @@ body {
                     }
                     .servicios_footer {
                         margin: 0 0 0 1%;
-                        
                     }
                     @media only screen and (max-width: 485px) {
                         #mostrar1 {
@@ -856,9 +856,9 @@ body {
                     }
                     @media only screen and (max-width: 350px) {
                         .sombra h2 {
-                             font-size: 75px;
+                            font-size: 75px;
                         }
-                        .cabecera_mail h3{
+                        .cabecera_mail h3 {
                             font-size: 20px;
                         }
                     }

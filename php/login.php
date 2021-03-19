@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logeo</title>
-    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="../css/estilos.css" />
 </head>
 <body>
     <p><br></p>
@@ -18,11 +18,10 @@
                 <h1 class="titulo">Taller Univalle <span>WWW</span></h1>
                 <div class="cab">
                     <nav id="navegar">
-                        <a href="index.html" id="btninicio">Inicio</a>
-                        <a href="#servic" id="btnclien">Servicios</a>
-                        <a href="nosotros.html" id="btnnost">Nosotros</a>
+                        <a href="../index.html" id="btninicio">Inicio</a>
+                        <a href="#servic" id="btnclien">Catalogo</a>
                         <a href="#contac2" id="btncontac">Contacto</a>
-                        <a href="../SuenoIntimo-WEB/login.php" id="btnlog">Logeo</a>
+                        <a href="login.php" id="btnlog">Logeo</a>
                     </nav>
                 </div>
             </div>
