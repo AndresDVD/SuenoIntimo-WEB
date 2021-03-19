@@ -9,12 +9,12 @@
 
 @font-face {
     font-family: "Confortaa";
-    src: url("/fonts/Comfortaa-VariableFont_wght.ttf");
+    src: url("../fonts/Comfortaa-VariableFont_wght.ttf");
 }
 
 @font-face {
     font-family: "BlueEyes";
-    src: url("/fonts/BlueEyes-PersonalUse.otf");
+    src: url("../fonts/BlueEyes-PersonalUse.otf");
 }
 
 html {
@@ -29,105 +29,16 @@ html {
 
 h1 {
     font-size: 3.8rem;
-}
+    color: red;
 
-h2 {
-    font-family: "Confortaa";
-    font-size: 2.8rem;
-    text-align: center;
-    padding-bottom: 2rem;
-}
-
-h3 {
-    font-size: 1.8rem;
-}
-
-h1,
-h3 {
-    text-align: center;
 }
 
 body {
-    font-family: georgia, times, serif;
     color: #333;
     font-size: 1.3rem;
     line-height: 1.3em;
     margin: 0;
     background-image: linear-gradient(to bottom, white 0%, black 100%);
-}
-
-.menulateral {
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: -20px;
-    height: 100%;
-}
-
-.informacionsinboton {
-    overflow-y: visible;
-    overflow-x: hidden;
-    background-color: white;
-    padding-top: 60px;
-    padding-bottom: 130px;
-    margin-top: -20px;
-    height: 100%;
-    border-left: var(--primario) 5px solid;
-    border-right: var(--primario) 5px solid;
-}
-
-.botonmenul {
-    background: var(--primario);
-    display: block;
-    color: black;
-    padding: 8px;
-    font-family: "Confortaa";
-    border-bottom: white 2px solid;
-}
-
-.informacionsinboton p:hover {
-    background: var(--secundario);
-    cursor: pointer;
-}
-
-.mostrar {
-    /* boton de desplegar el menu */
-    z-index: 7;
-    background-color: var(--terciario);
-    border: none;
-    border-radius: 0 6px 6px 0;
-    padding: 5px 5px 3px 3px;
-}
-
-.menul {
-    display: flex;
-    flex-direction: row;
-    z-index: 6;
-    margin-top: -35px;
-    width: 500px;
-    height: 100%;
-}
-
-.menul {
-    display: none;
-}
-
-.menul.show {
-    display: block;
-}
-
-.contenidomenu {
-    padding-left: 3rem;
-    padding-right: 3rem;
-    text-align: justify;
-}
-
-.botonmenul {
-    margin-top: 1;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    text-align: justify;
 }
 
 .cabecera {
@@ -145,24 +56,6 @@ body {
 
 .cabecera img {
     margin-left: 2rem;
-}
-
-.menu-icono {
-    color: white;
-    display: none;
-}
-
-.titulo {
-    color: var(--primario);
-    margin-left: 7%;
-}
-
-#navegar {
-    padding-right: 5rem;
-}
-
-.titulo span {
-    font-size: 1.3rem;
 }
 
 .navegar-cabecera {
@@ -191,7 +84,29 @@ body {
     border-right: black 1px solid;
 }
 
+.cabecera_mail {
+    display: flex;
+    margin-left: 8%;
+}
+
+.menu-icono {
+    color: white;
+    display: none;
+}
+
+#navegar {
+    padding-right: 5rem;
+}
+
 .contenedor {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: "BlueEyes";
     width: 80%;
     max-width: 1300px;
     margin: -32px auto;
@@ -201,109 +116,20 @@ body {
     padding-top: 0rem;
 }
 
-.fondo {
-    background-image: url(../imgs/ej_portada2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 550px;
-    top: 0;
-}
-
-.contenido {
-    background-color: rgba(0, 0, 0, 50%);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding-right: 1rem;
-    padding-bottom: 8px;
-}
-
-.contenido p {
-    font-family: "Confortaa";
-    color: white;
-    font-size: 18px;
-    margin: 0;
-}
-
-.ubicacion {
-    display: flex;
-    align-items: flex-end;
-}
-
-.boton {
-    background-color: var(--secundario);
-    color: white;
-    padding: 1rem 3rem;
-    text-decoration: none;
-    margin-top: 1rem;
-    border-radius: .5rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    width: 95%;
-}
-
-.boton:hover {
-    background-color: var(--presionado);
-    cursor: pointer;
-}
-
-.pie {
-    width: 80%;
-    max-width: 1300px;
-    background: var(--terciario);
-    padding: 1rem 0;
-    text-align: center;
-    margin: 0 auto;
-    border-top: var(--primario) 4px solid;
-}
-
-.contacto {
-    padding-right: 20%;
-    padding-left: 20%;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-}
-
-.contacto1 {
-    padding-right: 30%;
-    padding-left: 30%;
-    padding-top: 5.5rem;
-    padding-bottom: 5.5rem;
-    margin-bottom: -1.2rem;
-    background-color: var(--terciario);
-}
-
-.servi {
-    background: var(--terciario);
-    width: 100%;
-    left: 0;
-}
-
-.sombra {
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    font-family: "BlueEyes";
-}
-
-.sombra h2 {
+.contenedor h2 {
     font-weight: normal;
     text-shadow: 5px 5px 3px var(--primario);
     font-family: "BlueEyes";
     font-size: 100px;
+    padding-top: 6rem;
+    text-align: center;
 }
 
 .servicios {
     display: grid;
     text-align: justify;
     grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 2rem;
 }
 
 .servicios img {
@@ -348,26 +174,153 @@ body {
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
-.formulario {
+@media only screen and (max-width: 1180px) {
+    .cabecera a {
+        color: white;
+        display: block;
+        text-align: justify;
+        padding-left: 2rem;
+        width: 106%;
+    }
+    .navegar-cabecera {
+        display: block;
+        margin-left: 4%;
+    }
+}
+@media only screen and (max-width: 705px) {
+    .cabecera_mail {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .cabecera img {
+        width: 250px;
+        margin-left: 5px;
+        height: 100px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .cabecera a {
+        width: 112%;
+    }
+}
+@media only screen and (max-width: 485px) {
+    .cabecera a {
+        width: 120%;
+        border-left: black 1px solid;
+        border-right: black 1px solid;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .contenedor h2 {
+        font-size: 75px;
+    }
+    .cabecera_mail h3 {
+        font-size: 20px;
+    }
+}
+
+/*INICIO DE FOOTER*/
+
+.servicios_footer {
+    display: grid;
+    text-align: justify;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 3rem;
+    width: 90%;
+    margin: 0 0 0 7%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.servicios_footer h2 {
+    font-size: 30px;
+    color: var(--terciario);
+    font-family: "BlueEyes";
+    font-weight: normal;
+    padding-bottom: 1rem;
+}
+
+.servi_foot {
+    width: 95%;
+    margin: 0 0 0 0;
+    padding-left: 4rem;
+
+}
+
+#linea_div1 {
+    bottom: 80%;
+    left: 110%;
+    height: 75%;
+}
+
+#linea_div2 {
+    bottom: 69%;
+    height: 75%;
+    left: 110%;
+}
+
+.linea_divisoria {
+    position: relative;
+    border-radius: 25%;
+    margin: 0;
+    width: 3px;
+    border-color: var(--secundario);
+    background-color: var(--secundario);
+}
+
+.sect_foot h3 {
+    font-size: 20px;
+}
+
+.pie_pag p {
+    padding: 1rem 0;
+    text-align: center;
+    color: rgb(160, 160, 160);
+    text-align: justify;
+    width: 99%;
+    padding-left: 1rem;
+}
+.sub_footer p{
+    padding: 1rem 0;
+    text-align: center;
+    color: rgb(160, 160, 160);
+}
+
+.sect_foot {
     display: flex;
-    background-color: var(--terciario);
-    margin: 0 auto;
-    border-radius: 1rem;
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
+    align-items: center;
 }
 
-.form_interno {
-    max-width: 90%;
-    margin: 0 auto;
+.sect_foot h3 {
+    color: rgb(160, 160, 160);
+    margin-left: 1rem;
+    text-align: left;
+
 }
 
-.formulario fieldset {
-    border: none;
-    width: 100%;
+.sect_foot svg {
+    box-sizing: border-box;
 }
 
-.h1{
-    background-color: red;
+.footer_2 {
+    background-color: rgba(0, 0, 0, 0.829);
+    padding-top: 4px;
+    padding-bottom: 1px;
 }
+
+.sub_footer p {
+    background-color: rgba(0, 0, 0, 0.829);
+    padding-top: 4px;
+    padding-bottom: 1px;
+    text-align: center;
+    align-content: center;
+}
+.sub_footer p{
+    padding:2rem 0 1rem 0;
+    text-align: center;
+    color: rgb(160, 160, 160);
+}
+
+/*FINALIZA FOOTER*/

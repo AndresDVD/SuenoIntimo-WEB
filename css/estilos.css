@@ -206,7 +206,7 @@ body {
 }
 
 .fondo {
-    background-image: url(../imgs/ej_portada2.jpg);
+    background-image: url(../imgs/ej_portada1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 550px;
@@ -570,7 +570,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     padding-top: 3rem;
     width: 90%;
-    margin: 0 0 0 6%;
+    margin: 0 0 0 7%;
     padding-bottom: 0px;
     margin-bottom: 0px;
 }
@@ -599,7 +599,7 @@ body {
 #linea_div2 {
     bottom: 69%;
     height: 75%;
-    left: 115%;
+    left: 110%;
 }
 
 .linea_divisoria {
@@ -623,6 +623,12 @@ body {
     width: 99%;
     padding-left: 1rem;
 }
+
+.sub_footer p {
+    background-color: rgba(0, 0, 0, 0.829);
+    padding-top: 4px;
+    padding-bottom: 1px;
+}
 .sub_footer p{
     padding: 1rem 0;
     text-align: center;
@@ -645,11 +651,7 @@ body {
     box-sizing: border-box;
 }
 
-.footer_2 {
-    background-color: rgba(0, 0, 0, 0.829);
-    padding-top: 4px;
-    padding-bottom: 1px;
-}
+
 
 
 
