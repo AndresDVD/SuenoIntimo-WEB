@@ -8,13 +8,8 @@
 }
 
 @font-face {
-    font-family: "Confortaa";
-    src: url("/fonts/Comfortaa-VariableFont_wght.ttf");
-}
-
-@font-face {
-    font-family: "BlueEyes";
-    src: url("/fonts/BlueEyes-PersonalUse.otf");
+    font-family: BlueEyes;
+    src: url(../fonts/BlueEyes.otf);
 }
 
 html {
@@ -32,7 +27,7 @@ h1 {
 }
 
 h2 {
-    font-family: "Confortaa";
+    font-family: Comfortaa;
     font-size: 2.8rem;
     text-align: center;
     padding-bottom: 2rem;
@@ -82,7 +77,7 @@ body {
     display: block;
     color: black;
     padding: 8px;
-    font-family: "Confortaa";
+    font-family: Comfortaa;
     border-bottom: white 2px solid;
 }
 
@@ -125,6 +120,8 @@ body {
     padding-left: 3rem;
     padding-right: 3rem;
     text-align: justify;
+    font-family: Comfortaa;
+    text-shadow: 5px 5px 3px var(--primario);
 }
 
 .botonmenul {
@@ -225,7 +222,7 @@ body {
 }
 
 .contenido p {
-    font-family: "Confortaa";
+    font-family: Comfortaa;
     color: white;
     font-size: 18px;
     margin: 0;
@@ -294,13 +291,13 @@ body {
     padding-bottom: 5%;
     padding-left: 5%;
     padding-right: 5%;
-    font-family: "BlueEyes";
+    font-family: BlueEyes;
 }
 
 .sombra h2 {
     font-weight: normal;
     text-shadow: 5px 5px 3px var(--primario);
-    font-family: "BlueEyes";
+    font-family: BlueEyes;
     font-size: 100px;
 }
 
@@ -326,7 +323,7 @@ body {
 }
 
 .servicio a {
-    font-family: "Confortaa";
+    font-family: Comfortaa;
     color: black;
     font-weight: normal;
     font-size: 25px;
@@ -428,7 +425,7 @@ body {
     font-weight: bold;
     padding: .5rem .5rem;
     font-size: 16px;
-    font-family: "Confortaa";
+    font-family: Comfortaa;
     font-weight: bold;
     padding: .5rem 0 .5rem 0;
     text-decoration: none;
@@ -547,7 +544,7 @@ body {
 }
 
 .inicio p {
-    font-family: "Confortaa";
+    font-family: Comfortaa;
     padding-left: 4%;
     margin-top: 7%;
     max-width: 30%;
@@ -578,7 +575,7 @@ body {
 .servicios_footer h2 {
     font-size: 30px;
     color: var(--terciario);
-    font-family: "BlueEyes";
+    font-family: BlueEyes;
     font-weight: normal;
     padding-bottom: 1rem;
 }
@@ -587,7 +584,6 @@ body {
     width: 95%;
     margin: 0 0 0 0;
     padding-left: 4rem;
-
 }
 
 #linea_div1 {
@@ -623,7 +619,8 @@ body {
     width: 99%;
     padding-left: 1rem;
 }
-.sub_footer p{
+
+.sub_footer p {
     padding: 1rem 0;
     text-align: center;
     color: rgb(160, 160, 160);
@@ -638,7 +635,6 @@ body {
     color: rgb(160, 160, 160);
     margin-left: 1rem;
     text-align: left;
-
 }
 
 .sect_foot svg {
@@ -652,24 +648,20 @@ body {
 }
 
 
-
 /*FINALIZA FOOTER*/
 
 @media only screen and (min-width: 1110px) {
     .boton {
         width: auto;
     }
-    
-    
 }
 
 @media only screen and (max-width: 1050px) {
-    #linea_div2{
+    #linea_div2 {
         position: static;
     }
     .servi_foot {
         padding-left: 2rem;
-    
     }
 }
 
@@ -765,7 +757,7 @@ body {
         body {
             margin-top: -5px;
         }
-        #linea_div2{
+        #linea_div2 {
             position: relative;
             bottom: 250px;
         }
@@ -785,7 +777,6 @@ body {
             }
             .servi_foot {
                 padding-left: 10%;
-            
             }
             @media only screen and (max-width: 800px) {
                 .formulario svg {
@@ -794,10 +785,9 @@ body {
                 .servicios_footer {
                     grid-template-columns: repeat(1, 1fr);
                 }
-                .linea_divisoria{
+                .linea_divisoria {
                     display: none;
                 }
-                
                 @media only screen and (max-width: 705px) {
                     .cabecera_mail {
                         flex-direction: column;

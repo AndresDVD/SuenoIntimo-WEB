@@ -24,9 +24,9 @@ document.getElementById("botonlogeo").onclick = function() {
     document.getElementById('nombrelog').removeAttribute("required");
 
     if (document.getElementById('nombrelogeo').getAttribute("style") == "display: none;") {
-        document.getElementById('formulario1').setAttribute("action", "php/iniciarLogeo.php");
+        document.getElementById('formulario1').setAttribute("action", "iniciarLogeo.php");
     } else {
-        document.getElementById('formulario1').setAttribute("action", "php/insertarLogeo.php");
+        document.getElementById('formulario1').setAttribute("action", "insertarLogeo.php");
     }
 
 }
