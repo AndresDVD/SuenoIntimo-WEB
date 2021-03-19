@@ -5,21 +5,17 @@
     --terciario: #f2f2f2;
     --presionado: #fc8dc8;
     ;
-}
 
-@font-face {
-    font-family: "Confortaa";
-    src: url("../fonts/Comfortaa-VariableFont_wght.ttf");
 }
-
 @font-face {
-    font-family: "BlueEyes";
-    src: url("../fonts/BlueEyes-PersonalUse.otf");
+    font-family: BlueEyes;
+    src: url(../fonts/BlueEyes.otf);
 }
 
 html {
     box-sizing: border-box;
 }
+
 
 *,
 *:before,
@@ -148,7 +144,7 @@ body {
 }
 
 .servicio a {
-    font-family: "Confortaa";
+    font-family: Comfortaa;
     color: black;
     font-weight: normal;
     font-size: 25px;
