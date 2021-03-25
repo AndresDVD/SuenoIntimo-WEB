@@ -60,6 +60,15 @@ document.getElementById("botonmenul1").onclick = function() {
 
 }
 
+document.getElementById('id-icono-buscar').onclick = function(){
+    if(document.getElementById('id_barra_buscar').getAttribute ('display') == "none"){
+        document.getElementById('id_barra_buscar').setAttribute("style","display:flex;");
+    }else{
+        document.getElementById('id_barra_buscar').setAttribute("style","display:none;");
+    }
+}
+
+    
 document.getElementById("botonmenul2").onclick = function() {
 
     if (document.getElementById("contenidomenu2").getAttribute("style") == "display:block") {
