@@ -1,7 +1,7 @@
 <?php
     $host ="localhost"; //Direccion IP o el Servido de MYSQL
     $usuario ="u700865171_sunointimo"; //Nombre del usuario del Servidor de MYSQL
-    $contrasena = "Www20185571"; //Contrasena del Servido de MYSQL
+    $contrasena = "Www201855712"; //Contrasena del Servido de MYSQL
     $baseDatos ="u700865171_suenointimo";
 
     function conectarse(){

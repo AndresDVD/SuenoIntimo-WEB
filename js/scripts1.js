@@ -60,15 +60,15 @@ document.getElementById("botonmenul1").onclick = function() {
 
 }
 
-document.getElementById('id-icono-buscar').onclick = function(){
-    if(document.getElementById('id_barra_buscar').getAttribute ('display') == "none"){
-        document.getElementById('id_barra_buscar').setAttribute("style","display:flex;");
-    }else{
-        document.getElementById('id_barra_buscar').setAttribute("style","display:none;");
+document.getElementById('id-icono-buscar').onclick = function() {
+    if (document.getElementById('id_barra_buscar').getAttribute("style") == "display:none;") {
+        document.getElementById('id_barra_buscar').setAttribute("style", "display:flex;");
+    } else {
+        document.getElementById('id_barra_buscar').setAttribute("style", "display:none;");
     }
 }
 
-    
+
 document.getElementById("botonmenul2").onclick = function() {
 
     if (document.getElementById("contenidomenu2").getAttribute("style") == "display:block") {
@@ -92,15 +92,19 @@ document.getElementById("botonmenul3").onclick = function() {
     }
 
 }
+document.getElementById("botonmenul4").onclick = function() {
 
-document.getElementById("btninicio").onclick = function() {
-
-    menu = $('.cab nav');
-
-    menu.removeClass('show');
+    if (document.getElementById("ubicacion").getAttribute("style") == "display:block") {
+        document.getElementById("ubicacion").setAttribute("style", "display:none");
+        document.getElementById("botonmenul4").innerHTML = "+ Ubicacion";
+    } else {
+        document.getElementById("ubicacion").setAttribute("style", "display:block");
+        document.getElementById("botonmenul4").innerHTML = "- Ubicacion";
+    }
 
 }
-document.getElementById("btnnost").onclick = function() {
+
+document.getElementById("btninicio").onclick = function() {
 
     menu = $('.cab nav');
 
