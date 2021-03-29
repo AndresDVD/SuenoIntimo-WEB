@@ -38,7 +38,7 @@
                         <?php 
                         
                         if(isset($_SESSION['user'])){ 
-                            echo "../SuenoIntimo-WEB/php/cerrarSesion.php";
+                            echo "../SuenoIntimo-WEB/php/cerrarsesion.php";
                         }else{
                             echo "../SuenoIntimo-WEB/php/login.php";
                         }

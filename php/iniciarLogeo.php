@@ -11,9 +11,10 @@
     $sql="SELECT * from usuario where email='$email' and contrasena='$contrasena'";
     $result=mysqli_query($conexion,$sql);
     $rows = $result->num_rows;
+    $row =mysqli_fetch_array($result);
     if($rows==1)
         {
-            $_SESSION['user'] = $email;
+            $_SESSION['user'] = $row['email'];
             
             echo "1";
         }else{
