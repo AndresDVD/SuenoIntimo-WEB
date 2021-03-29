@@ -8,8 +8,22 @@
 </head>
 <body>
 <?php
-    include 'conectarse1.php';
+    require_once "conectarse1.php";
+    $conexion = conexion();
 
+    $nombre = $_POST['nombre'];
+    $email = $_POST['email'];
+    $contrasena = sha1($_POST['contrasena']);
+
+    $sql="INSERT into usuario (nombre,email,contrasena)
+                values ('$nombre','$email','$contrasena')";
+    $result=mysqli_query($conexion,$sql);
+    $rows = $result->num_rows;
+    if($result)
+        {
+            echo "1";
+        }
+/*
     if($_POST)
     {
         if(!empty($_POST['nombrelog1']) && !empty($_POST['emaillogeo1']) && !empty($_POST['contraseñalogeo1'])){
@@ -34,7 +48,7 @@
     }
     $query = "SELECT nombre, email, contraseña FROM usuario;";
     $result = mysqli_query($link, $query);
-    
+    */
 ?>
 </body>
 </html>

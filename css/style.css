@@ -498,12 +498,19 @@ body {
     padding: 0;
 }
 
+.botones div {
+    display: inline-block;
+}
+
 .enviar1 {
     background-color: var(--secundario);
+    display: inline-block;
     color: white;
     padding: .5rem .5rem;
-    padding: .5rem 0 .5rem 0;
+    padding: .4rem 0rem .4rem 0rem;
     text-decoration: none;
+    font-family: Comfortaa;
+    font-size: 14px;
     margin-top: .5rem;
     margin-bottom: .5rem;
     border-radius: .3rem;
@@ -516,6 +523,11 @@ body {
 }
 
 .enviar:hover {
+    background-color: var(--presionado);
+    cursor: pointer;
+}
+
+.enviar1:hover {
     background-color: var(--presionado);
     cursor: pointer;
 }

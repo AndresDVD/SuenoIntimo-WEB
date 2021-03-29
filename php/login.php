@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logeo</title>
     <link rel="stylesheet" href="../css/style.css" />
+    <?php require_once "scripts.php"; ?>
 </head>
 <body>
     <p><br></p>
@@ -46,15 +47,19 @@
                         </div>
                         <div class="campo">
                             <label>Email</label>
-                            <input type="tel" placeholder="Email*" name="emaillogeo1" required id="emaillogeo">
+                            <input type="tel" placeholder="Email*" name="emaillogeo1"  id="emaillogeo">
                         </div>
                         <div class="campo">
                             <label id="">Contraseña</label>
-                            <input type="password" placeholder="Contraseña*" name="contraseñalogeo1" required id="contraseñalogeo">
+                            <input type="password" placeholder="Contraseña*" name="contraseñalogeo1"  id="contraseñalogeo">
                         </div>
-                        <div>
-                            <button class="enviar1" id="botonregistro">Registrarse</button>
-                            <button class="enviar1" id="botonlogeo">Iniciar Sesion</button>
+                        <div class="botones">
+                            <div class="enviar1" id="botonregistro">
+                            <span>Registrarse</span>
+                            </div>
+                            <div class="enviar1" id="botonlogeo">
+                            <span>Iniciar Sesion</span>
+                            </div>
                         </div>
                     </div>
                 </fieldset>

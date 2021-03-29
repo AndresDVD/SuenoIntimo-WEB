@@ -1,5 +1,9 @@
 <?php
-    $host ="localhost"; //Direccion IP o el Servido de MYSQL
+
+    function conexion(){
+        return $conexion=mysqli_connect("localhost","root","","u700865171_suenointimo");
+    }
+    /*$host ="localhost"; //Direccion IP o el Servido de MYSQL
     $usuario ="u700865171_sunointimo"; //Nombre del usuario del Servidor de MYSQL
     $contrasena = "Www201855712"; //Contrasena del Servido de MYSQL
     $baseDatos ="u700865171_suenointimo";
@@ -20,5 +24,5 @@
         return $link;
     }
     $link = conectarse();
-    $result = mysqli_query ($link, $query);
+    $result = mysqli_query ($link, $query);*/
 ?>
