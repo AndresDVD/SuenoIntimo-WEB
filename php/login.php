@@ -1,3 +1,14 @@
+
+<?php
+
+    session_start();
+
+    if(isset($_SESSION['user'])){ 
+        header("location: ./../index.php");
+    }else{
+        
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,14 +27,21 @@
         <div class="cabecera">
             <span class="menu-icono">Menú</span>
             <div class="navegar-cabecera">
-                <h1 class="titulo">Taller Univalle <span>WWW</span></h1>
+                <img src="../imgs/Sueño Intimo 2 (Transparente).png">
                 <div class="cab">
                     <nav id="navegar">
-                        <a href="../index.html" id="btninicio">Inicio</a>
-                        <a href="#servic" id="btnclien">Catalogo</a>
-                        <a href="#contac2" id="btncontac">Contacto</a>
-                        <a href="login.php" id="btnlog">Logeo</a>
+                        <a href="../index.php" id="btninicio">Inicio</a>
+                        <a href="../index.php #servic" id="btnclien">Catalogo</a>
+                        <a href="../index.php #contac2" id="btncontac">Contacto</a>
                     </nav>
+                </div>
+                <div class="busqueda">
+                    <input type="text" placeholder="Busqueda" name="barra_buscar" id="id_barra_buscar">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icono_buscar" id="id-icono-buscar" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="10" cy="10" r="7" />
+                        <line x1="21" y1="21" x2="15" y2="15" />
+                      </svg>
                 </div>
             </div>
         </div>
@@ -73,3 +91,6 @@
     <script src="../js/scriptslogeo.js"></script>
 </body>
 </html>
+<?php
+    }
+?>

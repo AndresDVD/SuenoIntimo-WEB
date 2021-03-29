@@ -1,14 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iniciarLogeo</title>
-</head>
-<body>
+<?php
 
-    <?php
+    session_start();
+    require_once "conectarse1.php";
+
+    $conexion = conexion();
+
+    $email = $_POST['email'];
+    $contrasena = sha1($_POST['contrasena']);
+
+    $sql="SELECT * from usuario where email='$email' and contrasena='$contrasena'";
+    $result=mysqli_query($conexion,$sql);
+    $rows = $result->num_rows;
+    if($rows==1)
+        {
+            $_SESSION['user'] = $email;
+            
+            echo "1";
+        }else{
+            echo "0";
+        }
+/*
     include 'conectarse1.php';
     $query = "SELECT nombre, email, contrasena FROM usuario;";
     $result = mysqli_query($link, $query);
@@ -38,7 +49,5 @@
         }
     }
     mysqli_free_result($result);
-    mysqli_close($link);
+    mysqli_close($link);*/
     ?>
-</body>
-</html>

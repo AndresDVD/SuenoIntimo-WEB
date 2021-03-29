@@ -1,3 +1,11 @@
+
+<?php
+
+    session_start();
+
+        
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -25,7 +33,24 @@
                         <a href="#nosot1" id="btninicio">Inicio</a>
                         <a href="#servic" id="btnclien">Catalogo</a>
                         <a href="#contac2" id="btncontac">Contacto</a>
-                        <a href="../SuenoIntimo-WEB/php/login.php" id="btnlog">Logeo</a>
+                        
+                        <a href=
+                        <?php 
+                        
+                        if(isset($_SESSION['user'])){ 
+                            echo "../SuenoIntimo-WEB/php/cerrarSesion.php";
+                        }else{
+                            echo "../SuenoIntimo-WEB/php/login.php";
+                        }
+                        
+                        ?> id="btnlog">
+                        <?php
+                        if(isset($_SESSION['user'])){ 
+                            echo "Log out";
+                        }else{
+                            echo "Login";
+                        }
+                        ?></a>
                     </nav>
                 </div>
                 <div class="busqueda">

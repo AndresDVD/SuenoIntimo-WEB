@@ -40,10 +40,11 @@ $(document).ready(function() {
                 url: "iniciarLogeo.php",
                 data: cadena,
                 success: function(r) {
-                    if (r == 1) {
-                        alertify.success("Logeo Exitoso")
+                    if (r == "1") {
+                        alertify.success("Logeo Exitoso");
+                        location.href = " ./../index.php";
                     } else {
-                        alertify.error("Fallo", "Fallo Logearse");
+                        alertify.error("Fallo Logearse");
                     }
                 }
             });
@@ -68,9 +69,12 @@ $(document).ready(function() {
                 url: "insertarLogeo.php",
                 data: cadena,
                 success: function(r) {
-                    $('#formulario1')[0].reset();
                     if (r == 1) {
-                        alertify.success("Agregado con exito");
+                        $('#formulario1')[0].reset();
+                        document.getElementById('nombrelogeo').setAttribute("style", "display: none;");
+                        document.getElementById('botonregistro').innerText = "Registrarse";
+                        document.getElementById('botonlogeo').innerText = "Iniciar Sesion";
+                        alertify.alert("Exito", "Usuario creado con exito");
                     } else {
                         alertify.error("Fallo al agregar");
                     }
