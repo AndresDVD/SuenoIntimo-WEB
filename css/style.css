@@ -182,7 +182,7 @@ body {
 }
 .cab nav{
     min-width: 100%;
-    margin-left: 68%;
+    margin-left: 10%;
 }
 
 .cabecera a {
@@ -753,7 +753,7 @@ body {
         margin-right: 4%;
     }
     #navegar {
-        margin-left: 55%;
+        margin-left: 45%;
     }
     @media only screen and (max-width: 1180px) {
         .inicio {
