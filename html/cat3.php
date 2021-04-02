@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Categoria 2</title>
+    <title>Categoria 3</title>
     <link rel="stylesheet" href="../css/catStyle.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap">
 
@@ -12,53 +12,25 @@
 
 <body>
     <a name="nosot1"></a>
-    <header>
-        <div class="cabecera">
-            <span class="menu-icono">Menú</span>
-            <div class="navegar-cabecera">
-                <div class="logo-back">
-                    <a href="../index.php">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="flecha_volver" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M9 13l-4 -4l4 -4m-4 4h11a4 4 0 0 1 0 8h-1" />
-                      </svg>
-                    </a>
-                      <img src="../imgs/Sueño Intimo 2 (Transparente).png">
-                </div>
-                <div class="cab">
-                    <nav id="navegar">
-                        <a href="../index.php" id="btninicio">Inicio</a>
-                        <a href="#servic" id="btnclien">Catalogo</a>
-                        <a href="#contac2" id="btncontac">Contacto</a>
-                        <a href="../SuenoIntimo-WEB/php/login.php" id="btnlog">Logeo</a>
-                    </nav>
-                </div>
-                <div class="busqueda">
-                    <input type="text" placeholder="Busqueda" name="barra_buscar" id="id_barra_buscar">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icono_buscar" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="10" cy="10" r="7" />
-                        <line x1="21" y1="21" x2="15" y2="15" />
-                      </svg>
-                </div>
-            </div>
-        </div>
-    </header>
+    <?php
+    include_once('main.php') 
+    ?>
+    <p><br></p>
     <p><br></p>
     <main class="contenedor">
         <h2>CATÁLOGO</h2>
         <div class="servicios">
             <section class="servicio">
-                <img src="../imgs/pijama-4.jpg" alt="">
-                <a href="html/cat1.html">Pijamas para dormir #1</a>
+                <img src="../imgs/pijama-5.jpg" alt="">
+                <a href="html/cat1.html">Pijamas para levantarse #1</a>
             </section>
             <section class="servicio">
-                <img src="../imgs/pijama-4.jpg" alt="">
-                <a href="html/cat2.html">Pijamas para dormir #2</a>
+                <img src="../imgs/pijama-5.jpg" alt="">
+                <a href="html/cat2.html">Pijamas para levantarse #2</a>
             </section>
             <section class="servicio">
-                <img src="../imgs/pijama-4.jpg" alt="">
-                <a href="html/cat3.html">Pijamas para dormir #3</a>
+                <img src="../imgs/pijama-5.jpg" alt="">
+                <a href="html/cat3.html">Pijamas para levantarse #3</a>
             </section>
         </div>
     </main>

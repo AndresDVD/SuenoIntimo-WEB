@@ -5,6 +5,13 @@
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
     $contrasena = sha1($_POST['contrasena']);
+    $tipo = "usuario";
+
+    if($_SESSION['tipo'] == "admin"){ 
+        $tipo = "usuario";
+    }else{
+        $tipo = "usuario";
+    }
 
     $sql="INSERT into usuario (nombre,email,contrasena)
                 values ('$nombre','$email','$contrasena')";

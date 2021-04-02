@@ -34,7 +34,6 @@ $(document).ready(function() {
 
             emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
             valor = document.getElementById('emaillogeo').value;
-            alert("nombre");
             if (emailRegex.test(valor)) {} else {
                 alertify.error("La dirección de email no tiene el formato correcto.");
                 return false;

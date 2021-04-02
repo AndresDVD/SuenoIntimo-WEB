@@ -79,6 +79,9 @@
                             <span>Iniciar Sesion</span>
                             </div>
                         </div>
+                        <div class="checkbox">
+                        <label><input type="checkbox" id="cbox" value="admin">Administrador?</label>
+                        </div>
                     </div>
                 </fieldset>
             </form>
