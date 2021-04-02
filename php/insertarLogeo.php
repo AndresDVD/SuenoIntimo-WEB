@@ -12,6 +12,13 @@
     if($result){
         echo 1;
     }else{
-        echo 0;
+        $sql1="SELECT * from usuario Where email='$email'";
+        $result1=mysqli_query($conexion,$sql1);
+        $rows1 = $result1->num_rows;
+        if($rows1==1){
+            echo 2;
+        }else{
+            echo 0;
+        }
     }
 ?>

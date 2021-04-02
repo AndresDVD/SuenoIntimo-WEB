@@ -31,7 +31,6 @@ jQuery('document').ready(function() {
 
 });
 
-//document.getElementById('nombrelogeo').setAttribute("style", "display: none;");
 
 document.getElementById("mostrar").onclick = function() {
 
@@ -61,14 +60,14 @@ document.getElementById("botonmenul1").onclick = function() {
 }
 
 document.getElementById('id-icono-buscar').onclick = function() {
-    if (document.getElementById('id_barra_buscar').getAttribute("style") == "display:flex;") {
+    /*if (document.getElementById('id_barra_buscar').getAttribute("style") == "display:flex;") {
         document.getElementById('id_barra_buscar').setAttribute("style", "display:none;");
         document.getElementById('navegar').setAttribute("style", "margin-left: 50%;");
     } else {
         document.getElementById('id_barra_buscar').setAttribute("style", "display:flex;");
         document.getElementById('navegar').setAttribute("style", "margin-left: 68%;");
 
-    }
+    }*/
 }
 
 

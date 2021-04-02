@@ -32,6 +32,15 @@ $(document).ready(function() {
                 return false;
             }
 
+            emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+            valor = document.getElementById('emaillogeo').value;
+            alert("nombre");
+            if (emailRegex.test(valor)) {} else {
+                alertify.error("La dirección de email no tiene el formato correcto.");
+                return false;
+            }
+
+
             cadena = "email=" + $('#emaillogeo').val() +
                 "&contrasena=" + $('#contraseñalogeo').val();
 
@@ -60,6 +69,13 @@ $(document).ready(function() {
                 alertify.alert("Alerta", "Debes ingresar una Contraseña");
                 return false;
             }
+
+            emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+            valor = document.getElementById('emaillogeo').value;
+            if (emailRegex.test(valor)) {} else {
+                alertify.error("La dirección de email no tiene el formato correcto.");
+                return false;
+            }
             cadena = "nombre=" + $('#nombrelog').val() +
                 "&email=" + $('#emaillogeo').val() +
                 "&contrasena=" + $('#contraseñalogeo').val();
@@ -75,8 +91,10 @@ $(document).ready(function() {
                         document.getElementById('botonregistro').innerText = "Registrarse";
                         document.getElementById('botonlogeo').innerText = "Iniciar Sesion";
                         alertify.alert("Exito", "Usuario creado con exito");
-                    } else {
+                    } else if (r == 0) {
                         alertify.error("Fallo al agregar");
+                    } else if (r == 2) {
+                        alertify.error("Usuario ya existe");
                     }
                 }
             });
@@ -84,38 +102,3 @@ $(document).ready(function() {
     })
 
 });
-/*
-document.getElementById("botonlogeo").onclick = function() {
-
-    document.getElementById('nombrelog').removeAttribute("required");
-
-    if (document.getElementById('nombrelogeo').getAttribute("style") == "display: none;") {
-        //document.getElementById('formulario1').setAttribute("action", "iniciarLogeo.php");
-        if (document.getElementById('emaillogeo').value == "") {
-            alert("Por favor ingresa un Email");
-            return false;
-        } else {
-            if (document.getElementById('contraseñalogeo').value == "") {
-                alert("Por favor ingresa una Contraseña");
-                return false;
-            }
-        }
-    } else {
-        if (document.getElementById('nombrelog').value == "") {
-            alert("Por favor ingresa un Nombre");
-            return false;
-        } else {
-            if (document.getElementById('emaillogeo').value == "") {
-                alert("Por favor ingresa un Email");
-                return false;
-            } else {
-                if (document.getElementById('contraseñalogeo').value == "") {
-                    alert("Por favor ingresa una Contraseña");
-                    return false;
-                }
-            }
-        }
-        //document.getElementById('formulario1').setAttribute("action", "insertarLogeo.php");
-    }
-
-}*/

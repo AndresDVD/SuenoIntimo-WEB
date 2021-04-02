@@ -65,7 +65,7 @@
                         </div>
                         <div class="campo">
                             <label>Email</label>
-                            <input type="tel" placeholder="Email*" name="emaillogeo1"  id="emaillogeo">
+                            <input type="email" placeholder="Email*" name="emaillogeo1"  id="emaillogeo">
                         </div>
                         <div class="campo">
                             <label id="">Contraseña</label>
