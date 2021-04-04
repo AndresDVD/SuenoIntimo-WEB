@@ -30,19 +30,20 @@ session_start();
                 </div>
                 <div class="cab">
                     <nav id="navegar">
-                        <a href="../index.php" id="btninicio">Inicio</a>
-                        <a href="#servic" id="btnclien">Catalogo</a>
-                        <a href="#contac2" id="btncontac">Contacto</a>
+                        
+                        <a href="../index.php" class="btn">Inicio</a>
+                        <a href="#servic" class="btn">Catalogo</a>
+                        <a href="#contac2" class="btn">Contacto</a>
                         <a href=
                         <?php 
                         
                         if(isset($_SESSION['user'])){ 
-                            echo "../php/cerrarsesion.php";
+                            echo "../../SuenoIntimo-WEB/php/cerrarsesion.php";
                         }else{
-                            echo "../php/login.php";
+                            echo "../../SuenoIntimo-WEB/php/login.php";
                         }
                         
-                        ?> id="btnlog">
+                        ?> class="btn">
                         <?php
                         if(isset($_SESSION['user'])){ 
                             echo "Log out";
@@ -53,12 +54,49 @@ session_start();
                     </nav>
                 </div>
                 <div class="busqueda">
-                    <input type="text" placeholder="Busqueda" name="barra_buscar" id="id_barra_buscar">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icono_buscar" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <input type="search" placeholder="Busqueda" name="barra_buscar" id="id_barra_buscar">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icono_buscar" id="id-icono-buscar" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <circle cx="10" cy="10" r="7" />
                         <line x1="21" y1="21" x2="15" y2="15" />
                       </svg>
+                      <svg style="
+                      
+                      <?php
+                      if(isset($_SESSION['user'])){ 
+                        echo "display:block;";
+                        }else{
+                        echo "display:none;";
+                        }
+                      ?>
+                      
+                      "xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="6" cy="19" r="2" />
+                        <circle cx="17" cy="19" r="2" />
+                        <path d="M17 17h-11v-14h-2" />
+                        <path d="M6 5l14 1l-1 7h-13" />
+                      </svg>
+                      <a href="../SuenoIntimo-WEB/php/login.php" style="
+                      
+                      <?php 
+
+                        if(isset($_SESSION['user'])){
+                        if($_SESSION['tipo'] == 'admin'){ 
+                                echo "display:block;";
+                            }
+                        }else{
+                                echo "display:none;";
+                            }
+                            ?>"
+                      ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-exclamation" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        <line x1="19" y1="7" x2="19" y2="10" />
+                        <line x1="19" y1="14" x2="19" y2="14.01" />
+                        </svg>
+                        </a>
                 </div>
             </div>
         </div>

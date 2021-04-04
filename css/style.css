@@ -499,6 +499,10 @@ body {
     display: inline-block;
 }
 
+.articulo {
+    display: inline-block;
+}
+
 .enviar1 {
     background-color: var(--secundario);
     display: inline-block;

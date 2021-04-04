@@ -103,6 +103,7 @@
                     <p class="botonmenul" id="botonmenul1">+ Mision</p>
                     <div class="contenidomenu" id="contenidomenu1" style="display: none;">
                         Sueño Intimo es una empresa de confección y comercialización de pijamas para mujeres de todas las edades, cuya misión es satisfacer a cabalidad las necesidades del cliente.
+                        <?php echo $_SESSION['tipo'] ?>
                     </div>
                 </div>
                 <div class="vision">

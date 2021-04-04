@@ -8,7 +8,7 @@
 </head>
 <body>
 <?php
-    include 'conectarse1.php';
+    include 'conectarse.php';
 
     if($_POST)
     {

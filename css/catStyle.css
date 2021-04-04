@@ -5,8 +5,8 @@
     --terciario: #f2f2f2;
     --presionado: #fc8dc8;
     ;
-
 }
+
 @font-face {
     font-family: BlueEyes;
     src: url(../fonts/BlueEyes.otf);
@@ -15,7 +15,6 @@
 html {
     box-sizing: border-box;
 }
-
 
 *,
 *:before,
@@ -26,7 +25,6 @@ html {
 h1 {
     font-size: 3.8rem;
     color: red;
-
 }
 
 body {
@@ -37,11 +35,12 @@ body {
     background-image: linear-gradient(to bottom, white 0%, black 100%);
 }
 
-.logo-back{
+.logo-back {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .cabecera {
     background: black 90%;
     color: white;
@@ -55,8 +54,6 @@ body {
     border-bottom: var(--primario) 4px solid;
 }
 
-
-
 .navegar-cabecera {
     display: flex;
     justify-content: space-between;
@@ -64,7 +61,7 @@ body {
     flex-wrap: wrap;
 }
 
-.cabecera a {
+.cabecera .btn {
     color: white;
     margin-left: -6px;
     text-decoration: none;
@@ -76,27 +73,32 @@ body {
     border-left: var(--primario) 1px solid;
     border-right: var(--primario) 1px solid;
     border-radius: 5px;
-
 }
+
+
 /*es importante que logo-back a este definida despues de cabecera a*/
-.logo-back a { 
+
+.logo-back a {
     margin-right: 16px;
     padding: 5px 8px 0 8px;
     border: none;
     width: auto;
 }
 
-.cabecera a:hover {
+.cabecera .btn:hover {
     background-color: var(--secundario);
     border-left: black 1px solid;
     border-right: black 1px solid;
 }
+
+
 /*es importante que logo-back a:hover este definida despues de cabecera a:hover */
 
 .logo-back a:hover {
     border-left: none;
     border-right: none;
 }
+
 .cabecera_mail {
     display: flex;
     margin-left: 8%;
@@ -106,25 +108,36 @@ body {
     color: white;
     display: none;
 }
+
 .menu-icono:hover {
     background-color: var(--secundario);
     border-radius: 5px;
-
 }
 
 #navegar {
     padding-left: 8rem;
 }
 
-.busqueda{
+.busqueda {
     padding-right: 50px;
     display: flex;
     align-items: center;
-
 }
-.busqueda input{
+
+.busqueda input {
     margin-right: 1rem;
     height: 30px;
+}
+
+.busqueda svg {
+    margin-left: 10px;
+}
+
+.busqueda svg:hover {
+    width: 50px;
+    height: 50px;
+    margin-left: 0px;
+    cursor: pointer;
 }
 
 .contenedor {
@@ -203,6 +216,32 @@ body {
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
+.imagen {
+    width: 50px;
+    height: 100px;
+}
+
+.botones .btn {
+    background-color: #fc8dc8fd;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Comfortaa;
+    font-weight: bold;
+    padding: .5rem .5rem .5rem .5rem;
+    text-decoration: none;
+    border-radius: .3rem;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    text-transform: uppercase;
+}
+
+.botones .btn:hover {
+    background-color: var(--secundario);
+    font-size: 16.1px;
+}
+
 @media only screen and (max-width: 1386px) {
     #navegar {
         padding-left: 5rem;
@@ -252,23 +291,20 @@ body {
     }
     .servicio {
         padding-bottom: 3rem;
-        
     }
 }
-
 
 @media only screen and (max-width: 800px) {
     .servicios_footer {
         grid-template-columns: repeat(1, 1fr);
     }
-    .servicios{
+    .servicios {
         grid-template-columns: repeat(1, 1fr);
     }
     .linea_divisoria {
         display: none;
     }
 }
-
 
 @media only screen and (max-width: 705px) {
     .cabecera_mail {
@@ -279,8 +315,8 @@ body {
         margin-left: 85%;
         margin-right: 4%;
     }
-    
 }
+
 @media only screen and (max-width: 575px) {
     .cabecera img {
         width: 250px;
@@ -296,6 +332,7 @@ body {
         margin-left: 80%;
     }
 }
+
 @media only screen and (max-width: 485px) {
     .cabecera a {
         width: 120%;
@@ -305,8 +342,9 @@ body {
     .menu-icono {
         margin-left: 80%;
         margin-right: 4%;
-    }   
+    }
 }
+
 @media only screen and (max-width: 350px) {
     .contenedor h2 {
         font-size: 75px;
@@ -319,6 +357,7 @@ body {
         margin-right: 4%;
     }
 }
+
 
 /*INICIO DE FOOTER*/
 
@@ -345,7 +384,6 @@ body {
     width: 95%;
     margin: 0 0 0 0;
     padding-left: 4rem;
-
 }
 
 #linea_div1 {
@@ -381,7 +419,8 @@ body {
     width: 99%;
     padding-left: 1rem;
 }
-.sub_footer p{
+
+.sub_footer p {
     padding: 1rem 0;
     text-align: center;
     color: rgb(160, 160, 160);
@@ -396,7 +435,6 @@ body {
     color: rgb(160, 160, 160);
     margin-left: 1rem;
     text-align: left;
-
 }
 
 .sect_foot svg {
@@ -416,10 +454,12 @@ body {
     text-align: center;
     align-content: center;
 }
-.sub_footer p{
-    padding:2rem 0 1rem 0;
+
+.sub_footer p {
+    padding: 2rem 0 1rem 0;
     text-align: center;
     color: rgb(160, 160, 160);
 }
+
 
 /*FINALIZA FOOTER*/

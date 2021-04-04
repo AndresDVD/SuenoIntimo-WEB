@@ -20,6 +20,21 @@
     <main class="contenedor">
         <h2>CATÁLOGO</h2>
         <div class="servicios">
+        <?php
+        $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?categoria=levantadora'), true);
+        if($response['statuscode'] == 200){
+            foreach($response['items'] as $item){
+                include ('layout/items.php');
+            }
+
+        }else{
+
+        }
+
+        ?>
+        </div>
+        <!--
+        <div class="servicios">
             <section class="servicio">
                 <img src="../imgs/pijama-3.jpg" alt="">
                 <a href="html/cat1.html">Pijamas para acostarse #1</a>
@@ -33,6 +48,7 @@
                 <a href="html/cat3.html">Pijamas para acostarse #3</a>
             </section>
         </div>
+          -->
     </main>
     <footer class="pie_pag">
         <div class="servicios_footer">

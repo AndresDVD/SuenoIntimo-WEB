@@ -87,8 +87,6 @@ $(document).ready(function() {
                 tipo = "usuario";
             }
 
-            alert(tipo);
-
             cadena = "nombre=" + $('#nombrelog').val() +
                 "&email=" + $('#emaillogeo').val() +
                 "&contrasena=" + $('#contraseñalogeo').val() +
