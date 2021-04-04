@@ -3,9 +3,9 @@
 
     session_start();
 
-    if(isset($_SESSION['user'])){ 
+    if($_SESSION['tipo'] == 'usuario'){
         header("location: ./../index.php");
-    }else{
+        }else{
         
 ?>
 
@@ -30,9 +30,9 @@
                 <img src="../imgs/Sueño Intimo 2 (Transparente).png">
                 <div class="cab">
                     <nav id="navegar">
-                        <a href="../index.php" id="btninicio">Inicio</a>
-                        <a href="../index.php #servic" id="btnclien">Catalogo</a>
-                        <a href="../index.php #contac2" id="btncontac">Contacto</a>
+                        <a href="../index.php" class="btn">Inicio</a>
+                        <a href="../index.php #servic" class="btn">Catalogo</a>
+                        <a href="../index.php #contac2" class="btn">Contacto</a>
                     </nav>
                 </div>
                 <div class="busqueda">
@@ -79,8 +79,20 @@
                             <span>Iniciar Sesion</span>
                             </div>
                         </div>
+                        <input type="checkbox" id="cbox" value="admin" style="
+                        
+                        <?php 
+
+                        if(isset($_SESSION['user'])){
+                        if($_SESSION['tipo'] == 'admin'){ 
+                                echo "display:block;";
+                            }
+                        }else{
+                                echo "display:none;";
+                            }
+                            ?>">
+
                         <div class="checkbox">
-                        <label><input type="checkbox" id="cbox" value="admin">Administrador?</label>
                         </div>
                     </div>
                 </fieldset>

@@ -23,6 +23,8 @@ $(document).ready(function() {
 
 
     $('#botonlogeo').click(function() {
+
+
         if (document.getElementById('nombrelogeo').getAttribute("style") == "display: none;") {
             if ($('#emaillogeo').val() == "") {
                 alertify.alert("Alerta", "Debes ingresar un Email");
@@ -75,9 +77,22 @@ $(document).ready(function() {
                 alertify.error("La dirección de email no tiene el formato correcto.");
                 return false;
             }
+
+            var tipo;
+
+            var isChecked = document.getElementById('cbox').checked;
+            if (isChecked) {
+                tipo = "admin";
+            } else {
+                tipo = "usuario";
+            }
+
+            alert(tipo);
+
             cadena = "nombre=" + $('#nombrelog').val() +
                 "&email=" + $('#emaillogeo').val() +
-                "&contrasena=" + $('#contraseñalogeo').val();
+                "&contrasena=" + $('#contraseñalogeo').val() +
+                "&tipo=" + tipo;
             $.ajax({
                 type: "POST",
                 async: false,

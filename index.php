@@ -1,9 +1,6 @@
 
 <?php
-
     session_start();
-
-        
 ?>
 
 <!DOCTYPE html>
@@ -162,7 +159,7 @@
                     <path d="M7 9h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" />
                     <path d="M5 15v1m0 -8v1" />
                     </svg>
-                    <h3>Pago1</h3>
+                    <h3>Transferencia Bancaria</h3>
                 </div>
                 <div class="sect_foot">
 
@@ -181,7 +178,7 @@
                     <line x1="15" y1="12" x2="17" y2="12" />
                     <line x1="7" y1="16" x2="17" y2="16" />
                   </svg>
-                    <h3>Pago3</h3>
+                    <h3>Consignaciones</h3>
                 </div>
             </section>
         </div>

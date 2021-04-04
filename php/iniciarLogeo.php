@@ -3,6 +3,7 @@
     session_start();
     require_once "conectarse1.php";
 
+    
     $conexion = conexion();
 
     $email = $_POST['email'];
@@ -15,7 +16,8 @@
     if($rows==1)
         {
             $_SESSION['user'] = $row['email'];
-            
+            $_SESSION['tipo'] = $row['tipo'];
+
             echo "1";
         }else{
             echo "0";

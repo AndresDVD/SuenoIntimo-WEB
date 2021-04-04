@@ -5,16 +5,21 @@
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
     $contrasena = sha1($_POST['contrasena']);
-    $tipo = "usuario";
 
-    if($_SESSION['tipo'] == "admin"){ 
-        $tipo = "usuario";
-    }else{
-        $tipo = "usuario";
-    }
+    $sql2="SELECT * from usuario";
+    $result2=mysqli_query($conexion,$sql2);
+    $rows2 = $result2->num_rows;
+    $row2 =mysqli_fetch_array($result2);
+    if($rows2>0)
+        {
+            $tipo = $_POST['tipo'];
+        }else{
+            $tipo = "admin";
+        }
 
-    $sql="INSERT into usuario (nombre,email,contrasena)
-                values ('$nombre','$email','$contrasena')";
+
+    $sql="INSERT into usuario (nombre,email,contrasena,tipo)
+                values ('$nombre','$email','$contrasena','$tipo')";
     $result=mysqli_query($conexion,$sql);
     if($result){
         echo 1;
