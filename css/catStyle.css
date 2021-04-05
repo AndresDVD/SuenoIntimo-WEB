@@ -241,6 +241,15 @@ body {
     font-size: 25px;
 }
 
+#carrito-container {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 130px;
+    height: 100%;
+}
+
 .botones .btn {
     background-color: #fc8dc8fd;
     color: white;
@@ -268,113 +277,113 @@ body {
     }
 }
 
-@media only screen and (max-width: 1180px) {
-    .cabecera a {
-        color: white;
-        display: block;
-        text-align: justify;
-        padding-left: 2rem;
-        width: 106%;
+@media only screen and (max-width: 1415px) {
+    #carrito-container {
+        margin-top: 180px;
     }
-    .navegar-cabecera {
-        display: block;
-        margin-left: 4%;
+    @media only screen and (max-width: 1180px) {
+        .cabecera a {
+            color: white;
+            display: block;
+            text-align: justify;
+            padding-left: 2rem;
+            width: 106%;
+        }
+        .navegar-cabecera {
+            display: block;
+            margin-left: 4%;
+        }
+        .menu-icono {
+            color: white;
+            display: flex;
+            margin-top: 50px;
+            margin-bottom: -80px;
+            margin-left: 90%;
+            cursor: pointer;
+        }
+        .cabecera a {
+            color: white;
+            display: block;
+            text-align: justify;
+            padding-left: 2rem;
+            width: 106%;
+        }
+        .navegar-cabecera {
+            display: block;
+            margin-left: 4%;
+        }
+        .cab nav {
+            display: none;
+        }
+        .cab nav.show {
+            display: block;
+        }
+        .menu-icono {
+            padding-left: 5px;
+            margin-right: 4%;
+        }
+        .servicio {
+            padding-bottom: 3rem;
+        }
     }
-    .menu-icono {
-        color: white;
-        display: flex;
-        margin-top: 50px;
-        margin-bottom: -80px;
-        margin-left: 90%;
-        cursor: pointer;
+    @media only screen and (max-width: 800px) {
+        .servicios_footer {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .servicios {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .linea_divisoria {
+            display: none;
+        }
     }
-    .cabecera a {
-        color: white;
-        display: block;
-        text-align: justify;
-        padding-left: 2rem;
-        width: 106%;
+    @media only screen and (max-width: 705px) {
+        .cabecera_mail {
+            flex-direction: column;
+            align-items: center;
+        }
+        .menu-icono {
+            margin-left: 85%;
+            margin-right: 4%;
+        }
     }
-    .navegar-cabecera {
-        display: block;
-        margin-left: 4%;
+    @media only screen and (max-width: 575px) {
+        .cabecera img {
+            width: 250px;
+            margin-left: 5px;
+            height: 100px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        .cabecera a {
+            width: 112%;
+        }
+        .menu-icono {
+            margin-left: 80%;
+        }
     }
-    .cab nav {
-        display: none;
+    @media only screen and (max-width: 485px) {
+        .cabecera a {
+            width: 120%;
+            border-left: black 1px solid;
+            border-right: black 1px solid;
+        }
+        .menu-icono {
+            margin-left: 80%;
+            margin-right: 4%;
+        }
     }
-    .cab nav.show {
-        display: block;
-    }
-    .menu-icono {
-        padding-left: 5px;
-        margin-right: 4%;
-    }
-    .servicio {
-        padding-bottom: 3rem;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    .servicios_footer {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .servicios {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .linea_divisoria {
-        display: none;
-    }
-}
-
-@media only screen and (max-width: 705px) {
-    .cabecera_mail {
-        flex-direction: column;
-        align-items: center;
-    }
-    .menu-icono {
-        margin-left: 85%;
-        margin-right: 4%;
-    }
-}
-
-@media only screen and (max-width: 575px) {
-    .cabecera img {
-        width: 250px;
-        margin-left: 5px;
-        height: 100px;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-    .cabecera a {
-        width: 112%;
-    }
-    .menu-icono {
-        margin-left: 80%;
-    }
-}
-
-@media only screen and (max-width: 485px) {
-    .cabecera a {
-        width: 120%;
-        border-left: black 1px solid;
-        border-right: black 1px solid;
-    }
-    .menu-icono {
-        margin-left: 80%;
-        margin-right: 4%;
-    }
-}
-
-@media only screen and (max-width: 350px) {
-    .contenedor h2 {
-        font-size: 75px;
-    }
-    .cabecera_mail h3 {
-        font-size: 20px;
-    }
-    .menu-icono {
-        margin-left: 75%;
-        margin-right: 4%;
+    @media only screen and (max-width: 350px) {
+        .contenedor h2 {
+            font-size: 75px;
+        }
+        .cabecera_mail h3 {
+            font-size: 20px;
+        }
+        .menu-icono {
+            margin-left: 75%;
+            margin-right: 4%;
+        }
     }
 }
 
