@@ -174,8 +174,15 @@ body {
     padding-bottom: 2rem;
 }
 
+.articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
 .servicios img {
-    width: 60%;
+    width: 100%;
 }
 
 .servicios section {
@@ -217,8 +224,21 @@ body {
 }
 
 .imagen {
-    width: 50px;
-    height: 100px;
+    width: 200px;
+    height: 400px;
+}
+
+.botones {
+    padding-bottom: 1rem;
+}
+
+.titulo {
+    font-size: 25px;
+    margin-top: -50px;
+}
+
+.precio {
+    font-size: 25px;
 }
 
 .botones .btn {
