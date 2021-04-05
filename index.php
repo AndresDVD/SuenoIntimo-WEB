@@ -111,7 +111,6 @@
                 <h2>Sueño Intimo</h2>
                 <p>Un pequeño Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis reprehenderit</p>
                 <p>Otro pequeño Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis reprehenderit</p>
-                <hr class="linea_divisoria" id="linea_div1">
             </section>
             <section class="servi_foot" id="sect_f2">
                 <h2>Contactarse con Nosotros</h2>
@@ -145,7 +144,6 @@
                     </svg>
                     <h3>Carrera 11 #14sur - 37</h3>
                 </div>
-                <hr class="linea_divisoria" id="linea_div2">
             </section>
             <section class="servi_foot" id="sect_f3">
                 <h2>Medios de Pago</h2>
