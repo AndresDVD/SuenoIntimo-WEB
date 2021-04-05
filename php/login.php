@@ -100,7 +100,7 @@
         </section>
     </main>
     <footer class="pie">
-        <p>Todos los derechos reservados ADaraviña</p>
+        <p>Todos los derechos reservados Sueño Intimo ©</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="../js/scriptslogeo.js"></script>
