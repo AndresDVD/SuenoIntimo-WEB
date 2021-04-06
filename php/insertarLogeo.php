@@ -5,9 +5,10 @@
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
     $contrasena = sha1($_POST['contrasena']);
+    $tipo = $_POST['tipo'];
 
-    $sql="INSERT into usuario (nombre,email,contrasena)
-                values ('$nombre','$email','$contrasena')";
+    $sql="INSERT into usuario (nombre,email,contrasena,tipo)
+                values ('$nombre','$email','$contrasena','$tipo')";
     $result=mysqli_query($conexion,$sql);
     if($result){
         echo 1;
