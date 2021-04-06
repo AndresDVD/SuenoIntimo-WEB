@@ -61,7 +61,7 @@
                     <div class="contener-campos">
                         <div class="campo" id="nombrelogeo" style="display: none;">
                             <label>Nombre</label>
-                            <input type="text" placeholder="Nombre*" name="nombrelog1" id="nombrelog">
+                            <input type="text" placeholder="Nombre Completo*" name="nombrelog1" id="nombrelog">
                         </div>
                         <div class="campo">
                             <label>Email</label>
