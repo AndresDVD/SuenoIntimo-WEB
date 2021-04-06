@@ -144,6 +144,7 @@
     <div class="sub_footer">
         <p>Todos los derechos reservados Sueño Intimo ©</p>
     </div>
+    <script src="../js/carrito.js"></script>
 </body>
 
 </html>
