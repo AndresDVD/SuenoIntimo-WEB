@@ -209,7 +209,24 @@ body {
     border-right: black 1px solid;
     border-radius: 5px;
 }
+.created_later{
+    text-decoration: none;
+}
+.div_opciones{
+    float: right;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.menu_desplegable1{
+    list-style: none;
+    display: none;
+}
 
+.div_opciones:hover > ul{
+    display: block;
+}
 .menu-icono:hover {
     background-color: var(--secundario);
     border-radius: 5px;
