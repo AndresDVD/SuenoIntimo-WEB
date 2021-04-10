@@ -106,6 +106,7 @@ session_start();
                 <p>carrito</p>
            </div>                 
     </div>
+    
     <script src="../js/carrito.js"></script>
 </body>
 </html>

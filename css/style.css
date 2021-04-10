@@ -715,6 +715,97 @@ body {
 
 /*FINALIZA FOOTER*/
 
+.btn-remove {
+    background-color: #fc8dc8fd;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Comfortaa;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: .3rem;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    text-transform: uppercase;
+}
+
+.botones .btn-remove:hover {
+    background-color: var(--secundario);
+    font-size: 16.1px;
+}
+
+button {
+    border: 0;
+    border-radius: 5px;
+    background: var(--primario);
+    cursor: pointer;
+    padding: 10px;
+}
+
+.fila {
+    padding: 10px 10px 10px 10px;
+    border-top: solid 2px var(--secundario);
+    border-bottom: solid 2px var(--secundario);
+}
+
+#carrito-container {
+    font-size: 16px;
+    font-family: Comfortaa;
+    font-weight: bold;
+    text-decoration: none;
+    overflow-y: visible;
+    overflow-x: hidden;
+    background: white;
+    border: solid 2px var(--secundario);
+    right: 0;
+    margin-top: 10px;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    max-height: 70%;
+}
+
+#tabla {
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+#tabla .fila {
+    padding: 10px 0 0 20px;
+}
+
+#tabla .fila .imagen {
+    display: inline-block;
+    width: 100px;
+    height: 160px;
+}
+
+#tabla .fila .info {
+    padding-left: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+    width: 273px;
+}
+
+#tabla .fila .info .nombre {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#tabla .fila .info .botones {
+    padding: 20px 0 0 0;
+}
+
+#tabla p {
+    padding-top: 10px;
+    font-size: 24px !important;
+    text-align: center;
+    font-weight: bold;
+}
+
 @media only screen and (min-width: 1110px) {
     .boton {
         width: auto;

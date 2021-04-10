@@ -15,11 +15,11 @@
     <?php
     include_once('main.php') 
     ?>
+    <p><br></p>
+    <p><br></p>
     <main class="contenedor">
-        <p><br></p>
-        <p><br></p>
-        <p><br></p>
-        <h2>CATÁLOGO</h2>
+    <h2>CATÁLOGO</h2>
+        <div class="servicios">
         <?php
         $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?categoria=sencillas'), true);
         if($response['statuscode'] == 200){
@@ -32,22 +32,6 @@
         }
 
         ?>
-        <!--
-        <div class="servicios">
-            <section class="servicio">
-                <img src="../imgs/pijama-4.jpg" alt="">
-                <a href="html/cat1.html">Pijamas para dormir #1</a>
-            </section>
-            <section class="servicio">
-                <img src="../imgs/pijama-4.jpg" alt="">
-                <a href="html/cat2.html">Pijamas para dormir #2</a>
-            </section>
-            <section class="servicio">
-                <img src="../imgs/pijama-4.jpg" alt="">
-                <a href="html/cat3.html">Pijamas para dormir #3</a>
-            </section>
-        </div>
-          -->
     </main>
     <footer class="pie_pag">
         <div class="servicios_footer">

@@ -55,7 +55,7 @@ function actualizarCarritoUI() {
             data.items.forEach(element => {
                 html += `
                 <div class='fila'>
-                    <div class='imagen'><img src='../imgs/items/${element.imagen}' width='100' /></div>
+                    <div class='imagen'><img src='../SuenoIntimo-WEB/imgs/items/${element.imagen}' width='100' /></div>
                     <div class='info'>
                         <input type='hidden' value='${element.id}' />
                         <div class='nombre'>${element.nombre}</div>

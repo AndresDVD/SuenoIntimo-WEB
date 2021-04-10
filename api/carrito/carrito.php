@@ -24,7 +24,7 @@ class Carrito extends Session{
             $items = json_decode($this->getValue(), 1);
 
             for($i = 0; $i<sizeof($items);$i++){
-                if($items[$i]['id'] = $id){
+                if($items[$i]['id'] == $id){
                     $items[$i]['cantidad']++;
                     $this->setValue(json_encode($items));
 

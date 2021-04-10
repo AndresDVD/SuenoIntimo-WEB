@@ -28,7 +28,7 @@
                         <a href="#servic" class="btn">Catalogo</a>
                         <a href="#contac2" class="btn">Contacto</a>
                         
-                        <a class="btn" href=
+                        <a class="btn" href="
                         <?php 
                         
                         if(isset($_SESSION['user'])){ 
@@ -37,7 +37,7 @@
                             echo "../SuenoIntimo-WEB/php/login.php";
                         }
                         
-                        ?> id="btnlog">
+                        ?>" id="btnlog">
                         <?php
                         if(isset($_SESSION['user'])){ 
                             echo "Log out";
@@ -65,7 +65,7 @@
                         }
                       ?>
                       
-                      "xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      " class="carrito1" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <circle cx="6" cy="19" r="2" />
                         <circle cx="17" cy="19" r="2" />
@@ -98,6 +98,11 @@
             </div>
         </div>
     </header>
+    <div id="carrito-container" style="display:none;">
+           <div id="tabla">
+                <p>carrito</p>
+           </div>                 
+    </div>
     <div class="menulateral" id="menulateralcompleto">
         <div class="menul">
             <div class="informacionsinboton">
@@ -139,5 +144,6 @@
           </svg>
         </button>
     </div>
+    <script src="../SuenoIntimo-WEB/js/carritoindex.js"></script>
 </body>
 </html>
