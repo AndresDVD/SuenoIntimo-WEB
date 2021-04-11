@@ -1,8 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-});
-
-document.addEventListener('DOMContentLoaded', () => {
     const botones = document.querySelectorAll('.btn-add');
 
     botones.forEach(boton => {
@@ -23,7 +19,24 @@ document.addEventListener('DOMContentLoaded', () => {
         const count = cookie.split('=')[1];
         console.log(count);
     }
-})
+
+    document.querySelector('.slide1').addEventListener('click', e => {
+        document.getElementById("imagenes").setAttribute("style", "margin-left:0");
+    });
+
+    document.querySelector('.slide2').addEventListener('click', e => {
+        document.getElementById("imagenes").setAttribute("style", "margin-left:-200px");
+    });
+    document.querySelector('.slide3').addEventListener('click', e => {
+        document.getElementById("imagenes").setAttribute("style", "margin-left:-400px");
+    });
+    document.querySelector('.slide4').addEventListener('click', e => {
+        document.getElementById("imagenes").setAttribute("style", "margin-left:-600px");
+    });
+    document.querySelector('.slide5').addEventListener('click', e => {
+        document.getElementById("imagenes").setAttribute("style", "margin-left:-800px");
+    });
+});
 
 const bCarrito = document.querySelector('.carrito1');
 
@@ -51,9 +64,10 @@ function actualizarCarritoUI() {
             let precioTotal = '';
             let html = '';
             data.items.forEach(element => {
+                imagen = element.imagen.split("/");
                 html += `
                 <div class='fila'>
-                    <div class='imagen'><img src='../imgs/items/${element.imagen}' width='100' /></div>
+                    <div class='imagen'><img src='../imgs/items/${element.categoria}/${imagen[0]}' width='100' /></div>
                     <div class='info'>
                         <input type='hidden' value='${element.id}' />
                         <div class='nombre'>${element.nombre}</div>
