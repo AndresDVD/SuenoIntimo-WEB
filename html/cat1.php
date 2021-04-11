@@ -21,7 +21,7 @@
         <h2>CATÁLOGO</h2>
         <div class="servicios">
         <?php
-        $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?categoria=levantadora'), true);
+        $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?categoria=Batola'), true);
         if($response['statuscode'] == 200){
             foreach($response['items'] as $item){
                 include ('layout/items.php');

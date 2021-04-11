@@ -117,8 +117,11 @@
     </header>
     <div id="carrito-container" style="display:none;">
            <div id="tabla">
-                <p>carrito</p>
-           </div>                 
+           </div>    
+           <div class='botons'>
+           <button class="btn-remove" id="btns">Cancelar</button>       
+           <button class="btn-remove" >Continuar</button> 
+           </div>
     </div>
     <div class="menulateral" id="menulateralcompleto">
         <div class="menul">

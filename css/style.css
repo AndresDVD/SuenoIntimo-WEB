@@ -209,24 +209,28 @@ body {
     border-right: black 1px solid;
     border-radius: 5px;
 }
-.created_later{
+
+.created_later {
     text-decoration: none;
 }
-.div_opciones{
+
+.div_opciones {
     float: right;
     align-items: center;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
 }
-.menu_desplegable1{
+
+.menu_desplegable1 {
     list-style: none;
     display: none;
 }
 
-.div_opciones:hover > ul{
+.div_opciones:hover>ul {
     display: block;
 }
+
 .menu-icono:hover {
     background-color: var(--secundario);
     border-radius: 5px;
@@ -773,6 +777,8 @@ button {
     text-decoration: none;
     overflow-y: visible;
     overflow-x: hidden;
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
     background: white;
     border: solid 2px var(--secundario);
     right: 0;
@@ -782,6 +788,66 @@ button {
     align-items: center;
     max-height: 70%;
 }
+
+
+/*ScrollBar Estilo*/
+
+#carrito-container::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+#carrito-container::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+#carrito-container::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+    display: none;
+}
+
+#carrito-container::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+#carrito-container::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+#carrito-container::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-button:increment,
+.contenedor::-webkit-scrollbar-button {
+    display: none;
+}
+
+body::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+
+/*ScrollBar Fin*/
 
 #tabla {
     overflow-y: visible;
@@ -821,6 +887,23 @@ button {
     font-size: 24px !important;
     text-align: center;
     font-weight: bold;
+}
+
+.botons .btn-remove:hover {
+    background-color: var(--secundario);
+    font-size: 16.1px;
+}
+
+.botons {
+    padding: 10px 0 10px 0;
+    display: inline-flex;
+}
+
+#btns {
+    align-items: center;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
 }
 
 @media only screen and (min-width: 1110px) {

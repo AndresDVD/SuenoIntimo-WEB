@@ -257,6 +257,7 @@ button {
     flex-direction: column;
     align-items: center;
     text-align: left;
+    border: black 1px solid;
 }
 
 .servicios img {
@@ -359,6 +360,58 @@ button {
     background-color: var(--secundario);
     font-size: 16.1px;
 }
+
+
+/*COMIENZA SLIDER*/
+
+.slider {
+    right: 0px;
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    margin-left: 4%;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 200%;
+    animation: cambio 7s infinite;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0%;
+    }
+    50% {
+        margin-left: 0%;
+    }
+    55% {
+        margin-left: -100%;
+    }
+    100% {
+        margin-left: -100%;
+    }
+}
+
+.inicio {
+    z-index: -3;
+    display: flex;
+    padding-top: 1rem;
+}
+
+
+/*FINALIZA SLIDER*/
 
 @media only screen and (max-width: 1386px) {
     #navegar {
