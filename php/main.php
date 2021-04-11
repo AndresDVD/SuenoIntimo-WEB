@@ -123,8 +123,8 @@
            <button class="btn-remove" >Continuar</button> 
            </div>
     </div>
-    <div class="menulateral" id="menulateralcompleto">
-        <div class="menul">
+    <div class="menulateral" id="menulateralcompleto" style="width:40px;">
+        <div class="menul" >
             <div class="informacionsinboton">
                 <div class="mision">
                     <p class="botonmenul" id="botonmenul1">+ Mision</p>

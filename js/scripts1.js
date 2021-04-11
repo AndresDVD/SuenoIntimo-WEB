@@ -1,10 +1,10 @@
-jQuery('document').ready(function() {
+jQuery('document').ready(function () {
 
     var menuBtn = $('.menu-icono'),
         menu = $('.cab nav');
 
 
-    menuBtn.click(function() {
+    menuBtn.click(function () {
 
 
         if (menu.hasClass('show')) {
@@ -15,37 +15,36 @@ jQuery('document').ready(function() {
 
     })
 
-    jQuery('.tels').keypress(function(tecla)
+    jQuery('.tels').keypress(function (tecla) {
 
-        {
+        if (tecla.charCode < 48 || tecla.charCode > 57) {
 
-            if (tecla.charCode < 48 || tecla.charCode > 57)
+            return false;
 
-            {
+        }
 
-                return false;
-
-            }
-
-        });
+    });
 
 });
 
 
-document.getElementById("mostrar").onclick = function() {
+document.getElementById("mostrar").onclick = function () {
 
     menu = $('.menul');
 
     if (menu.hasClass('show')) {
+        document.getElementById("menulateralcompleto").setAttribute("style", "width:40px;");
         document.getElementById("mostrar").innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="icon_flecha" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"/> <line x1="14" y1="12" x2="4" y2="12" /> <line x1="14" y1="12" x2="10" y2="16" /> <line x1="14" y1="12" x2="10" y2="8" /> <line x1="20" y1="4" x2="20" y2="20" /> </svg>';
         menu.removeClass('show');
     } else {
+        document.getElementById("menulateralcompleto").setAttribute("style", "width:100%;");
         document.getElementById("mostrar").innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-bar-to-left" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"/> <line x1="10" y1="12" x2="20" y2="12" /> <line x1="10" y1="12" x2="14" y2="16" /> <line x1="10" y1="12" x2="14" y2="8" /> <line x1="4" y1="4" x2="4" y2="20" /> </svg>';
         menu.addClass('show');
+
     }
 }
 
-document.getElementById("botonmenul1").onclick = function() {
+document.getElementById("botonmenul1").onclick = function () {
 
 
     if (document.getElementById("contenidomenu1").getAttribute("style") == "display:block") {
@@ -59,7 +58,7 @@ document.getElementById("botonmenul1").onclick = function() {
 
 }
 
-document.getElementById('id-icono-buscar').onclick = function() {
+document.getElementById('id-icono-buscar').onclick = function () {
     /*if (document.getElementById('id_barra_buscar').getAttribute("style") == "display:flex;") {
         document.getElementById('id_barra_buscar').setAttribute("style", "display:none;");
         document.getElementById('navegar').setAttribute("style", "margin-left: 50%;");
@@ -71,7 +70,7 @@ document.getElementById('id-icono-buscar').onclick = function() {
 }
 
 
-document.getElementById("botonmenul2").onclick = function() {
+document.getElementById("botonmenul2").onclick = function () {
 
     if (document.getElementById("contenidomenu2").getAttribute("style") == "display:block") {
         document.getElementById("contenidomenu2").setAttribute("style", "display:none");
@@ -83,7 +82,7 @@ document.getElementById("botonmenul2").onclick = function() {
 
 }
 
-document.getElementById("botonmenul3").onclick = function() {
+document.getElementById("botonmenul3").onclick = function () {
 
     if (document.getElementById("contenidomenu3").getAttribute("style") == "display:block") {
         document.getElementById("contenidomenu3").setAttribute("style", "display:none");
@@ -94,7 +93,7 @@ document.getElementById("botonmenul3").onclick = function() {
     }
 
 }
-document.getElementById("botonmenul4").onclick = function() {
+document.getElementById("botonmenul4").onclick = function () {
 
     if (document.getElementById("ubicacion").getAttribute("style") == "display:block") {
         document.getElementById("ubicacion").setAttribute("style", "display:none");
@@ -106,28 +105,28 @@ document.getElementById("botonmenul4").onclick = function() {
 
 }
 
-document.getElementById("btninicio").onclick = function() {
+document.getElementById("nosot1").onclick = function () {
 
     menu = $('.cab nav');
 
     menu.removeClass('show');
 
 }
-document.getElementById("btnclien").onclick = function() {
+document.getElementById("servic").onclick = function () {
 
     menu = $('.cab nav');
 
     menu.removeClass('show');
 
 }
-document.getElementById("btncontac").onclick = function() {
+document.getElementById("contac2").onclick = function () {
 
     menu = $('.cab nav');
 
     menu.removeClass('show');
 
 }
-document.getElementById("btnlog").onclick = function() {
+document.getElementById("btnlog").onclick = function () {
 
     menu = $('.cab nav');
 
