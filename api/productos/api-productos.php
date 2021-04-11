@@ -24,7 +24,12 @@
             $item = $productos->get($id);
             echo json_encode(['statuscode' => 200, 'item' => $item]);
         }
-    }else{
+    }else if(isset($_GET['items']))
+        {
+            $productos = new Productos();
+            $items = $productos->getall();
+            echo json_encode(['statuscode' => 200, 'items' => $items]);
+        }else{
         echo json_encode(['statuscode' => 400, 'response' => 'No hay accion']);
     }
 

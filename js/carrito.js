@@ -1,9 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-
-
-
 });
+
 document.addEventListener('DOMContentLoaded', () => {
     const botones = document.querySelectorAll('.btn-add');
 

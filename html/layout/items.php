@@ -16,7 +16,7 @@
                             $imagens = explode("/", $item['imagen']);
                             $max = sizeof($imagens);
                             for($i = 0;$i<$max;$i++){?>
-                                <li><a href=#slide<?php echo $i+1?>><?php echo $i+1?></a></li>
+                                <li><a href="#slide<?php echo $i+1?>"><?php echo $i+1?></a></li>
                         <?php }?>
                     </ul>
                 </div>

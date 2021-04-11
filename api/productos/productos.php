@@ -32,6 +32,15 @@ include_once '../../php/conectarse1.php';
     
             return $items;
         }
+
+        function getall(){
+            $conexion = $this -> conexion();
+            $sql="SELECT * from productos";
+            $result=mysqli_query($conexion,$sql);
+            $row =mysqli_fetch_array($result);
+            return $row;
+        }
+
     }
 
 ?>
