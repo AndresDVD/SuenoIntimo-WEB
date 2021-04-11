@@ -25,6 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const count = cookie.split('=')[1];
         console.log(count);
     }
+
+    document.getElementById("id-icono-buscar").onclick = function () {
+        var busqueda = document.getElementById("id_barra_buscar").value;
+        enviar_a_php(busqueda);
+    }
+
+    function enviar_a_php(busqueda){
+        window.location = "/SuenoIntimo-WEB/html/resultados_busqueda.php?buscar=" + busqueda;
+    }
 })
 
 const bCarrito = document.querySelector('.carrito1');
@@ -105,3 +114,5 @@ const removeItemFromCarrito = id => {
             actualizarCarritoUI();
         });
 };
+
+
