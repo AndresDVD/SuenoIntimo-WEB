@@ -374,7 +374,7 @@ body {
 .servicios {
     display: grid;
     text-align: justify;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 2fr);
 }
 
 .servicios img {
@@ -399,6 +399,7 @@ body {
     font-size: 25px;
     max-width: 50%;
     padding-top: 1rem;
+    padding-bottom: 3rem;
     text-align: center;
 }
 
