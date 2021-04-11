@@ -3,15 +3,23 @@
     <div class="imagen">
         <div class="inicio">
                 <div class="slider">
-                    <ul>
+                    <ul class="slide">
                         <?php 
                             $imagens = explode("/", $item['imagen']);
                             $max = sizeof($imagens);
                             for($i = 0;$i<$max;$i++){?>
-                                <li><img src="../imgs/items/<?php echo $item['categoria'];?>/<?php echo $imagens[$i];?>" alt=""></li>
+                                <li id="slide<?php echo $i+1?>"><img src="../imgs/items/<?php echo $item['categoria'];?>/<?php echo $imagens[$i];?>" alt=""></li>
                         <?php }?>
-                </ul>
-            </div>
+                    </ul>
+                    <ul class="menusli">
+                        <?php 
+                            $imagens = explode("/", $item['imagen']);
+                            $max = sizeof($imagens);
+                            for($i = 0;$i<$max;$i++){?>
+                                <li><a href=#slide<?php echo $i+1?>><?php echo $i+1?></a></li>
+                        <?php }?>
+                    </ul>
+                </div>
         </div>
     </div>
     <div class="titulo"><?php echo $item['nombre'];?></div>
