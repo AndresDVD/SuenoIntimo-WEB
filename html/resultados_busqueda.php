@@ -21,16 +21,16 @@
     <p><br></p>
     <p><br></p>
     <main class="contenedor">
-    <h2>Resultados</h2>
+    <h2>Resultados de Busqueda</h2>
     <h3>
     <?php
         
-        echo "la busqueda es: " .$busqueda;
+        echo "la busqueda es-" .$busqueda;
     ?>
     </h3>
         <div class="servicios">
         <?php
-        $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?items=items'), true);
+        $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?categoria='.$busqueda), true);
         if($response['statuscode'] == 200){
             foreach($response['items'] as $item){
                 include ('layout/items.php');
