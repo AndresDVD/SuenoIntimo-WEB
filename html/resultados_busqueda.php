@@ -4,24 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Categoria 1</title>
+    <title>Categoria 3</title>
     <link rel="stylesheet" href="../css/catStyle.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap">
 
 </head>
 
 <body>
-    <a name="nosot1"></a>
+<a name="Resultados de la busqueda"></a>
     <?php
     include_once('main.php') 
     ?>
     <p><br></p>
     <p><br></p>
     <main class="contenedor">
-        <h2>CATÁLOGO</h2>
+    <h2>Resultados</h2>
         <div class="servicios">
         <?php
-        $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?categoria=Batola'), true);
+        $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?categoria=dospiezas'), true);
         if($response['statuscode'] == 200){
             foreach($response['items'] as $item){
                 include ('layout/items.php');
@@ -32,14 +32,14 @@
         }
 
         ?>
-        </div>
-    </main>
+        </main>
     <footer class="pie_pag">
         <div class="servicios_footer">
             <section class="servi_foot" id="sect_f1">
                 <h2>Sueño Intimo</h2>
                 <p>Un pequeño Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis reprehenderit</p>
                 <p>Otro pequeño Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis reprehenderit</p>
+                <hr class="linea_divisoria" id="linea_div1">
             </section>
             <section class="servi_foot" id="sect_f2">
                 <h2>Contactarse con Nosotros</h2>
@@ -79,6 +79,7 @@
                     </svg>
                     <h3>Kra busquela - Calle encuentrela</h3>
                 </div>
+                <hr class="linea_divisoria" id="linea_div2">
             </section>
             <section class="servi_foot" id="sect_f3">
                 <h2>Medios de Pago</h2>
@@ -126,6 +127,6 @@
     <div class="sub_footer">
         <p>Todos los derechos reservados Sueño Intimo ©</p>
     </div>
-    <script src="../js/carrito.js"></script>
 </body>
+
 </html>
