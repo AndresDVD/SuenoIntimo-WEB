@@ -68,6 +68,14 @@
                     <img src="imgs/ej_cat3.jpg" alt="">
                     <a href="html/cat3.php">Pijamas para levantarse</a>
                 </section>
+                <section class="servicio">
+                    <img src="imgs/ej_cat3.jpg" alt="">
+                    <a href="html/cat4.php">Cat4 </a>
+                </section>
+                <section class="servicio">
+                    <img src="imgs/ej_cat3.jpg" alt="">
+                    <a href="html/cat5.php">Cat5</a>
+                </section>
             </div>
         </main>
         <a name="contac2" class="contac3"></a>
