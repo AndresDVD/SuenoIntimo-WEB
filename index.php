@@ -58,23 +58,27 @@
             <div class="servicios">
                 <section class="servicio">
                     <img src="imgs/ej_cat1.jpg" alt="">
-                    <a href="html/cat1.php">Pijamas para acostarse</a>
+                    <a href="html/cat1.php">Batolas</a>
                 </section>
                 <section class="servicio">
                     <img src="imgs/ej_cat2.jpg" alt="">
-                    <a href="html/cat2.php">Pijamas para dormir</a>
+                    <a href="html/cat2.php">Dos piezas</a>
                 </section>
                 <section class="servicio">
                     <img src="imgs/ej_cat3.jpg" alt="">
-                    <a href="html/cat3.php">Pijamas para levantarse</a>
+                    <a href="html/cat3.php">Pantalon largo</a>
+                </section>
+                <section class="servicio">
+                    <img src="imgs/ej_cat1.jpg" alt="">
+                    <a href="html/cat4.php">Estilo Camisa</a>
+                </section>
+                <section class="servicio">
+                    <img src="imgs/ej_cat2.jpg" alt="">
+                    <a href="html/cat5.php">Levantadoras</a>
                 </section>
                 <section class="servicio">
                     <img src="imgs/ej_cat3.jpg" alt="">
-                    <a href="html/cat4.php">Cat4 </a>
-                </section>
-                <section class="servicio">
-                    <img src="imgs/ej_cat3.jpg" alt="">
-                    <a href="html/cat5.php">Cat5</a>
+                    <a href="html/cat6.php">Lactancia</a>
                 </section>
             </div>
         </main>

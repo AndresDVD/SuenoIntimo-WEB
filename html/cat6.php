@@ -4,21 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resultados de Busqueda</title>
+    <title>Categoria 3</title>
     <link rel="stylesheet" href="../css/catStyle.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap">
 
 </head>
 
 <body>
-<a name="Resultados de la busqueda"></a>
+<a name="nosot1"></a>
     <?php
     include_once('main.php') 
     ?>
     <p><br></p>
     <p><br></p>
     <main class="contenedor">
-    <h2>Resultados</h2>
+    <h2>CATÁLOGO</h2>
         <div class="servicios">
         <?php
         $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?categoria=dospiezas'), true);
