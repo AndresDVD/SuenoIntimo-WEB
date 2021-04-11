@@ -146,5 +146,4 @@
     </div>
     <script src="../js/carrito.js"></script>
 </body>
-
 </html>

@@ -28,7 +28,7 @@
                         <a href="#servic" class="btn">Catalogo</a>
                         <a href="#contac2" class="btn">Contacto</a>
                         
-                        <a class="btn" href=
+                        <a class="btn" href="
                         <?php 
                         
                         if(isset($_SESSION['user'])){ 
@@ -37,14 +37,16 @@
                             echo "../SuenoIntimo-WEB/php/login.php";
                         }
                         
-                        ?> id="btnlog">
+                        ?>" id="btnlog">
                         <?php
                         if(isset($_SESSION['user'])){ 
                             echo "Log out";
                         }else{
                             echo "Login";
                         }
-                        ?></a>
+                        ?>
+                      
+                        </a>
                     </nav>
                 </div>
                 <div class="busqueda">
@@ -54,27 +56,26 @@
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <circle cx="10" cy="10" r="7" />
                         <line x1="21" y1="21" x2="15" y2="15" />
-                      </svg>
-                      <svg style="
-                      
-                      <?php
-                      if(isset($_SESSION['user'])){ 
+                    </svg>
+                    
+                    <svg style="
+                        <?php
+                        if(isset($_SESSION['user'])){ 
                         echo "display:block;";
                         }else{
                         echo "display:none;";
                         }
                       ?>
                       
-                      "xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      " class="carrito1" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <circle cx="6" cy="19" r="2" />
                         <circle cx="17" cy="19" r="2" />
                         <path d="M17 17h-11v-14h-2" />
                         <path d="M6 5l14 1l-1 7h-13" />
-                      </svg>
-                      <a href="../SuenoIntimo-WEB/php/login.php" style="
-                      
-                      <?php 
+                    </svg>  
+                    <a href="../SuenoIntimo-WEB/php/login.php" style="
+                    <?php 
 
                         if(isset($_SESSION['user'])){
                         if($_SESSION['tipo'] == 'admin'){ 
@@ -85,19 +86,40 @@
                         }else{
                                 echo "display:none;";
                             }
-                            ?>"
-                      ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-exclamation" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="9" cy="7" r="4" />
-                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                        <line x1="19" y1="7" x2="19" y2="10" />
-                        <line x1="19" y1="14" x2="19" y2="14.01" />
+                    ?>"
+                    >
+                    <div class="div_opciones" 
+                        style="
+                        <?php
+                        if(isset($_SESSION['user'])){ 
+                        echo "display:block;";
+                        }else{
+                        echo "display:none;";
+                        }
+                        ?>">     
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icono_opciones" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                            <line x1="19" y1="7" x2="19" y2="10" />
+                            <line x1="19" y1="14" x2="19" y2="14.01" />
                         </svg>
-                        </a>
+                        <ul class="menu_desplegable1">
+                            <li><a class="created_later" href="php/borrarUsuario.php">Borra Usuario</a></li>
+                            <li><a class="created_later" href="">opc2</a></li>
+                            <li><a class="created_later" href="">opc3</a></li>
+                        </ul>
+                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </header>
+    <div id="carrito-container" style="display:none;">
+           <div id="tabla">
+                <p>carrito</p>
+           </div>                 
+    </div>
     <div class="menulateral" id="menulateralcompleto" style="width:40px;">
         <div class="menul" >
             <div class="informacionsinboton">
@@ -139,5 +161,6 @@
           </svg>
         </button>
     </div>
+    <script src="../SuenoIntimo-WEB/js/carritoindex.js"></script>
 </body>
 </html>

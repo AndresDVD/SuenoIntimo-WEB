@@ -11,29 +11,28 @@
 </head>
 
 <body>
-    <a name="nosot1"></a>
+<a name="nosot1"></a>
     <?php
     include_once('main.php') 
     ?>
     <p><br></p>
     <p><br></p>
     <main class="contenedor">
-        <h2>CATÁLOGO</h2>
+    <h2>CATÁLOGO</h2>
         <div class="servicios">
-            <section class="servicio">
-                <img src="../imgs/pijama-5.jpg" alt="">
-                <a href="html/cat1.html">Pijamas para levantarse #1</a>
-            </section>
-            <section class="servicio">
-                <img src="../imgs/pijama-5.jpg" alt="">
-                <a href="html/cat2.html">Pijamas para levantarse #2</a>
-            </section>
-            <section class="servicio">
-                <img src="../imgs/pijama-5.jpg" alt="">
-                <a href="html/cat3.html">Pijamas para levantarse #3</a>
-            </section>
-        </div>
-    </main>
+        <?php
+        $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?categoria=dospiezas'), true);
+        if($response['statuscode'] == 200){
+            foreach($response['items'] as $item){
+                include ('layout/items.php');
+            }
+
+        }else{
+
+        }
+
+        ?>
+        </main>
     <footer class="pie_pag">
         <div class="servicios_footer">
             <section class="servi_foot" id="sect_f1">

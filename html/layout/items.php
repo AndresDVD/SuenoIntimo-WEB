@@ -4,6 +4,6 @@
     <div class="titulo"><?php echo $item['nombre'];?></div>
     <div class="precio">$<?php echo $item['precio'];?></div>
     <div class="botones">
-    <button class="btn">Agregar al carrito</button>
+    <button class="btn-add">Agregar al carrito</button>
     </div>
 </div>
