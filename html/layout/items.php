@@ -3,7 +3,7 @@
     <div class="imagen">
         <div class="inicio">
                 <div class="slider">
-                    <ul class="slide">
+                    <ul class="slide" id="imagenes">
                         <?php 
                             $imagens = explode("/", $item['imagen']);
                             $max = sizeof($imagens);
@@ -15,9 +15,35 @@
                         <?php 
                             $imagens = explode("/", $item['imagen']);
                             $max = sizeof($imagens);
-                            for($i = 0;$i<$max;$i++){?>
-                                <li><a href="#slide<?php echo $i+1?>"><?php echo $i+1?></a></li>
-                        <?php }?>
+                            $imagen1 = "display:none";
+                            $imagen2 = "display:none";
+                            $imagen3 = "display:none";
+                            $imagen4 = "display:none";
+                            $imagen5 = "display:none";
+                            for($i = 0;$i<$max;$i++){
+
+                                if($i==0){
+                                    $imagen1 = "display:block";
+                                }
+                                if($i==1){
+                                    $imagen2 = "display:block";
+                                }
+                                if($i==2){
+                                    $imagen3 = "display:block";
+                                }
+                                if($i==3){
+                                    $imagen4 = "display:block";
+                                }
+                                if($i==4){
+                                    $imagen5 = "display:block";
+                                }
+
+                            }?>
+                        <li style="<?php echo $imagen1?>"><button class="slide1">1</button></li>
+                        <li style="<?php echo $imagen2?>"><button class="slide2">2</button></li>
+                        <li style="<?php echo $imagen3?>"><button class="slide3">3</button></li>
+                        <li style="<?php echo $imagen4?>"><button class="slide4">4</button></li>
+                        <li style="<?php echo $imagen5?>"><button class="slide5">5</button></li>
                     </ul>
                 </div>
         </div>

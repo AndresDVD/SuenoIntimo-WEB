@@ -19,6 +19,23 @@ document.addEventListener('DOMContentLoaded', () => {
         const count = cookie.split('=')[1];
         console.log(count);
     }
+
+    document.querySelector('.slide1').addEventListener('click', e => {
+        document.getElementById("imagenes").setAttribute("style", "margin-left:0");
+    });
+
+    document.querySelector('.slide2').addEventListener('click', e => {
+        document.getElementById("imagenes").setAttribute("style", "margin-left:-200px");
+    });
+    document.querySelector('.slide3').addEventListener('click', e => {
+        document.getElementById("imagenes").setAttribute("style", "margin-left:-400px");
+    });
+    document.querySelector('.slide4').addEventListener('click', e => {
+        document.getElementById("imagenes").setAttribute("style", "margin-left:-600px");
+    });
+    document.querySelector('.slide5').addEventListener('click', e => {
+        document.getElementById("imagenes").setAttribute("style", "margin-left:-800px");
+    });
 });
 
 const bCarrito = document.querySelector('.carrito1');

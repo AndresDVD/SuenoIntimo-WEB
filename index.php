@@ -57,27 +57,27 @@
             <h2>CATÁLOGO</h2>
             <div class="servicios">
                 <section class="servicio">
-                    <img src="imgs/ej_cat1.jpg" alt="">
+                    <img src="imgs/categorias/batolas1.jpg" alt="">
                     <a href="html/cat1.php">Batolas</a>
                 </section>
                 <section class="servicio">
-                    <img src="imgs/ej_cat2.jpg" alt="">
+                    <img src="imgs/categorias/dospiezas.jpg" alt="">
                     <a href="html/cat2.php">Dos piezas</a>
                 </section>
                 <section class="servicio">
-                    <img src="imgs/ej_cat3.jpg" alt="">
+                    <img src="imgs/categorias/pantalonlargo.JPG" alt="">
                     <a href="html/cat3.php">Pantalon largo</a>
                 </section>
                 <section class="servicio">
-                    <img src="imgs/ej_cat1.jpg" alt="">
+                    <img src="imgs/categorias/estilocamisa.jpg" alt="">
                     <a href="html/cat4.php">Estilo Camisa</a>
                 </section>
                 <section class="servicio">
-                    <img src="imgs/ej_cat2.jpg" alt="">
+                    <img src="imgs/categorias/levantadoras.jpg" alt="">
                     <a href="html/cat5.php">Levantadoras</a>
                 </section>
                 <section class="servicio">
-                    <img src="imgs/ej_cat3.jpg" alt="">
+                    <img src="imgs/categorias/lactancia.jpg" alt="">
                     <a href="html/cat6.php">Lactancia</a>
                 </section>
             </div>
