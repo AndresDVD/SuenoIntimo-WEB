@@ -1,5 +1,5 @@
 <div class="articulo">
-    <div class="referencia" id="id">Referencia: <?php echo $item['id']; ?></div>
+    <input type="hidden" id="id" value="<?php echo $item['id']; ?>">
     <div class="imagen">
         <div class="inicio">
                 <div class="slider">

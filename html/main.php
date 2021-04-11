@@ -103,7 +103,7 @@ session_start();
     </header>
     <div id="carrito-container" style="display:none;">
            <div id="tabla">
-                <p>carrito</p>
+           <div>carrito</div>
            </div>                 
     </div>
     

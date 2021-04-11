@@ -1,8 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-});
-
-document.addEventListener('DOMContentLoaded', () => {
     const botones = document.querySelectorAll('.btn-add');
 
     botones.forEach(boton => {
@@ -23,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const count = cookie.split('=')[1];
         console.log(count);
     }
-})
+});
 
 const bCarrito = document.querySelector('.carrito1');
 
@@ -51,9 +47,10 @@ function actualizarCarritoUI() {
             let precioTotal = '';
             let html = '';
             data.items.forEach(element => {
+                imagen = element.imagen.split("/");
                 html += `
                 <div class='fila'>
-                    <div class='imagen'><img src='../imgs/items/${element.imagen}' width='100' /></div>
+                    <div class='imagen'><img src='../imgs/items/${element.categoria}/${imagen[0]}' width='100' /></div>
                     <div class='info'>
                         <input type='hidden' value='${element.id}' />
                         <div class='nombre'>${element.nombre}</div>
