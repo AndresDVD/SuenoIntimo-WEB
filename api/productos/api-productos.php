@@ -22,7 +22,7 @@
         }else{
             $productos = new Productos();
             $item = $productos->get($id);
-            echo json_encode(['statuscode' => 200, 'item' => $item]);
+            echo json_encode(['statuscode' => 200, 'items' => $item]);
         }
     }else if(isset($_GET['items']))
         {

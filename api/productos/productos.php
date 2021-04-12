@@ -37,8 +37,21 @@ include_once '../../php/conectarse1.php';
             $conexion = $this -> conexion();
             $sql="SELECT * from productos";
             $result=mysqli_query($conexion,$sql);
-            $row =mysqli_fetch_array($result);
-            return $row;
+            $items = [];
+    
+            while($row = mysqli_fetch_array($result))
+            {
+    
+                $item = ['id' => $row['id'],
+                         'nombre' => $row['nombre'],
+                         'precio' => $row['precio'],
+                         'categoria' => $row['categoria'],
+                         'imagen' => $row['imagen'],
+                ];
+                array_push($items, $item);
+            }
+    
+            return $items;
         }
 
     }
