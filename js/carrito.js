@@ -59,6 +59,7 @@ function actualizarCarritoUI() {
             return response.json();
         })
         .then(data => {
+
             console.log(data);
             let tablaCont = document.querySelector('#tabla');
             let precioTotal = '';
