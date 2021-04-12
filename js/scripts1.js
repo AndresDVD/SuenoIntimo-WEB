@@ -105,6 +105,21 @@ document.getElementById("botonmenul4").onclick = function () {
 
 }
 
+
+document.getElementById("botonmenul5").onclick = function () {
+
+    if (document.getElementById("contenidomenu5").getAttribute("style") == "display:block") {
+        document.getElementById("contenidomenu5").setAttribute("style", "display:none");
+        document.getElementById("botonmenul5").innerHTML = "+ Qué ofrecemos";
+
+    } else {
+        document.getElementById("contenidomenu5").setAttribute("style", "display:block");
+        document.getElementById("botonmenul5").innerHTML = "- Qué ofrecemos";
+    }
+
+}
+
+
 document.getElementById("nosot1").onclick = function () {
 
     menu = $('.cab nav');

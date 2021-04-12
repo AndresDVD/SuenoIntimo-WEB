@@ -143,9 +143,12 @@
                 <div class="usoempresa">
                     <p class="botonmenul" id="botonmenul3">+ Servicios</p>
                     <div class="contenidomenu" id="contenidomenu3" style="display: none;">
-                        Realizamos confección de pijamas tanto al por mayor como al detal.
-                    </div>
+                        - Confección de pijamas de catalogo<br><br>
+                        - Venta de pijamas al por mayor<br><br>
+                        - Venta de pijamas al detal<br><br>
+                    </div>  
                 </div>
+
                 <div class="usoempresa">
                     <p class="botonmenul" id="botonmenul4">+ Ubicacion</p>
                     <div>
@@ -154,6 +157,20 @@
                     </iframe>
                     </div>
                 </div>
+                <div class="quedarse_con_nosotros">
+                    <p class="botonmenul" id="botonmenul5">+ Qué ofrecemos</p>
+                    <div class="contenidomenu" id="contenidomenu5" style="display: none;">
+                        - La calidad de las telas que usamos<br><br>
+                        - Las técnicas de confección<br><br>
+                        - La preparación de nuestros empleados y empleadas<br><br>
+                        - El trabajo que realizamos: Constante y con Pasión con el objetivo de 
+                        ser cada vez mejores.<br><br>
+                        Estas y muchas más, son razones por las que las personas eligen 
+                        Sueño Intimo primero.<br><br>
+                        - Si quieres saber más acerca de nosotros, Contáctanos para tener el gusto
+                        de atenderte
+                    </div>
+                </div> 
             </div>
         </div>
         <button class="mostrar" id="mostrar">
