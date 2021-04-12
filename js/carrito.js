@@ -8,29 +8,44 @@ document.addEventListener('DOMContentLoaded', () => {
             addItemToCarrito(id);
         });
     });
+
     const cookies = document.cookie.split(';');
     let cookie = null;
+
     cookies.forEach(item => {
         if (item.indexOf('items') > -1) {
             cookie = item;
         }
     });
+
     if (cookie != null) {
         const count = cookie.split('=')[1];
         console.log(count);
     }
-    /*
-        const botonslider = document.querySelectorAll('a[class^="slide-"]');
+    const botonslider = document.querySelectorAll('button[id^="slide-"]');
 
-        botonslider.forEach(boton => {
-            const id = boton.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.children[1].children[0].children[0].children[0].value;
+    botonslider.forEach(boton => {
+        const id = boton.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.children[1].children[0].children[0].children[0];
 
-            boton.addEventListener('click', e => {
-                alert(e.target.id);
-                moverSlider(id);
-            });
+        boton.addEventListener('click', e => {
+            if (e.target.id == "slide-1") {
+                id.setAttribute("style", "margin-left:0px");
+            }
+            if (e.target.id == "slide-2") {
+                id.setAttribute("style", "margin-left:-200px");
+            }
+            if (e.target.id == "slide-3") {
+                id.setAttribute("style", "margin-left:-400px");
+            }
+            if (e.target.id == "slide-4") {
+                id.setAttribute("style", "margin-left:-600px");
+            }
+            if (e.target.id == "slide-5") {
+                id.setAttribute("style", "margin-left:-800px");
+            }
         });
-
+    });
+    /*
         document.querySelectorAll('.slide1').addEventListener('click', e => {
             document.getElementById("imagenes").firstElementChild.setAttribute("style", "margin-left:0");
         });
@@ -48,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById("imagenes").setAttribute("style", "margin-left:-800px");
         });*/
 });
-
 const bCarrito = document.querySelector('.carrito1');
 
 bCarrito.addEventListener('click', (e) => {
