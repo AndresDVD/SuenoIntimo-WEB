@@ -51,7 +51,8 @@
                 </div>
                 <div class="busqueda">
                     
-                    <input type="search" placeholder="Busqueda" name="barra_buscar" id="id_barra_buscar">
+                    <input type="search" placeholder="Busqueda" name="barra_buscar" id="id_barra_buscar" 
+                    >
                     <svg xmlns="http://www.w3.org/2000/svg" class="icono_buscar" id="id-icono-buscar" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <circle cx="10" cy="10" r="7" />
@@ -60,11 +61,12 @@
                     
                     <svg style="
                         <?php
-                        if(isset($_SESSION['user'])){ 
+                    
+                    if(isset($_SESSION['user'])){ 
                         echo "display:block;";
-                        }else{
+                    }else{
                         echo "display:none;";
-                        }
+                    }
                       ?>
                       
                       " class="carrito1" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
