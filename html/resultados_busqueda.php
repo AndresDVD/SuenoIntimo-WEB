@@ -30,12 +30,22 @@
     </h3>
         <div class="servicios">
         <?php
-        $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?items'), true);
-        if($response['statuscode'] == 200){
-            foreach($response['items'] as $item){
-                include ('layout/items.php');
+        $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?categoria='.$busqueda), true);
+        if($response['statuscode'] != 500){
+            if($response['statuscode'] == 200){
+                foreach($response['items'] as $item){
+                    include ('layout/items.php');
+                }
             }
+        }       
+        $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?items='.$busqueda), true);
+        if($response['statuscode'] != 500){
+            if($response['statuscode'] == 200){
+                foreach($response['items'] as $item){
+                    include ('layout/items.php');
+                }
             }
+        }
 
     
         ?>
