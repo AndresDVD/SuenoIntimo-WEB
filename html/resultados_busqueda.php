@@ -30,16 +30,20 @@
     </h3>
         <div class="servicios">
         <?php
-        $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?categoria='.$busqueda), true);
+        $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?get-item=2008'), true);
         if($response['statuscode'] == 200){
-            foreach($response['items'] as $item){
+            
+                ?>
+                <p><?php
+                    echo $response;
+                ?></p>
+                <?php
+            }
+            foreach($response['row'] as $item){
                 include ('layout/items.php');
             }
 
-        }else{
-
-        }
-
+    
         ?>
         </main>
     <footer class="pie_pag">

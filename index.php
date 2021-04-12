@@ -50,9 +50,7 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, voluptates officiis. Magnam ut corporis quia, qui, cum rem dicta, accusamus illo suscipit doloremque fugit expedita! Sapiente dicta laudantium explicabo incidunt?</p>
         </div>
         <a name="servic"></a>
-        <p></p>
-        <p></p>
-        <p></p>
+        <p><br></p>
         <main class="sombra">
             <h2>CATÁLOGO</h2>
             <div class="servicios">
@@ -82,7 +80,11 @@
                 </section>
             </div>
         </main>
+        
         <a name="contac2" class="contac3"></a>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
         <section class="contacto" id="contac">
             <form class="formulario" method="post" action="php/insertarMensaje.php">
                 <fieldset class="form_interno">
@@ -94,7 +96,7 @@
                                 <polyline points="3 7 12 13 21 7" />
                             </svg>
                         </div>
-                        <h3>Contactanos Aqui</h3>
+                        <h3>Contactanos Aquí</h3>
                     </div>
                     <div class="contener-campos">
                         <div class="campo">
