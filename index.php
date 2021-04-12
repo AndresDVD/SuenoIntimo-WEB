@@ -123,8 +123,10 @@
         <div class="servicios_footer">
             <section class="servi_foot" id="sect_f1">
                 <h2>Sueño Intimo</h2>
-                <p>Un pequeño Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis reprehenderit</p>
-                <p>Otro pequeño Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos facilis reprehenderit</p>
+                <p>Esta es la tienda de Sueño Intimo, empresa de confección y comercialización 
+                    de pijamas para mujeres de todas las edades</p>
+                <p>Si quieres saber más acerca de nosotros, Contáctanos para tener el gusto
+                        de atenderte</p>
             </section>
             <section class="servi_foot" id="sect_f2">
                 <h2>Contactarse con Nosotros</h2>
@@ -136,7 +138,7 @@
                         <line x1="3" y1="19" x2="9" y2="13" />
                         <line x1="15" y1="13" x2="21" y2="19" />
                     </svg>
-                    <h3>mail@mail.com</h3>
+                    <h3>sueñoIntimo@gmail.com</h3>
                 </div>
                 <div class="sect_foot">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icono_footer" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -179,7 +181,7 @@
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M10 13l2.5 0c2.5 0 5 -2.5 5 -5c0 -3 -1.9 -5 -5 -5h-5.5c-.5 0 -1 .5 -1 1l-2 14c0 .5 .5 1 1 1h2.8l1.2 -5c.1 -.6 .4 -1 1 -1zm7.5 -5.8c1.7 1 2.5 2.8 2.5 4.8c0 2.5 -2.5 4.5 -5 4.5h-2.6l-.6 3.6a1 1 0 0 1 -1 .8l-2.7 0a0.5 .5 0 0 1 -.5 -.6l.2 -1.4" />
                   </svg>
-                    <h3>Pago2</h3>
+                    <h3>PayPal</h3>
                 </div>
                 <div class="sect_foot">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-id" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
