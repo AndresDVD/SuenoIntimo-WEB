@@ -19,23 +19,34 @@ document.addEventListener('DOMContentLoaded', () => {
         const count = cookie.split('=')[1];
         console.log(count);
     }
+    /*
+        const botonslider = document.querySelectorAll('a[class^="slide-"]');
 
-    document.querySelector('.slide1').addEventListener('click', e => {
-        document.getElementById("imagenes").setAttribute("style", "margin-left:0");
-    });
+        botonslider.forEach(boton => {
+            const id = boton.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.children[1].children[0].children[0].children[0].value;
 
-    document.querySelector('.slide2').addEventListener('click', e => {
-        document.getElementById("imagenes").setAttribute("style", "margin-left:-200px");
-    });
-    document.querySelector('.slide3').addEventListener('click', e => {
-        document.getElementById("imagenes").setAttribute("style", "margin-left:-400px");
-    });
-    document.querySelector('.slide4').addEventListener('click', e => {
-        document.getElementById("imagenes").setAttribute("style", "margin-left:-600px");
-    });
-    document.querySelector('.slide5').addEventListener('click', e => {
-        document.getElementById("imagenes").setAttribute("style", "margin-left:-800px");
-    });
+            boton.addEventListener('click', e => {
+                alert(e.target.id);
+                moverSlider(id);
+            });
+        });
+
+        document.querySelectorAll('.slide1').addEventListener('click', e => {
+            document.getElementById("imagenes").firstElementChild.setAttribute("style", "margin-left:0");
+        });
+
+        document.querySelector('.slide2').addEventListener('click', e => {
+            document.getElementById("imagenes").firstElementChild.setAttribute("style", "margin-left:-200px");
+        });
+        document.querySelector('.slide3').addEventListener('click', e => {
+            document.getElementById("imagenes").setAttribute("style", "margin-left:-400px");
+        });
+        document.querySelector('.slide4').addEventListener('click', e => {
+            document.getElementById("imagenes").setAttribute("style", "margin-left:-600px");
+        });
+        document.querySelector('.slide5').addEventListener('click', e => {
+            document.getElementById("imagenes").setAttribute("style", "margin-left:-800px");
+        });*/
 });
 
 const bCarrito = document.querySelector('.carrito1');
@@ -96,7 +107,7 @@ function actualizarCarritoUI() {
 
 };
 
-
+const moverSlider = id => {};
 
 const addItemToCarrito = id => {
     fetch('http://localhost/SuenoIntimo-WEB/api/carrito/api-carrito.php?action=add&id=' + id)

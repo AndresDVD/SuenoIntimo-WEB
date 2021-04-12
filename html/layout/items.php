@@ -3,6 +3,7 @@
     <div class="imagen">
         <div class="inicio">
                 <div class="slider">
+                    <input type="hidden" id="id1" value="<?php echo $item['id']; ?>">
                     <ul class="slide" id="imagenes">
                         <?php 
                             $imagens = explode("/", $item['imagen']);
@@ -39,11 +40,11 @@
                                 }
 
                             }?>
-                        <li style="<?php echo $imagen1?>"><button class="slide1">1</button></li>
-                        <li style="<?php echo $imagen2?>"><button class="slide2">2</button></li>
-                        <li style="<?php echo $imagen3?>"><button class="slide3">3</button></li>
-                        <li style="<?php echo $imagen4?>"><button class="slide4">4</button></li>
-                        <li style="<?php echo $imagen5?>"><button class="slide5">5</button></li>
+                        <li style="<?php echo $imagen1?>"><button class="slide-1">1</button></li>
+                        <li style="<?php echo $imagen2?>"><button class="slide-2">2</button></li>
+                        <li style="<?php echo $imagen3?>"><button class="slide-3">3</button></li>
+                        <li style="<?php echo $imagen4?>"><button class="slide-4">4</button></li>
+                        <li style="<?php echo $imagen5?>"><button class="slide-5">5</button></li>
                     </ul>
                 </div>
         </div>
