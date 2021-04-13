@@ -27,26 +27,6 @@
                         <a href="#nosot1" class="btn">Inicio</a>
                         <a href="#servic" class="btn">Catalogo</a>
                         <a href="#contac2" class="btn">Contacto</a>
-                        
-                        <a class="btn" href="
-                        <?php 
-                        
-                        if(isset($_SESSION['user'])){ 
-                            echo "../SuenoIntimo-WEB/php/cerrarsesion.php";
-                        }else{
-                            echo "../SuenoIntimo-WEB/php/login.php";
-                        }
-                        
-                        ?>" id="btnlog">
-                        <?php
-                        if(isset($_SESSION['user'])){ 
-                            echo "Log out";
-                        }else{
-                            echo "Login";
-                        }
-                        ?>
-                      
-                        </a>
                     </nav>
                 </div>
                 <div class="busqueda">
@@ -111,6 +91,27 @@
                             <li><a class="created_later" href="">opc2</a></li>
                             <li><a class="created_later" href="">opc3</a></li>
                         </ul>
+                    </div>
+                    <div class="div_sesion">
+                    <a class="btn" href="
+                        <?php 
+                        
+                        if(isset($_SESSION['user'])){ 
+                            echo "../SuenoIntimo-WEB/php/cerrarsesion.php";
+                        }else{
+                            echo "../SuenoIntimo-WEB/php/login.php";
+                        }
+                        
+                        ?>" id="btnlog">
+                        <?php
+                        if(isset($_SESSION['user'])){ 
+                            echo "Log out";
+                        }else{
+                            echo "Login";
+                        }
+                        ?>
+                      
+                        </a>
                     </div>
                     </a>
                 </div>

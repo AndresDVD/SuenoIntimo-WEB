@@ -50,15 +50,15 @@ $(document).ready(function() {
                 url: "iniciarLogeo.php",
                 data: cadena,
                 success: function(r) {
-                    if(r == "0"){
-                        alertify.error("Fallo Logearse");    
+                    if (r == "0") {
+                        alertify.error("Fallo Logearse");
                     }
                     if (r == "1") {
                         alertify.success("Logeo Exitoso");
                         location.href = " ./../index.php";
-                    } 
-                    if(r == "2"){
-                        alertify.error("Usuario Inactivo");    
+                    }
+                    if (r == "2") {
+                        alertify.error("Usuario Inactivo");
                     }
                 }
             });
