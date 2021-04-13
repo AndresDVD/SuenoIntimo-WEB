@@ -62,20 +62,20 @@ INSERT INTO `productos` (`id`, `nombre`, `precio`, `imagen`, `tallas`, `descripc
 	('2015', 'Batola Visos Rosados', 35000, 'batolavisosrosados1.jpg/batolavisosrosados2.jpg', 'S,M', 'Batola en franela de algodon.', 'Rosado', '1', 'Batola'),
 	('2016', 'Conjunto Corazones', 25000, 'conjuntocorazones1.jpg/conjuntocorazones2.jpg', 'S,M', 'Dos piezas en franela de algodon. Blusa blanca y Short estampado.', 'Verde Pastel,Amarillo,Rojo', '5', 'DosPiezas'),
 	('2017', 'Pijama de Conejitos', 49000, 'pijamaconejitos1.jpg/pijamaconejitos2.jpg', 'S,M,L', 'Dos piezas en satin. Blusa en copa prehormada.', 'Gris con Rosado', '5', 'DosPiezas'),
-	('2018', 'Pijama Camisera', 55000, NULL, 'S,M,L', 'Dos piezas en satin. Short y camisa estampado.', 'Blanco,Negro', '5', 'EstiloCamisa'),
-	('2019', 'Pijama Azul Cielo', 48000, NULL, 'S,M,L', 'Dos piezas en satin con encaje guipur. Blusa en tiras y short', 'Azul', '5', 'DosPiezas'),
-	('2020', 'Pijama Ojitos', 48000, NULL, 'S,M,L', 'Dos piezas en franela algodon. Pantalon largo estampado y blusa en tiras', 'Blusa Negra Pantalon Ojitos', '5', 'PantalonLargo'),
-	('2021', 'Pijama Snoopy', 38000, NULL, 'S,M,L', 'Dos piezas en satin elastico. Blusa y short estampados.', 'Estampado Snoopy', '5', 'PantalonLargo'),
+	('2018', 'Pijama Camisera', 55000, 'pijamacamisa1.jpg/pijamacamisa2.jpg/pijamacamisa3.jpg', 'S,M,L', 'Dos piezas en satin. Short y camisa estampado.', 'Blanco,Negro,Estampado Ositos', '5', 'EstiloCamisa'),
+	('2019', 'Pijama Azul Cielo', 48000, 'pijamaazulcielo.jpg', 'S,M,L', 'Dos piezas en satin con encaje guipur. Blusa en tiras y short', 'Azul', '5', 'DosPiezas'),
+	('2020', 'Pijama Ojitos', 48000, 'pijamaojitos.jpg', 'S,M,L', 'Dos piezas en franela algodon. Pantalon largo estampado y blusa en tiras', 'Blusa Negra Pantalon Ojitos', '5', 'PantalonLargo'),
+	('2021', 'Pijama Snoopy', 38000, 'pijamasnoopy1.jpg/pijamasnoopy2.jpg', 'S,M,L', 'Dos piezas en satin elastico. Blusa y short estampados.', 'Estampado Snoopy', '5', 'DosPiezas'),
 	('2022', 'Batola Princesa con Levantadora', 130000, 'batolaprincesaconlevantadora1.jpg/batolaprincesaconlevantadora2.jpg/batolaprincesaconlevantadora3.jpg', 'S,M,L', 'Dos piezas en Satin. Batola y Levantadora', 'Blanco,Negro,Palo de Rosa,Rosado,Plateado', '5', 'Levantadora'),
-	('2023', 'Pijama Minnie', 45000, NULL, 'S,M,L', 'Dos piezas. Blusa estilo camisa sin cuello y short con lazo en cinta negro', 'Estampado Minnie', '5', 'EstiloCamisa'),
-	('2024', 'Pijama Animal Print', 70000, NULL, 'S,M,L', 'Dos piezas en satin. Blusa estilo camisa pantalon largo. Cinta en satin en cintura del pantalon.', 'Animal Print', '5', 'PantalonLargo'),
-	('2025', 'Batola Materna', 48000, NULL, 'S,M,L', 'Copa desplegable para lactancia. Franela en algodon', 'Lila,Jade,Rosado,Amarillo', '4', 'Lactancia'),
-	('2026', 'Pijama Materna', 65000, NULL, 'S,M,L', 'Dos piezas en franela de algodon. Pantalon largo y blusa con copa desplegable para lactancia.', 'Salmon,Aguamarina', '2', 'Lactancia'),
-	('2027', 'Pijama Camison', 48000, NULL, 'S,M,L', 'Batola estilo camison estampado de rallas en seda satin elastico.', 'Rosado,Azul,Estampado Pastelitos', '3', 'EstiloCamisa'),
+	('2023', 'Pijama Minnie', 45000, 'pijamaminnie.jpg', 'S,M,L', 'Dos piezas. Blusa estilo camisa sin cuello y short con lazo en cinta negro', 'Estampado Minnie', '5', 'EstiloCamisa'),
+	('2024', 'Pijama Animal Print', 70000, 'pijamaanimalprint1.jpg/pijamaanimalprint2.jpg', 'S,M,L', 'Dos piezas en satin. Blusa estilo camisa pantalon largo. Cinta en satin en cintura del pantalon.', 'Animal Print', '5', 'PantalonLargo'),
+	('2025', 'Batola Materna', 48000, 'batolamaterna1.jpg/batolamaterna2.jpg/batolamaterna3.jpg', 'S,M,L', 'Copa desplegable para lactancia. Franela en algodon', 'Lila,Jade,Rosado', '4', 'Lactancia'),
+	('2026', 'Pijama Materna', 65000, 'pijamamaterna1.jpg/pijamamaterna2.jpg', 'S,M,L', 'Dos piezas en franela de algodon. Pantalon largo y blusa con copa desplegable para lactancia.', 'Salmon,Aguamarina', '2', 'Lactancia'),
+	('2027', 'Pijama Camison', 48000, 'pijamacamison1.jpg/pijamacamison2.jpg', 'S,M,L', 'Batola estilo camison estampado de rallas en seda satin elastico.', 'Rosado,Azul', '3', 'EstiloCamisa'),
 	('2028', 'Batola Tacitas', 30000, 'batolatacitas.jpg', 'S,M,L', 'Batola en franela algodon.', 'Estampado Tacitas', '5', 'Batola'),
-	('2029', 'Conjunto Unicornio', 25000, NULL, 'S,M', 'Dos piezas en franela de algodon.', 'Blusa Azul Short Estampado, Blusa Estampada Short Azul', '5', 'DosPiezas'),
-	('2030', 'Pijama Pink Panter', 48000, NULL, 'S,M,L', 'Dos piezas en franela algodon. Pantalon largo estampado y blusa tipo top.', 'Estampado Pink Panter', '5', 'PantalonLargo'),
-	('2031', 'Pijama Stitch', 45000, NULL, 'S,M,L', 'Dos piezas. Blusa estilo camisa sin cuello y short con lazo en cinta rosada', 'Estampado Stitch', '5', 'EstiloCamisa');
+	('2029', 'Conjunto Unicornio', 25000, 'pijamaunicornio1.jpg/pijamaunicornio2.jpg', 'S,M', 'Dos piezas en franela de algodon.', 'Blusa Azul Short Estampado, Blusa Estampada Short Azul', '5', 'DosPiezas'),
+	('2030', 'Pijama Pink Panter', 48000, 'pijamapinkpanter.jpg', 'S,M,L', 'Dos piezas en franela algodon. Pantalon largo estampado y blusa tipo top.', 'Estampado Pink Panter', '5', 'PantalonLargo'),
+	('2031', 'Pijama Stitch', 45000, 'pijamastitch.jpg', 'S,M,L', 'Dos piezas. Blusa estilo camisa sin cuello y short con lazo en cinta rosada', 'Estampado Stitch', '5', 'EstiloCamisa');
 /*!40000 ALTER TABLE `productos` ENABLE KEYS */;
 
 -- Volcando estructura para tabla u700865171_suenointimo.usuario
