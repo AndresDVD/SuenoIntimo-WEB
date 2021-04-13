@@ -4,7 +4,6 @@
     --secundario: #fba6d3;
     --terciario: #f2f2f2;
     --presionado: #fc8dc8;
-    ;
 }
 
 @font-face {
@@ -304,20 +303,61 @@ button {
 
 .imagen {
     width: 200px;
-    height: 400px;
+    height: 340px;
 }
 
 .botones {
     padding-bottom: 1rem;
+    border-radius: 5px;
 }
 
 .titulo {
     font-size: 25px;
     margin-top: -20px;
+    font-family: Comfortaa;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.descripcion {
+    width: 80%;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
 }
 
 .precio {
     font-size: 25px;
+    font-family: Comfortaa;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.talla {
+    padding-bottom: 5px;
+}
+
+.tallas {
+    font-size: 15px;
+    font-family: Comfortaa;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: var(--primario);
+}
+
+.color {
+    padding-bottom: 5px;
+}
+
+.colores {
+    font-size: 15px;
+    font-family: Comfortaa;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: var(--primario);
 }
 
 .btn-remove {
@@ -398,12 +438,29 @@ li {
 }
 
 .menusli {
+    margin-top: -60px;
     max-width: 200px;
     justify-content: center;
 }
 
 .menusli li {
     padding: 0 5px 0px 5px;
+}
+
+.menusli button {
+    font-family: BlueEyes;
+    font-weight: bold;
+    border-radius: 35%;
+    font-size: 22px;
+    border: var(--secundario) 1px solid;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    outline: none;
+}
+
+.menusli button:hover {
+    background-color: var(--presionado);
 }
 
 

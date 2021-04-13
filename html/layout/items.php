@@ -38,8 +38,9 @@
                                     $imagen5 = "display:block";
                                 }
 
-                            }?>
-                        <li style="<?php echo $imagen1?>"><button id="slide-1">1</button></li>
+                            }
+                        ?>
+                        <li style="<?php echo $imagen1?>"><button id="slide-1" style="background-color: #fc8dc8;">1</button></li>
                         <li style="<?php echo $imagen2?>"><button id="slide-2">2</button></li>
                         <li style="<?php echo $imagen3?>"><button id="slide-3">3</button></li>
                         <li style="<?php echo $imagen4?>"><button id="slide-4">4</button></li>
@@ -49,7 +50,34 @@
         </div>
     </div>
     <div class="titulo"><?php echo $item['nombre'];?></div>
+    <div class="descripcion"><?php echo $item['descripcion'];?></div>
     <div class="precio">$<?php echo $item['precio'];?></div>
+    <div class="talla">
+        <select class="tallas">
+            <?php 
+                $tallas = explode(",", $item['tallas']);
+                $max1 = sizeof($tallas);
+                for($i = 0;$i<$max1;$i++){
+            ?>
+                <option value="value<?php echo $i+1 ?>"><?php echo $tallas[$i];?></option>
+            <?php 
+            }
+            ?>
+        </select>
+    </div>  
+    <div class="color">
+        <select class="colores">
+            <?php 
+                $colores = explode(",", $item['colores']);
+                $max2 = sizeof($colores);
+                for($i = 0;$i<$max2;$i++){
+            ?>
+                <option value="value<?php echo $i+1 ?>"><?php echo $colores[$i];?></option>
+            <?php 
+            }
+            ?>
+        </select>
+    </div> 
     <div class="botones">
     <button class="btn-add">Agregar al carrito</button>
     </div>

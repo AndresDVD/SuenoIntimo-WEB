@@ -27,21 +27,51 @@ document.addEventListener('DOMContentLoaded', () => {
     botonslider.forEach(boton => {
         const id = boton.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.children[1].children[0].children[0].children[0];
 
+        const boton1 = boton.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.children[1].children[0].children[0].children[1].children[0].children[0];
+        const boton2 = boton.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.children[1].children[0].children[0].children[1].children[1].children[0];
+        const boton3 = boton.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.children[1].children[0].children[0].children[1].children[2].children[0];
+        const boton4 = boton.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.children[1].children[0].children[0].children[1].children[3].children[0];
+        const boton5 = boton.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.children[1].children[0].children[0].children[1].children[4].children[0];
         boton.addEventListener('click', e => {
             if (e.target.id == "slide-1") {
                 id.setAttribute("style", "margin-left:0px");
+                boton1.setAttribute("style", "background-color: #fc8dc8;");
+                boton2.setAttribute("style", "background-color: #fcd6ea;");
+                boton3.setAttribute("style", "background-color: #fcd6ea;");
+                boton4.setAttribute("style", "background-color: #fcd6ea;");
+                boton5.setAttribute("style", "background-color: #fcd6ea;");
             }
             if (e.target.id == "slide-2") {
                 id.setAttribute("style", "margin-left:-200px");
+                boton1.setAttribute("style", "background-color: #fcd6ea;");
+                boton2.setAttribute("style", "background-color: #fc8dc8;");
+                boton3.setAttribute("style", "background-color: #fcd6ea;");
+                boton4.setAttribute("style", "background-color: #fcd6ea;");
+                boton5.setAttribute("style", "background-color: #fcd6ea;");
             }
             if (e.target.id == "slide-3") {
                 id.setAttribute("style", "margin-left:-400px");
+                boton1.setAttribute("style", "background-color: #fcd6ea;");
+                boton2.setAttribute("style", "background-color: #fcd6ea;");
+                boton3.setAttribute("style", "background-color: #fc8dc8;");
+                boton4.setAttribute("style", "background-color: #fcd6ea;");
+                boton5.setAttribute("style", "background-color: #fcd6ea;");
             }
             if (e.target.id == "slide-4") {
                 id.setAttribute("style", "margin-left:-600px");
+                boton1.setAttribute("style", "background-color: #fcd6ea;");
+                boton2.setAttribute("style", "background-color: #fcd6ea;");
+                boton3.setAttribute("style", "background-color: #fcd6ea;");
+                boton4.setAttribute("style", "background-color: #fc8dc8;");
+                boton5.setAttribute("style", "background-color: #fcd6ea;");
             }
             if (e.target.id == "slide-5") {
                 id.setAttribute("style", "margin-left:-800px");
+                boton1.setAttribute("style", "background-color: #fcd6ea;");
+                boton2.setAttribute("style", "background-color: #fcd6ea;");
+                boton3.setAttribute("style", "background-color: #fcd6ea;");
+                boton4.setAttribute("style", "background-color: #fcd6ea;");
+                boton5.setAttribute("style", "background-color: #fc8dc8;");
             }
         });
     });
