@@ -22,10 +22,10 @@
     <p><br></p>
     <main class="contenedor">
     <h2>Resultados de Busqueda</h2>
-    <h3>
+    <h3 class="text_resultado">
     <?php
         
-        echo "la busqueda es-" .$busqueda;
+        echo "Resultados de: '" .$busqueda. "'";
     ?>
     </h3>
         <div class="servicios">

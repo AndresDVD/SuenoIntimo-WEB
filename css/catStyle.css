@@ -89,6 +89,7 @@ button {
     max-height: 70%;
 }
 
+
 #tabla {
     overflow-y: visible;
     overflow-x: hidden;
@@ -446,6 +447,12 @@ li {
 .menusli li {
     padding: 0 5px 0px 5px;
 }
+
+.text_resultado{
+    font-family: Comfortaa;
+    font-size: 20px;
+}
+
 
 .menusli button {
     font-family: BlueEyes;
