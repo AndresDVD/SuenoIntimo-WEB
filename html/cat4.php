@@ -18,7 +18,7 @@
     <p><br></p>
     <p><br></p>
     <main class="contenedor">
-    <h2>CATÁLOGO</h2>
+    <h2>Estilo Camisa</h2>
         <div class="servicios">
         <?php
         $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?categoria=EstiloCamisa'), true);
