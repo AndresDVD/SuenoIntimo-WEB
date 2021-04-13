@@ -309,7 +309,6 @@ button {
 
 .botones {
     padding-bottom: 1rem;
-    border-radius: 5px;
 }
 
 .titulo {
@@ -319,6 +318,7 @@ button {
     font-weight: bold;
     padding-bottom: 10px;
     padding-top: 10px;
+    text-align: center;
 }
 
 .descripcion {
@@ -349,6 +349,10 @@ button {
     background-color: var(--primario);
 }
 
+.tallas:hover {
+    background-color: var(--presionado);
+}
+
 .color {
     padding-bottom: 5px;
 }
@@ -359,6 +363,10 @@ button {
     font-weight: bold;
     border-radius: 5px;
     background-color: var(--primario);
+}
+
+.colores:hover {
+    background-color: var(--presionado);
 }
 
 .btn-remove {

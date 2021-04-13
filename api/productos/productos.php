@@ -49,8 +49,12 @@ include_once '../../php/conectarse1.php';
                 $item = ['id' => $row['id'],
                          'nombre' => $row['nombre'],
                          'precio' => $row['precio'],
-                         'categoria' => $row['categoria'],
                          'imagen' => $row['imagen'],
+                         'tallas' => $row['tallas'],
+                         'descripcion' => $row['descripcion'],
+                         'colores' => $row['colores'],
+                         'stock' => $row['stock'],
+                         'categoria' => $row['categoria'],
                 ];
                 array_push($items, $item);
             }
