@@ -4,7 +4,6 @@
     
     if(isset($_GET['categoria'])){
         $categoria = $_GET['categoria'];
-
         if($categoria == ''){
             echo json_encode(['statuscode' => 400, 'response' => 'No existe esa categoria']);
         }else{
@@ -26,14 +25,15 @@
         }
     }else if(isset($_GET['items'])){
             if($_GET['items'] == 'todo'){
-                $productos = new Productos();
-                $items = $productos->getall();
-                echo json_encode(['statuscode' => 200, 'items' => $items]); 
-            }else{
-                echo json_encode(['statuscode' => 500, 'response' => 'N/D']);
-            }
-        }else{
-        echo json_encode(['statuscode' => 400, 'response' => 'No hay accion']);
+                    $productos = new Productos();
+                    $items = $productos->getall();
+                    echo json_encode(['statuscode' => 200, 'items' => $items]); 
+                }else{
+                    echo json_encode(['statuscode' => 500, 'response' => 'N/D']);
+                }
+        }
+    }else{
+    echo json_encode(['statuscode' => 400, 'response' => 'No hay accion']);
     }
 
 ?>

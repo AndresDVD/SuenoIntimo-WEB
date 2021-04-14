@@ -384,6 +384,13 @@ button {
     text-transform: uppercase;
 }
 
+
+.no_matches{
+    justify-content: center;
+
+
+}
+
 .botones .btn-remove:hover {
     background-color: var(--secundario);
     font-size: 16.1px;

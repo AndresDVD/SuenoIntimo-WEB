@@ -24,8 +24,18 @@
     <h2>Resultados de Busqueda</h2>
     <h3 class="text_resultado">
     <?php
-        
         echo "Resultados de: '" .$busqueda. "'";
+        if(strcasecmp ($busqueda, 'dos piezas') == 0){
+            $busqueda = 'dosPiezas';  
+        }else if(strcasecmp ($busqueda, 'pantalon largo') == 0){
+            $busqueda = 'pantalonLargo';  
+        }else if(strcasecmp ($busqueda, 'todo') == 0){
+            $busqueda = 'todo';  
+        }else{
+            $busqueda = 'nada';
+            
+        }
+
     ?>
     </h3>
         <div class="servicios">
@@ -37,14 +47,21 @@
                     include ('layout/items.php');
                 }
             }
-        }       
-        $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?items='.$busqueda), true);
-        if($response['statuscode'] != 500){
-            if($response['statuscode'] == 200){
-                foreach($response['items'] as $item){
-                    include ('layout/items.php');
+        }      
+        /*    // $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?items='.$busqueda), true);
+            if($response['statuscode'] != 500){
+                if($response['statuscode'] == 200){
+                    foreach($response['items'] as $item){
+                        include ('layout/items.php');
+                    }
                 }
             }
+        }else{ */
+        if($busqueda == 'nada') {
+
+            ?>
+            <h3 class='no_matches'>NO SE ENCUENTRAN COINCIDENCIAS PARA ESTA BUSQUEDA</h3>
+            <?php
         }
 
     
