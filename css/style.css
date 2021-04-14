@@ -4,7 +4,6 @@
     --secundario: #fba6d3;
     --terciario: #f2f2f2;
     --presionado: #fc8dc8;
-    ;
 }
 
 @font-face {
@@ -208,6 +207,42 @@ body {
     border-left: black 1px solid;
     border-right: black 1px solid;
     border-radius: 5px;
+}
+
+.cabecera .btnn {
+    color: white;
+    margin-left: 6px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    width: 7rem;
+    transition: all 0.2s linear;
+    background-color: var(--secundario);
+    border-radius: 5px;
+}
+
+.cabecera .btnn:hover {
+    background-color: var(--primario);
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+.btnimg {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: var(--secundario) 1px solid;
+    ;
+}
+
+.btnimg:hover {
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 3px 3px rgba(252, 141, 200 0.5);
+    -moz-box-shadow: 0px 0px 3px 3px rgba(252, 141, 200, 0.5);
+    box-shadow: 0px 0px 3px 3px rgba(252, 141, 200, 0.5);
 }
 
 .created_later {
@@ -793,6 +828,25 @@ button {
     max-height: 70%;
 }
 
+#carrito-container1 {
+    font-size: 16px;
+    font-family: Comfortaa;
+    font-weight: bold;
+    text-decoration: none;
+    overflow-y: visible;
+    overflow-x: hidden;
+    scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+    background: white;
+    border: solid 2px var(--secundario);
+    right: 0;
+    margin-top: 10px;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    max-height: 70%;
+}
+
 
 /*ScrollBar Estilo*/
 
@@ -892,6 +946,116 @@ body::-webkit-scrollbar-track {
     text-align: center;
     font-weight: bold;
 }
+
+
+/*sesion*/
+
+#carrito-container1 {
+    border-radius: 5px;
+}
+
+#tabla1 {
+    display: flex;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+
+#tabla1 .session {
+    margin: 0px auto;
+    padding: 10px 0 20px 0px;
+    width: 273px;
+}
+
+#tabla1 .session .imagen {
+    margin: 0px auto;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+}
+
+#tabla1 .session .imagen img {
+    width: 100%;
+    height: auto;
+}
+
+@supports(object-fit: cover) {
+    #tabla1 .session .imagen img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+#tabla1 .session .imagen img {
+    border-radius: 100%;
+}
+
+#tabla1 .session .nombre {
+    padding-top: 10px;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+#tabla1 .session .boton1 {
+    padding-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cerrar {
+    background-color: var(--primario);
+    color: black;
+    margin-left: -6px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 5px;
+    transition: all 0.2s linear;
+    border-left: var(--primario) 1px solid;
+    border-right: var(--primario) 1px solid;
+    border-radius: 5px;
+}
+
+.modificarcuenta {
+    font-family: Comfortaa;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 0;
+    width: 100%;
+    border-top: rgb(250, 180, 217) 1px solid;
+    border-bottom: rgb(250, 180, 217) 1px solid;
+}
+
+.modificarcuenta:hover {
+    background-color: var(--presionado);
+}
+
+#tabla1 .session .cerrar {
+    font-family: Comfortaa;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 10px;
+    border: rgb(250, 180, 217) 1px solid;
+}
+
+#tabla1 .session .cerrar:hover {
+    background-color: var(--presionado);
+}
+
+#tabla1 p {
+    padding-top: 10px;
+    font-size: 24px !important;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/*finsesion*/
 
 .botons .btn-remove:hover {
     background-color: var(--secundario);

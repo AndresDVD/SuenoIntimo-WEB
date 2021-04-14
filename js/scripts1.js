@@ -1,10 +1,10 @@
-jQuery('document').ready(function () {
+jQuery('document').ready(function() {
 
     var menuBtn = $('.menu-icono'),
         menu = $('.cab nav');
 
 
-    menuBtn.click(function () {
+    menuBtn.click(function() {
 
 
         if (menu.hasClass('show')) {
@@ -15,7 +15,7 @@ jQuery('document').ready(function () {
 
     })
 
-    jQuery('.tels').keypress(function (tecla) {
+    jQuery('.tels').keypress(function(tecla) {
 
         if (tecla.charCode < 48 || tecla.charCode > 57) {
 
@@ -28,7 +28,7 @@ jQuery('document').ready(function () {
 });
 
 
-document.getElementById("mostrar").onclick = function () {
+document.getElementById("mostrar").onclick = function() {
 
     menu = $('.menul');
 
@@ -44,7 +44,7 @@ document.getElementById("mostrar").onclick = function () {
     }
 }
 
-document.getElementById("botonmenul1").onclick = function () {
+document.getElementById("botonmenul1").onclick = function() {
 
 
     if (document.getElementById("contenidomenu1").getAttribute("style") == "display:block") {
@@ -58,7 +58,7 @@ document.getElementById("botonmenul1").onclick = function () {
 
 }
 
-document.getElementById('id-icono-buscar').onclick = function () {
+document.getElementById('id-icono-buscar').onclick = function() {
     /*if (document.getElementById('id_barra_buscar').getAttribute("style") == "display:flex;") {
         document.getElementById('id_barra_buscar').setAttribute("style", "display:none;");
         document.getElementById('navegar').setAttribute("style", "margin-left: 50%;");
@@ -70,7 +70,7 @@ document.getElementById('id-icono-buscar').onclick = function () {
 }
 
 
-document.getElementById("botonmenul2").onclick = function () {
+document.getElementById("botonmenul2").onclick = function() {
 
     if (document.getElementById("contenidomenu2").getAttribute("style") == "display:block") {
         document.getElementById("contenidomenu2").setAttribute("style", "display:none");
@@ -82,7 +82,7 @@ document.getElementById("botonmenul2").onclick = function () {
 
 }
 
-document.getElementById("botonmenul3").onclick = function () {
+document.getElementById("botonmenul3").onclick = function() {
 
     if (document.getElementById("contenidomenu3").getAttribute("style") == "display:block") {
         document.getElementById("contenidomenu3").setAttribute("style", "display:none");
@@ -93,7 +93,7 @@ document.getElementById("botonmenul3").onclick = function () {
     }
 
 }
-document.getElementById("botonmenul4").onclick = function () {
+document.getElementById("botonmenul4").onclick = function() {
 
     if (document.getElementById("ubicacion").getAttribute("style") == "display:block") {
         document.getElementById("ubicacion").setAttribute("style", "display:none");
@@ -106,7 +106,7 @@ document.getElementById("botonmenul4").onclick = function () {
 }
 
 
-document.getElementById("botonmenul5").onclick = function () {
+document.getElementById("botonmenul5").onclick = function() {
 
     if (document.getElementById("contenidomenu5").getAttribute("style") == "display:block") {
         document.getElementById("contenidomenu5").setAttribute("style", "display:none");
@@ -118,36 +118,3 @@ document.getElementById("botonmenul5").onclick = function () {
     }
 
 }
-
-
-document.getElementById("nosot1").onclick = function () {
-
-    menu = $('.cab nav');
-
-    menu.removeClass('show');
-
-}
-document.getElementById("servic").onclick = function () {
-
-    menu = $('.cab nav');
-
-    menu.removeClass('show');
-
-}
-document.getElementById("contac2").onclick = function () {
-
-    menu = $('.cab nav');
-
-    menu.removeClass('show');
-
-}
-document.getElementById("btnlog").onclick = function () {
-
-    menu = $('.cab nav');
-
-    menu.removeClass('show');
-
-}
-
-
-

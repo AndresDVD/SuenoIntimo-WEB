@@ -24,9 +24,9 @@
                 <img src="imgs/Sueño Intimo 2 (Transparente).png">
                 <div class="cab">
                     <nav id="navegar">
-                        <a href="#nosot1" class="btn">Inicio</a>
-                        <a href="#servic" class="btn">Catalogo</a>
-                        <a href="#contac2" class="btn">Contacto</a>
+                        <a href="#nosot1" class="btn" id="btnsi">Inicio</a>
+                        <a href="#servic" class="btn" id="btnsi">Catalogo</a>
+                        <a href="#contac2" class="btn" id="btnsi">Contacto</a>
                     </nav>
                 </div>
                 <div class="busqueda">
@@ -93,25 +93,32 @@
                         </ul>
                     </div>
                     <div class="div_sesion">
-                    <a class="btn" href="
-                        <?php 
-                        
-                        if(isset($_SESSION['user'])){ 
-                            echo "../SuenoIntimo-WEB/php/cerrarsesion.php";
-                        }else{
-                            echo "../SuenoIntimo-WEB/php/login.php";
-                        }
-                        
-                        ?>" id="btnlog">
+
+                    
                         <?php
-                        if(isset($_SESSION['user'])){ 
-                            echo "Log out";
-                        }else{
-                            echo "Login";
-                        }
+                            if(isset($_SESSION['user'])){ 
+                                ?>
+                                
+                                
+                                <?php 
+                                
+                                if(isset($_SESSION['user'])){ 
+                                    $img = '<img src="../SuenoIntimo-WEB/imgs/usuarios/'.$_SESSION['imagen']. " \"class=\"btnimg\">";
+                                    echo ($img);
+                                    
+                                }
+                                
+                                ?>
+                                
+                                <?php
+                            }else{
+                                ?>  
+                                    <img src="" class="btnimg" style="display: none;">
+                                    <a class="btnn" href="../SuenoIntimo-WEB/php/login.php" id="btnlog">Login</a>
+                                <?php
+                            }
                         ?>
-                      
-                        </a>
+
                     </div>
                     </a>
                 </div>
@@ -125,6 +132,29 @@
            <button class="btn-remove" id="btns">Cancelar</button>       
            <button class="btn-remove" >Continuar</button> 
            </div>
+    </div>
+    <div id="carrito-container1" style="display:none;" class="divsesions">
+           <input type="hidden" id="usuarioactual" value="<?php echo $_SESSION['user']; ?>">
+           <div id="tabla1">
+                            <?php
+                            $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/usuario/api-usuario.php?email='.$_SESSION['user']), true);
+                                if($response['statuscode'] == 200){
+                                    foreach($response['perfil'] as $perfil){
+                                        include ('controlsesion.php');
+                                    }
+
+                                }
+                            $img = '<img src="../SuenoIntimo-WEB/imgs/usuarios/'.$_SESSION['imagen']. " \"class=\"btnimg\">";
+                            echo ($img);
+                            ?>
+            </div>
+            <div class="boton2"><button class="modificarcuenta" id="modificarcuentas" style="
+                        <?php if($_SESSION['tipo'] == 'admin'){ 
+                            echo "display:block;";
+                        }else{
+                            echo "display:none;";
+                        } ?>">Modifica Cuentas</button>
+            </div>
     </div>
     <div class="menulateral" id="menulateralcompleto" style="width:40px;">
         <div class="menul" >
