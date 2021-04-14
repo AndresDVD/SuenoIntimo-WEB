@@ -26,7 +26,6 @@
             foreach($response['items'] as $item){
                 include ('layout/items.php');
             }
-
         }else{
 
         }

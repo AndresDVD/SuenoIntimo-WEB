@@ -1,10 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-
-
-
-});
-document.addEventListener('DOMContentLoaded', () => {
     const botones = document.querySelectorAll('.btn-add');
 
     botones.forEach(boton => {
@@ -14,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             addItemToCarrito(id);
         });
     });
+
     const cookies = document.cookie.split(';');
     let cookie = null;
     cookies.forEach(item => {
@@ -34,6 +29,21 @@ document.addEventListener('DOMContentLoaded', () => {
     function enviar_a_php(busqueda) {
         window.location = "/SuenoIntimo-WEB/html/resultados_busqueda.php?buscar=" + busqueda;
     }
+
+    const sesion1 = document.querySelector('.btnimg');
+
+    sesion1.addEventListener('click', (e) => {
+        e.preventDefault();
+        const divsesions = document.querySelector('#carrito-container1');
+        email = document.getElementById('usuarioactual').value;
+        if (divsesions.style.display == 'none') {
+            divsesions.style.display = 'block';
+            mostrarUsuario(email);
+        } else {
+            divsesions.style.display = 'none';
+        }
+    });
+
 })
 
 const bCarrito = document.querySelector('.carrito1');
@@ -50,6 +60,49 @@ bCarrito.addEventListener('click', (e) => {
         carritoContainer.style.display = 'none';
     }
 });
+
+function mostrarUsuario(email) {
+    fetch('http://localhost/SuenoIntimo-WEB/api/usuario/api-usuario.php?email=' + email)
+        .then(response => {
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+            let tablaCont = document.querySelector('#tabla1');
+            let html = '';
+            html += `
+                <div class="session">
+                
+                    <div class="imagen"><img src='../SuenoIntimo-WEB/imgs/usuarios/${data.perfil.imagen}' width='70px' /></div>
+                    <div class='info'>
+                        <div class='nombre'>${data.perfil.nombre}</div>
+                        <div>${data.perfil.email}</div>
+                        <div class="boton1"><button class="modificarcuenta" id="modificatucuenta">Modifica tu Cuenta</button></div>
+                                                <div class="boton3"><a class="cerrar" href="../../SuenoIntimo-WEB/php/cerrarsesion.php">Cerrar sesion</a></div>
+                    </div>
+                </div>
+        `;
+
+
+            tablaCont.innerHTML = html;
+
+            modificar = document.querySelector('#modificatucuenta');
+            modificar.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert("modifica tu cuenta");
+                location.href = "http://localhost/SuenoIntimo-WEB/php/modificarcuenta.php";
+            });
+
+            modificarc = document.querySelector('#modificarcuentas');
+            modificarc.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert("modificar cuentas");
+                location.href = "http://localhost/SuenoIntimo-WEB/php/modificarcuenta.php";
+            });
+
+        });
+
+};
 
 function actualizarCarritoUI() {
     fetch('http://localhost/SuenoIntimo-WEB/api/carrito/api-carrito.php?action=mostrar')

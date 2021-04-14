@@ -17,6 +17,7 @@
             if($row['activo']=='SI'){
                 $_SESSION['user'] = $row['email'];
                 $_SESSION['tipo'] = $row['tipo'];
+                $_SESSION['imagen'] = $row['imagen'];
                 echo "1";
             }else{
                 echo "2";

@@ -89,7 +89,6 @@ button {
     max-height: 70%;
 }
 
-
 #tabla {
     overflow-y: visible;
     overflow-x: hidden;
@@ -365,6 +364,12 @@ button {
     background-color: var(--primario);
 }
 
+.btnimg {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
 .colores:hover {
     background-color: var(--presionado);
 }
@@ -463,11 +468,10 @@ li {
     padding: 0 5px 0px 5px;
 }
 
-.text_resultado{
+.text_resultado {
     font-family: Comfortaa;
     font-size: 20px;
 }
-
 
 .menusli button {
     font-family: BlueEyes;
