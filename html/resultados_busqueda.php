@@ -27,13 +27,14 @@
         echo "Resultados de: '" .$busqueda. "'";
         if(strcasecmp ($busqueda, 'dos piezas') == 0){
             $busqueda = 'dosPiezas';  
-        }else if(strcasecmp ($busqueda, 'pantalon largo') == 0){
+        }else if(strcasecmp ($busqueda, 'pantalon largo') == 0 ||
+                strcasecmp ($busqueda, 'pantalon' ) == 0){
             $busqueda = 'pantalonLargo';  
         }else if(strcasecmp ($busqueda, 'todo') == 0){
             $busqueda = 'todo';  
-        }else{
-            $busqueda = 'nada';
-            
+        }else if(strcasecmp ($busqueda, 'estilo camisa' ) == 0 || 
+                strcasecmp ($busqueda, 'camisa' ) == 0){
+            $busqueda = 'estiloCamisa';  
         }
 
     ?>

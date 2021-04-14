@@ -24,6 +24,9 @@
             echo json_encode(['statuscode' => 200, 'item' => $item]);
         }
     }else if(isset($_GET['items'])){
+        if($items == ''){
+            echo json_encode(['statuscode' => 400, 'response' => 'No existe ese item']);
+        }else{    
             if($_GET['items'] == 'todo'){
                     $productos = new Productos();
                     $items = $productos->getall();
