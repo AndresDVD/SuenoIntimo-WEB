@@ -135,15 +135,8 @@
     </div>
     <div id="carrito-container1" style="display:none;" class="divsesions">
            <input type="hidden" id="usuarioactual" value="<?php echo $_SESSION['user']; ?>">
-           <div id="tabla1">
+           <div id="tabla1" class="tabla1">
                             <?php
-                            $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/usuario/api-usuario.php?email='.$_SESSION['user']), true);
-                                if($response['statuscode'] == 200){
-                                    foreach($response['perfil'] as $perfil){
-                                        include ('controlsesion.php');
-                                    }
-
-                                }
                             $img = '<img src="../SuenoIntimo-WEB/imgs/usuarios/'.$_SESSION['imagen']. " \"class=\"btnimg\">";
                             echo ($img);
                             ?>

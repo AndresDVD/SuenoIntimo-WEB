@@ -63,6 +63,18 @@
                             <label>Nombre</label>
                             <input type="text" placeholder="Nombre Completo*" name="nombrelog1" id="nombrelog">
                         </div>
+                        <div class="campo" id="direccionlogeo" style="display: none;">
+                            <label>Direccion</label>
+                            <input type="text" placeholder="Direccion*" name="direccionlog1" id="direccionlog">
+                        </div>
+                        <div class="campo" id="ciudadlogeo" style="display: none;">
+                            <label>Ciudad</label>
+                            <input type="text" placeholder="Ciudad Logeo*" name="ciudadlog1" id="ciudadlog">
+                        </div>
+                        <div class="campo" id="telefonologeo" style="display: none;">
+                            <label>Telefono</label>
+                            <input type="text" placeholder="Ciudad Logeo*" name="telefonolog1" id="telefonolog">
+                        </div>
                         <div class="campo">
                             <label>Email</label>
                             <input type="email" placeholder="Email*" name="emaillogeo1"  id="emaillogeo">

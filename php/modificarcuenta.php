@@ -3,7 +3,7 @@
 
 session_start();
 
-if($_SESSION['tipo'] == 'usuario'){
+if(!isset($_SESSION['user'])){
     header("location: ./../index.php");
     }else{
     
@@ -50,50 +50,9 @@ if($_SESSION['tipo'] == 'usuario'){
     <section class="contacto1" id="contac1">
         <form class="formulario" id="formulario1" method="post">
             <fieldset>
-                <div class="iconos1">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="12" cy="7" r="4" />
-                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                      </svg>
-                </div>
-                <h3>Ingresa con tu cuenta</h3>
-                <div class="contener-campos">
-                    <div class="campo" id="nombrelogeo" style="display: none;">
-                        <label>Nombre</label>
-                        <input type="text" placeholder="Nombre Completo*" name="nombrelog1" id="nombrelog">
-                    </div>
-                    <div class="campo">
-                        <label>Email</label>
-                        <input type="email" placeholder="Email*" name="emaillogeo1"  id="emaillogeo">
-                    </div>
-                    <div class="campo">
-                        <label id="">Contraseña</label>
-                        <input type="password" placeholder="Contraseña*" name="contraseñalogeo1"  id="contraseñalogeo">
-                    </div>
-                    <div class="botones">
-                        <div class="enviar1" id="botonregistro">
-                        <span>Registrarse</span>
-                        </div>
-                        <div class="enviar1" id="botonlogeo">
-                        <span>Iniciar Sesion</span>
-                        </div>
-                    </div>
-                    <input type="checkbox" id="cbox" value="admin" style="
-                    
-                    <?php 
-
-                    if(isset($_SESSION['user'])){
-                    if($_SESSION['tipo'] == 'admin'){ 
-                            echo "display:block;";
-                        }
-                    }else{
-                            echo "display:none;";
-                        }
-                        ?>">
-
-                    <div class="checkbox">
-                    </div>
+                <input type="hidden" id="usuarioactual" value="<?php echo $_SESSION['user']; ?>">
+                <h3>Información básica</h3>
+                <div id="tabla2" class="tabla1">
                 </div>
             </fieldset>
         </form>
@@ -103,7 +62,7 @@ if($_SESSION['tipo'] == 'usuario'){
     <p>Todos los derechos reservados Sueño Intimo ©</p>
 </footer>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="../js/scriptslogeo.js"></script>
+<script src="../js/scriptsmodificarc.js"></script>
 </body>
 </html>
 <?php

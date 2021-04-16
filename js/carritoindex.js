@@ -89,7 +89,6 @@ function mostrarUsuario(email) {
             modificar = document.querySelector('#modificatucuenta');
             modificar.addEventListener('click', (e) => {
                 e.preventDefault();
-                alert("modifica tu cuenta");
                 location.href = "http://localhost/SuenoIntimo-WEB/php/modificarcuenta.php";
             });
 

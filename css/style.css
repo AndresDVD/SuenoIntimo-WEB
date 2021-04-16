@@ -475,6 +475,8 @@ body {
 
 .formulario fieldset {
     border: none;
+    padding-left: 0;
+    padding-right: 0;
     width: 100%;
 }
 
@@ -954,7 +956,15 @@ body::-webkit-scrollbar-track {
     border-radius: 5px;
 }
 
-#tabla1 {
+#tabla2 .session {
+    width: 110%;
+}
+
+#tabla2 .button {
+    width: 100%;
+}
+
+.tabla1 {
     display: flex;
     text-align: center;
     grid-template-columns: repeat(1, 1fr);
@@ -968,37 +978,37 @@ body::-webkit-scrollbar-track {
     width: 273px;
 }
 
-#tabla1 .session .imagen {
+.tabla1 .session .imagen {
     margin: 0px auto;
     width: 70px;
     height: 70px;
     overflow: hidden;
 }
 
-#tabla1 .session .imagen img {
+.tabla1 .session .imagen img {
     width: 100%;
     height: auto;
 }
 
 @supports(object-fit: cover) {
-    #tabla1 .session .imagen img {
+    .tabla1 .session .imagen img {
         height: 100%;
         object-fit: cover;
         object-position: center center;
     }
 }
 
-#tabla1 .session .imagen img {
+.tabla1 .session .imagen img {
     border-radius: 100%;
 }
 
-#tabla1 .session .nombre {
+.tabla1 .session .nombre {
     padding-top: 10px;
     font-size: 22px;
     font-weight: 900;
 }
 
-#tabla1 .session .boton1 {
+.tabla1 .session .boton1 {
     padding-top: 10px;
     width: 100%;
     box-sizing: border-box;
@@ -1032,6 +1042,19 @@ body::-webkit-scrollbar-track {
 }
 
 .modificarcuenta:hover {
+    background-color: var(--presionado);
+}
+
+.enviarcuenta {
+    font-family: Comfortaa;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    border-top: rgb(250, 180, 217) 1px solid;
+    border-bottom: rgb(250, 180, 217) 1px solid;
+}
+
+.enviarcuenta:hover {
     background-color: var(--presionado);
 }
 

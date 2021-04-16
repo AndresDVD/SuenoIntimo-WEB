@@ -7,12 +7,18 @@ document.getElementById("botonregistro").onclick = function() {
     if (document.getElementById('nombrelogeo').getAttribute("style") == "display: none;") {
 
         document.getElementById('nombrelogeo').setAttribute("style", "display: block;");
+        document.getElementById('direccionlogeo').setAttribute("style", "display: block;");
+        document.getElementById('ciudadlogeo').setAttribute("style", "display: block;");
+        document.getElementById('telefonologeo').setAttribute("style", "display: block;");
         document.getElementById('botonregistro').innerText = "Iniciar Sesion";
         document.getElementById('botonlogeo').innerText = "Crear Cuenta";
 
     } else {
 
         document.getElementById('nombrelogeo').setAttribute("style", "display: none;");
+        document.getElementById('direccionlogeo').setAttribute("style", "display: none;");
+        document.getElementById('ciudadlogeo').setAttribute("style", "display: none;");
+        document.getElementById('telefonologeo').setAttribute("style", "display: none;");
         document.getElementById('botonregistro').innerText = "Registrarse";
         document.getElementById('botonlogeo').innerText = "Iniciar Sesion";
 
@@ -73,6 +79,15 @@ $(document).ready(function() {
             } else if ($('#contraseñalogeo').val() == "") {
                 alertify.alert("Alerta", "Debes ingresar una Contraseña");
                 return false;
+            } else if ($('#direccionlog').val() == "") {
+                alertify.alert("Alerta", "Debes ingresar una Direccion");
+                return false;
+            } else if ($('#ciudadlog').val() == "") {
+                alertify.alert("Alerta", "Debes ingresar una Ciudad");
+                return false;
+            } else if ($('#telefonolog').val() == "") {
+                alertify.alert("Alerta", "Debes ingresar un Telefono");
+                return false;
             }
 
             emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
@@ -93,6 +108,9 @@ $(document).ready(function() {
 
             cadena = "nombre=" + $('#nombrelog').val() +
                 "&email=" + $('#emaillogeo').val() +
+                "&direccion=" + $('#direccionlog').val() +
+                "&ciudad=" + $('#ciudadlog').val() +
+                "&telefono=" + $('#telefonolog').val() +
                 "&contrasena=" + $('#contraseñalogeo').val() +
                 "&tipo=" + tipo;
             $.ajax({
@@ -104,6 +122,9 @@ $(document).ready(function() {
                     if (r == 1) {
                         $('#formulario1')[0].reset();
                         document.getElementById('nombrelogeo').setAttribute("style", "display: none;");
+                        document.getElementById('direccionlogeo').setAttribute("style", "display: none;");
+                        document.getElementById('ciudadlogeo').setAttribute("style", "display: none;");
+                        document.getElementById('telefonologeo').setAttribute("style", "display: none;");
                         document.getElementById('botonregistro').innerText = "Registrarse";
                         document.getElementById('botonlogeo').innerText = "Iniciar Sesion";
                         alertify.alert("Exito", "Usuario creado con exito");
