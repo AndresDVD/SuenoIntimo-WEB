@@ -32,7 +32,7 @@ function mostrar($carrito){
     $total = 0;
     $totalItems = 0;
     foreach($itemsCarrito as $itemCarrito){
-        $httpRequest = file_get_contents('http://suenointimo.univallebuga.host/SuenoIntimo-WEB/api/productos/api-productos.php?get-item=' . $itemCarrito['id']); 
+        $httpRequest = file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?get-item=' . $itemCarrito['id']); 
         $itemProducto = json_decode($httpRequest, 1)['item'];
         $itemProducto['cantidad'] = $itemCarrito['cantidad'];
         $itemProducto['subtotal'] = $itemProducto['cantidad'] * $itemProducto['precio'];

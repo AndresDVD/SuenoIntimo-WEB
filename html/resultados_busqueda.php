@@ -41,7 +41,7 @@
     </h3>
         <div class="servicios">
         <?php
-        $response = json_decode(file_get_contents('http://suenointimo.univallebuga.host/SuenoIntimo-WEB/api/productos/api-productos.php?categoria='.$busqueda), true);
+        $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?categoria='.$busqueda), true);
         if($response['statuscode'] != 500){
             if($response['statuscode'] == 200){
                 foreach($response['items'] as $item){
