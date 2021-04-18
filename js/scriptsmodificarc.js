@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function mostrarUsuario(email) {
-    fetch('http://localhost/SuenoIntimo-WEB/api/usuario/api-usuario.php?email=' + email)
+    fetch('http://suenointimo.univallebuga.host/SuenoIntimo-WEB/api/usuario/api-usuario.php?email=' + email)
         .then(response => {
             return response.json();
         })

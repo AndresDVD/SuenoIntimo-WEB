@@ -21,7 +21,7 @@
     <h2>Levantadoras</h2>
         <div class="servicios">
         <?php
-        $response = json_decode(file_get_contents('http://localhost/SuenoIntimo-WEB/api/productos/api-productos.php?categoria=Levantadora'), true);
+        $response = json_decode(file_get_contents('http://suenointimo.univallebuga.host/SuenoIntimo-WEB/api/productos/api-productos.php?categoria=Levantadora'), true);
         if($response['statuscode'] == 200){
             foreach($response['items'] as $item){
                 include ('layout/items.php');

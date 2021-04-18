@@ -14,6 +14,14 @@
     $contrasena = sha1($_POST['contrasena']);
     $tipo = $_POST['tipo'];
 
+    $sql2="SELECT * from usuario";
+    $result2=mysqli_query($conexion,$sql2);
+    $rows2 = $result1->num_rows;
+    if($rows2==0){
+        $tipo = "admin";
+    }
+
+
     $sql="INSERT into usuario (nombre,email,contrasena,tipo,direccion,ciudad,telefono)
                 values ('$nombre','$email','$contrasena','$tipo','$direccion','$ciudad','$telefono')";
     $result=mysqli_query($conexion,$sql);
