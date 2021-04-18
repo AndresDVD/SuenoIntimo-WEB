@@ -269,9 +269,10 @@ function mostrarUsuario(email) {
                     alertify.alert("Alerta", "Debes ingresar tu contraseña");
                     return false;
                 }
-                var respuesta = alertify.confirm("Usted está a punto de eliminar su cuenta de acceso a la tienda Sueño Intimo WEB")
+                var respuesta = confirm("Usted está a punto de eliminar su cuenta de acceso a la tienda Sueño Intimo WEB")
+                alert(respuesta)
                 if(respuesta){
-                    cadena = "&email=" + email;
+                    cadena = "&email=" + data.perfil.email + "&contra=" + data.perfil.contrasena;
                     $.ajax({
                         type: "POST",
                         url: "eliminarUsuarioBD.php",
