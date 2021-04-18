@@ -75,23 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-    /*
-        document.querySelectorAll('.slide1').addEventListener('click', e => {
-            document.getElementById("imagenes").firstElementChild.setAttribute("style", "margin-left:0");
-        });
-
-        document.querySelector('.slide2').addEventListener('click', e => {
-            document.getElementById("imagenes").firstElementChild.setAttribute("style", "margin-left:-200px");
-        });
-        document.querySelector('.slide3').addEventListener('click', e => {
-            document.getElementById("imagenes").setAttribute("style", "margin-left:-400px");
-        });
-        document.querySelector('.slide4').addEventListener('click', e => {
-            document.getElementById("imagenes").setAttribute("style", "margin-left:-600px");
-        });
-        document.querySelector('.slide5').addEventListener('click', e => {
-            document.getElementById("imagenes").setAttribute("style", "margin-left:-800px");
-        });*/
 });
 const bCarrito = document.querySelector('.carrito1');
 
@@ -109,7 +92,7 @@ bCarrito.addEventListener('click', (e) => {
 });
 
 function actualizarCarritoUI() {
-    fetch('http://localhost/SuenoIntimo-WEB/api/carrito/api-carrito.php?action=mostrar')
+    fetch('http://suenointimo.univallebuga.host/SuenoIntimo-WEB/api/carrito/api-carrito.php?action=mostrar')
         .then(response => {
             return response.json();
         })
@@ -154,7 +137,7 @@ function actualizarCarritoUI() {
 const moverSlider = id => {};
 
 const addItemToCarrito = id => {
-    fetch('http://localhost/SuenoIntimo-WEB/api/carrito/api-carrito.php?action=add&id=' + id)
+    fetch('http://suenointimo.univallebuga.host/SuenoIntimo-WEB/api/carrito/api-carrito.php?action=add&id=' + id)
         .then(response => {
             return response.text();
         })
@@ -164,7 +147,7 @@ const addItemToCarrito = id => {
 };
 
 const removeItemFromCarrito = id => {
-    fetch('http://localhost/SuenoIntimo-WEB/api/carrito/api-carrito.php?action=remove&id=' + id)
+    fetch('http://suenointimo.univallebuga.host/SuenoIntimo-WEB/api/carrito/api-carrito.php?action=remove&id=' + id)
         .then(res => {
             return res.json();
         })
