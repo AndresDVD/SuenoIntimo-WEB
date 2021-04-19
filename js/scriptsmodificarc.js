@@ -57,6 +57,11 @@ function mostrarUsuario(email) {
                     </div>
                     <div class="boton1"><button class="modificarcuenta" id="email">Email:    ${data.perfil.email}</button></div>
                     </div>
+                    <div class="boton1"><button class="eliminarcuenta" id="eliminar">Eliminar la cuenta:${data.perfil.email}</button></div>
+                    <div class="boton1" id="divEliminar" style="display:none">
+                        <input type="text" placeholder="Ingrese su contraseña*" name="contra1" id="contra1">
+                        <div class="boton1"><button class="eliminarcuenta" id="enviareliminar">Eliminar</button></div>
+                    </div>
                 </div>
         `;
 
@@ -241,6 +246,48 @@ function mostrarUsuario(email) {
                 if (nombrediv == "display:none") {
                     nomdiv.setAttribute("style", "display:block");
                 };
+            });
+
+            telefono = document.querySelector('#eliminar');
+            telefono.addEventListener('click', (e) => {
+                e.preventDefault();
+                nombrediv = document.getElementById("divEliminar").getAttribute("style");
+                nomdiv = document.getElementById("divEliminar");
+                if (nombrediv == "display:block") {
+                    nomdiv.setAttribute("style", "display:none");
+                }
+                if (nombrediv == "display:none") {
+                    nomdiv.setAttribute("style", "display:block");
+                }; 
+            });
+
+
+            telefono = document.querySelector('#enviareliminar');
+            telefono.addEventListener('click', (e) => {
+                e.preventDefault();
+                if ($('#contra1').val() == "") {
+                    alertify.alert("Alerta", "Debes ingresar tu contraseña");
+                    return false;
+                }
+                var respuesta = confirm("Usted está a punto de eliminar su cuenta de acceso a la tienda Sueño Intimo WEB")
+                alert(respuesta)
+                if(respuesta){
+                    cadena = "&email=" + data.perfil.email + "&contra=" + data.perfil.contrasena;
+                    $.ajax({
+                        type: "POST",
+                        url: "eliminarUsuarioBD.php",
+                        data: cadena,
+                        success: function(r) {
+                            if (r == "0") {
+                                alertify.error("Fallo al Eliminar");
+                            }
+                            if (r == "1") {
+                                alertify.success("Eliminación Exitosa");
+                                mostrarUsuario(email);
+                            }
+                        }
+                    });
+                }   
             });
 
             nombreenviar = document.querySelector('#enviarnombre');
