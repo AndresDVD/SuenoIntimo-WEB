@@ -16,7 +16,7 @@
 
     $sql2="SELECT * from usuario";
     $result2=mysqli_query($conexion,$sql2);
-    $rows2 = $result1->num_rows;
+    $rows2 = $result2->num_rows;
     if($rows2==0){
         $tipo = "admin";
     }

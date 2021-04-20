@@ -62,7 +62,7 @@ bCarrito.addEventListener('click', (e) => {
 });
 
 function mostrarUsuario(email) {
-    fetch('http://suenointimo.univallebuga.host/SuenoIntimo-WEB/api/usuario/api-usuario.php?email=' + email)
+    fetch('http://localhost/suenointimo-web/api/usuario/api-usuario.php?email=' + email)
         .then(response => {
             return response.json();
         })
@@ -89,7 +89,7 @@ function mostrarUsuario(email) {
             modificar = document.querySelector('#modificatucuenta');
             modificar.addEventListener('click', (e) => {
                 e.preventDefault();
-                location.href = "http://suenointimo.univallebuga.host/SuenoIntimo-WEB/php/modificarcuenta.php";
+                location.href = "http://localhost/suenointimo-web/php/modificarcuenta.php";
             });
 
             modificarc = document.querySelector('#modificarcuentas');
