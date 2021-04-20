@@ -14,10 +14,31 @@ document.addEventListener('DOMContentLoaded', () => {
     email = document.getElementById('usuarioactual').value;
     mostrarUsuario(email);
 
+    buscaru = document.querySelector('#buscar');
+    buscaru.addEventListener('click', (e) => {
+        mostrarUsuario($('#buscarusuarioinput').val());
+    });
+
 })
 
+function cerrarS() {
+    $.ajax({
+        type: "POST",
+        url: "cerrarSesion1.php",
+        success: function(r) {
+            if (r == "0") {
+                alertify.error("Fallo");
+            }
+            if (r == "1") {
+                location.reload();
+            }
+        }
+    });
+}
+
+
 function mostrarUsuario(email) {
-    fetch('http://suenointimo.univallebuga.host/SuenoIntimo-WEB/api/usuario/api-usuario.php?email=' + email)
+    fetch('http://localhost/SuenoIntimo-WEB/api/usuario/api-usuario.php?email=' + email)
         .then(response => {
             return response.json();
         })
@@ -55,7 +76,6 @@ function mostrarUsuario(email) {
                         <input type="text" placeholder="Ingrese su contraseña actual*" name="contrasena11" id="contrasena1">
                         <div class="boton1"><button class="enviarcuenta" id="enviarcontrasena1">Enviar</button></div>
                     </div>
-                    <div class="boton1"><button class="modificarcuenta" id="email">Email:    ${data.perfil.email}</button></div>
                     </div>
                     <div class="boton1"><button class="eliminarcuenta" id="eliminar">Eliminar la cuenta:${data.perfil.email}</button></div>
                     <div class="boton1" id="divEliminar" style="display:none">
@@ -258,7 +278,7 @@ function mostrarUsuario(email) {
                 }
                 if (nombrediv == "display:none") {
                     nomdiv.setAttribute("style", "display:block");
-                }; 
+                };
             });
 
 
@@ -271,7 +291,7 @@ function mostrarUsuario(email) {
                 }
                 var respuesta = confirm("Usted está a punto de eliminar su cuenta de acceso a la tienda Sueño Intimo WEB")
                 alert(respuesta)
-                if(respuesta){
+                if (respuesta) {
                     cadena = "&email=" + data.perfil.email + "&contra=" + data.perfil.contrasena;
                     $.ajax({
                         type: "POST",
@@ -283,11 +303,15 @@ function mostrarUsuario(email) {
                             }
                             if (r == "1") {
                                 alertify.success("Eliminación Exitosa");
-                                mostrarUsuario(email);
+                                if (data.perfil.tipo == usuario) {
+                                    cerrarS();
+                                } else {
+                                    mostrarUsuario(document.getElementById('usuarioactual').value);
+                                }
                             }
                         }
                     });
-                }   
+                }
             });
 
             nombreenviar = document.querySelector('#enviarnombre');

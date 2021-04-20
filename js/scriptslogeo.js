@@ -96,15 +96,8 @@ $(document).ready(function() {
                 alertify.error("La dirección de email no tiene el formato correcto.");
                 return false;
             }
-
-            var tipo;
-
-            var isChecked = document.getElementById('cbox').checked;
-            if (isChecked) {
-                tipo = "admin";
-            } else {
-                tipo = "usuario";
-            }
+            var tipo = document.getElementById("tipouser");
+            var tipou = tipo.options[tipo.selectedIndex].value;
 
             cadena = "nombre=" + $('#nombrelog').val() +
                 "&email=" + $('#emaillogeo').val() +
@@ -112,7 +105,7 @@ $(document).ready(function() {
                 "&ciudad=" + $('#ciudadlog').val() +
                 "&telefono=" + $('#telefonolog').val() +
                 "&contrasena=" + $('#contraseñalogeo').val() +
-                "&tipo=" + tipo;
+                "&tipo=" + tipou;
             $.ajax({
                 type: "POST",
                 async: false,

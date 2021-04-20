@@ -3,7 +3,7 @@
 
     session_start();
 
-    if($_SESSION['tipo'] == 'usuario'){
+    if($_SESSION['tipo'] == 'usuario' || $_SESSION['tipo'] == 'almacenista'){
         header("location: ./../index.php");
         }else{
         
@@ -91,21 +91,22 @@
                             <span>Iniciar Sesion</span>
                             </div>
                         </div>
-                        <input type="checkbox" id="cbox" value="admin" style="
-                        
+                        <select name="tipousuario" id="tipouser" class="enviar2" style="
                         <?php 
-
                         if(isset($_SESSION['user'])){
                         if($_SESSION['tipo'] == 'admin'){ 
                                 echo "display:block;";
+                            }else{
+                                echo "display:none;";
                             }
                         }else{
                                 echo "display:none;";
                             }
-                            ?>">
-
-                        <div class="checkbox">
-                        </div>
+                            ?>">>
+                            <option value="usuario" selected>Usuario</option>
+                            <option value="admin">Administrador</option>
+                            <option value="almacenista">Almacenista</option>
+                        </select>
                     </div>
                 </fieldset>
             </form>

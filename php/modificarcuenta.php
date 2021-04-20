@@ -52,6 +52,23 @@ if(!isset($_SESSION['user'])){
             <fieldset>
                 <input type="hidden" id="usuarioactual" value="<?php echo $_SESSION['user']; ?>">
                 <h3>Información básica</h3>
+                <div style="
+                        <?php 
+                        if(isset($_SESSION['user'])){
+                        if($_SESSION['tipo'] == 'admin'){ 
+                                echo "display:block;";
+                            }else{
+                                echo "display:none;";
+                            }
+                        }else{
+                                echo "display:none;";
+                            }
+                            ?>">
+                    <input type="text" id="buscarusuarioinput" placeholder="Email">
+                    <div class="enviar2" id="buscar">
+                            <span>Buscar Usuario</span>
+                    </div>
+                </div>
                 <div id="tabla2" class="tabla1">
                 </div>
             </fieldset>

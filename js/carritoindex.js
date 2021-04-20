@@ -62,7 +62,7 @@ bCarrito.addEventListener('click', (e) => {
 });
 
 function mostrarUsuario(email) {
-    fetch('http://localhost/suenointimo-web/api/usuario/api-usuario.php?email=' + email)
+    fetch('http://localhost/SuenoIntimo-WEB/api/usuario/api-usuario.php?email=' + email)
         .then(response => {
             return response.json();
         })
@@ -78,7 +78,7 @@ function mostrarUsuario(email) {
                         <div class='nombre'>${data.perfil.nombre}</div>
                         <div>${data.perfil.email}</div>
                         <div class="boton1"><button class="modificarcuenta" id="modificatucuenta">Modifica tu Cuenta</button></div>
-                                                <div class="boton3"><a class="cerrar" href="../../SuenoIntimo-WEB/php/cerrarsesion.php">Cerrar sesion</a></div>
+                                                <div class="boton3"><a class="cerrar" href="../../SuenoIntimo-WEB/php/cerrarSesion.php">Cerrar sesion</a></div>
                     </div>
                 </div>
         `;
@@ -89,14 +89,12 @@ function mostrarUsuario(email) {
             modificar = document.querySelector('#modificatucuenta');
             modificar.addEventListener('click', (e) => {
                 e.preventDefault();
-                location.href = "http://localhost/suenointimo-web/php/modificarcuenta.php";
+                location.href = "http://localhost/SuenoIntimo-WEB/php/modificarcuenta.php";
             });
-
-            modificarc = document.querySelector('#modificarcuentas');
-            modificarc.addEventListener('click', (e) => {
+            crearc = document.querySelector('#crearcuentas');
+            crearc.addEventListener('click', (e) => {
                 e.preventDefault();
-                alert("modificar cuentas");
-                location.href = "http://suenointimo.univallebuga.host/SuenoIntimo-WEB/php/modificarcuenta.php";
+                location.href = "http://localhost/SuenoIntimo-WEB/php/login.php";
             });
 
         });
@@ -104,7 +102,7 @@ function mostrarUsuario(email) {
 };
 
 function actualizarCarritoUI() {
-    fetch('http://suenointimo.univallebuga.host/SuenoIntimo-WEB/api/carrito/api-carrito.php?action=mostrar')
+    fetch('http://localhost/SuenoIntimo-WEB/api/carrito/api-carrito.php?action=mostrar')
         .then(response => {
             return response.json();
         })
@@ -147,7 +145,7 @@ function actualizarCarritoUI() {
 
 
 const addItemToCarrito = id => {
-    fetch('http://suenointimo.univallebuga.host/SuenoIntimo-WEB/api/carrito/api-carrito.php?action=add&id=' + id)
+    fetch('http://localhost/SuenoIntimo-WEB/api/carrito/api-carrito.php?action=add&id=' + id)
         .then(response => {
             return response.text();
         })
@@ -157,7 +155,7 @@ const addItemToCarrito = id => {
 };
 
 const removeItemFromCarrito = id => {
-    fetch('http://suenointimo.univallebuga.host/SuenoIntimo-WEB/api/carrito/api-carrito.php?action=remove&id=' + id)
+    fetch('http://localhost/SuenoIntimo-WEB/api/carrito/api-carrito.php?action=remove&id=' + id)
         .then(res => {
             return res.json();
         })

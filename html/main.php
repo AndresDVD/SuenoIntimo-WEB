@@ -77,26 +77,35 @@ session_start();
                         <path d="M17 17h-11v-14h-2" />
                         <path d="M6 5l14 1l-1 7h-13" />
                       </svg>
-                      <a href="../../SuenoIntimo-WEB/php/login.php" style="
-                      
-                      <?php 
+                      <div class="div_sesion">
 
-                        if(isset($_SESSION['user'])){
-                        if($_SESSION['tipo'] == 'admin'){ 
-                                echo "display:block;";
+
+                    
+                        <?php
+                            if(isset($_SESSION['user'])){ 
+                                ?>
+                                
+                                
+                                <?php 
+                                
+                                if(isset($_SESSION['user'])){ 
+                                    $img = '<img src="../imgs/usuarios/'.$_SESSION['imagen']. " \"class=\"btnimg\">";
+                                    echo ($img);
+                                    
+                                }
+                                
+                                ?>
+                                
+                                <?php
+                            }else{
+                                ?>  
+                                    <img src="" class="btnimg" style="display: none;">
+                                    <a class="btnn" href="../php/login.php" id="btnlog">Login</a>
+                                <?php
                             }
-                        }else{
-                                echo "display:none;";
-                            }
-                            ?>"
-                      ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-exclamation" width="40" height="40" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fc8dc8" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="9" cy="7" r="4" />
-                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                        <line x1="19" y1="7" x2="19" y2="10" />
-                        <line x1="19" y1="14" x2="19" y2="14.01" />
-                        </svg>
-                        </a>
+                        ?>
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,6 +114,24 @@ session_start();
            <div id="tabla">
            <div>carrito</div>
            </div>                 
+    </div>
+
+    <div id="carrito-container1" style="display:none;" class="divsesions">
+           <input type="hidden" id="usuarioactual" value="<?php echo $_SESSION['user']; ?>">
+           <div id="tabla1" class="tabla1">
+                            <?php
+                            $img = '<img src="../SuenoIntimo-WEB/imgs/usuarios/'.$_SESSION['imagen']. " \"class=\"btnimg\">";
+                            echo ($img);
+                            ?>
+            </div>
+            <div class="boton2"><button class="modificarcuenta" id="crearcuentas" style="
+                        <?php if($_SESSION['tipo'] == 'admin'){ 
+                            echo "display:block;";
+                        }else{
+                            echo "display:none;";
+                        } ?>">Crear Cuentas</button>
+                        
+            </div>
     </div>
     
     <script src="../js/carrito.js"></script>
